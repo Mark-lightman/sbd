@@ -370,7 +370,7 @@
           "settings": {
             "text": "<p>We offer a full end to end service from initial enquiry through a site survey, design consultation, ‘deliver and fit’ and removal of your old doors.</p>",
             "width": "fit-content",
-            "max_width": "none",
+            "max_width": "normal",
             "alignment": "center",
             "type_preset": "h4",
             "font": "var(--font-body--family)",
@@ -403,8 +403,8 @@
         "align_baseline": false,
         "horizontal_alignment_flex_direction_column": "center",
         "vertical_alignment_flex_direction_column": "center",
-        "gap": 10,
-        "section_width": "full-width",
+        "gap": 0,
+        "section_width": "page-width",
         "section_height": "",
         "section_height_custom": 50,
         "color_scheme": "scheme-4",
@@ -419,8 +419,8 @@
         "overlay_color": "#00000026",
         "overlay_style": "solid",
         "gradient_direction": "to top",
-        "padding-block-start": 48,
-        "padding-block-end": 48
+        "padding-block-start": 24,
+        "padding-block-end": 21
       }
     },
     "section_nXmcqe": {
