@@ -146,10 +146,10 @@
       "type": "custom-liquid",
       "name": "t:names.custom_liquid",
       "settings": {
-        "custom_liquid": "<p style=\"text-decoration:none;text-align:center;font-size:19px;\"><a href=\"#\">Click Here</a> for a quote </p>",
+        "custom_liquid": "<p style=\"text-decoration:none;text-align:center;font-size:24px;\"><a href=\"/contact\">Click Here</a> for a quote </p>",
         "color_scheme": "scheme-4",
         "section_width": "page-width",
-        "padding-block-start": 40,
+        "padding-block-start": 35,
         "padding-block-end": 40
       }
     }
