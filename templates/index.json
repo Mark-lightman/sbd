@@ -150,8 +150,8 @@
         "overlay_color": "#00000026",
         "overlay_style": "solid",
         "gradient_direction": "to top",
-        "padding-block-start": 24,
-        "padding-block-end": 21
+        "padding-block-start": 40,
+        "padding-block-end": 40
       }
     },
     "media_with_content_7nqPJc": {
