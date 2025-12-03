@@ -1551,7 +1551,7 @@
               "type": "text",
               "name": "t:names.description",
               "settings": {
-                "text": "<p>Bob -<br/><em>\"We create with intention. Our products solve real problems with clean design and honest materials.\"</em></p>",
+                "text": "<p>Sarah B -<br/><em>\"Simple ordering process and outstanding quality — they look amazing and you can just tell they’re built to last.\"</em></p>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "center",
@@ -1739,7 +1739,7 @@
         "section_width": "page-width",
         "section_height": "",
         "section_height_custom": 50,
-        "color_scheme": "",
+        "color_scheme": "scheme-4",
         "background_media": "none",
         "video_position": "cover",
         "background_image_position": "cover",
