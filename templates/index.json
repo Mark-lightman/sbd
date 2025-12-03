@@ -2274,7 +2274,7 @@
                 "text_jGNmAe": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Quote & Order Confirmation</p>",
+                    "text": "<p>Site Survey </p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
@@ -2299,7 +2299,7 @@
                 "text_ppncHi": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Once you are happy with your build and have received your quote we can confirm your order and move forward to install.</p>",
+                    "text": "<p>We will visit your site and carry out a full pre-built site survey to ensure fitting happens without a hitch</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
