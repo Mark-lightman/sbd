@@ -17,9 +17,9 @@
           "name": "t:names.heading",
           "settings": {
             "text": "<p>Luxury Steel Bespoke Doors</p>",
-            "width": "fit-content",
-            "max_width": "none",
-            "alignment": "left",
+            "width": "100%",
+            "max_width": "normal",
+            "alignment": "center",
             "type_preset": "h2",
             "font": "var(--font-body--family)",
             "font_size": "1rem",
