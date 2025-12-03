@@ -147,7 +147,7 @@
       "type": "custom-liquid",
       "name": "t:names.custom_liquid",
       "settings": {
-        "custom_liquid": "<p style=\"text-decoration:none;text-align:center;font-size:24px;\"><a href=\"/pages/contact\">Click Here</a> for a free no obligation quote </p>",
+        "custom_liquid": "<p style=\"text-decoration:none;text-align:center;font-size:28px;\"><a href=\"/pages/contact\">Click Here</a> for a free no obligation quote </p>",
         "color_scheme": "scheme-4",
         "section_width": "page-width",
         "padding-block-start": 35,
