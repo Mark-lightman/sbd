@@ -1551,7 +1551,7 @@
               "type": "text",
               "name": "t:names.description",
               "settings": {
-                "text": "<p>Sarah B -<br/><em>\"Simple ordering process and outstanding quality — they look amazing and you can just tell they’re built to last.\"</em></p>",
+                "text": "<h4>Sarah B -<br/><em>\"Simple ordering process and outstanding quality — they look amazing and you can just tell they’re built to last.\"</em></h4>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "center",
