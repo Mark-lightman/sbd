@@ -218,7 +218,7 @@
                 "horizontal_alignment_flex_direction_column": "center",
                 "vertical_alignment_flex_direction_column": "center",
                 "gap": 12,
-                "width": "fill",
+                "width": "custom",
                 "custom_width": 100,
                 "width_mobile": "fill",
                 "custom_width_mobile": 100,
@@ -278,7 +278,7 @@
                   "settings": {
                     "text": "<ul><li>Up to 150 different colour and finish combinations</li><li>Colour match to existing fixtures and fittings</li><li>Various glass options from frosted and stained to fluted and mirrored</li><li>Fire rated options available</li><li>Various steel profiles</li><li>A wide choice of lever and bar or plated push pull handles<br/></li></ul>",
                     "width": "100%",
-                    "max_width": "narrow",
+                    "max_width": "none",
                     "alignment": "left",
                     "type_preset": "rte",
                     "font": "var(--font-body--family)",
