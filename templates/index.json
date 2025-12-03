@@ -1786,7 +1786,7 @@
                 "text_4xBRAz": {
                   "type": "text",
                   "settings": {
-                    "text": "<h2>A team with a goal</h2>",
+                    "text": "<p>Quote & Order Confirmation</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
@@ -1811,7 +1811,7 @@
                 "text_caVMPk": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Real people making great products</p>",
+                    "text": "<p>Once you are happy with your build and have received your quote we can confirm your order and move forward to install.</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
