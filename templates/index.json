@@ -361,6 +361,68 @@
         "padding-block-end": 48
       }
     },
+    "section_wAFgbV": {
+      "type": "section",
+      "blocks": {
+        "text_TVAUtb": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<p>We offer a full end to end service from initial enquiry through a site survey, design consultation, ‘deliver and fit’ and removal of your old doors.</p>",
+            "width": "100%",
+            "max_width": "normal",
+            "alignment": "center",
+            "type_preset": "h4",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "var(--color-foreground-heading)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "text_TVAUtb"
+      ],
+      "name": "t:names.rich_text_section",
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "center",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 10,
+        "section_width": "full-width",
+        "section_height": "",
+        "section_height_custom": 50,
+        "color_scheme": "",
+        "background_media": "none",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "padding-block-start": 48,
+        "padding-block-end": 48
+      }
+    },
     "section_nXmcqe": {
       "type": "section",
       "blocks": {
@@ -1317,6 +1379,7 @@
   "order": [
     "hero_jVaWmY",
     "product_list_fa6P9H",
+    "section_wAFgbV",
     "section_nXmcqe",
     "section_8tmYP6",
     "section_7bFWJX",
