@@ -1551,7 +1551,7 @@
               "type": "text",
               "name": "t:names.description",
               "settings": {
-                "text": "<p>Bob -<br/>\"We create with intention. Our products solve real problems with clean design and honest materials.\"</p>",
+                "text": "<p>Bob -<br/><em>\"We create with intention. Our products solve real problems with clean design and honest materials.\"</em></p>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "center",
