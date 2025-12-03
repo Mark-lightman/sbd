@@ -819,13 +819,14 @@
           "static": true,
           "settings": {
             "horizontal_alignment_flex_direction_column": "flex-start",
-            "vertical_alignment_flex_direction_column": "space-between",
+            "vertical_alignment_flex_direction_column": "center",
             "gap": 24
           },
           "blocks": {
             "text_3hYPCR": {
               "type": "text",
               "name": "t:names.caption",
+              "disabled": true,
               "settings": {
                 "text": "<p>Bestseller</p>",
                 "width": "fit-content",
@@ -947,6 +948,7 @@
             },
             "button_ycPrdP": {
               "type": "button",
+              "disabled": true,
               "settings": {
                 "label": "Shop now",
                 "link": "shopify://collections/all",
