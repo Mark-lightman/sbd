@@ -175,9 +175,9 @@
           "type": "_content-without-appearance",
           "static": true,
           "settings": {
-            "horizontal_alignment_flex_direction_column": "flex-start",
+            "horizontal_alignment_flex_direction_column": "center",
             "vertical_alignment_flex_direction_column": "center",
-            "gap": 24
+            "gap": 41
           },
           "blocks": {
             "text_3hYPCR": {
@@ -215,7 +215,7 @@
                 "horizontal_alignment": "flex-start",
                 "vertical_alignment": "center",
                 "align_baseline": false,
-                "horizontal_alignment_flex_direction_column": "flex-start",
+                "horizontal_alignment_flex_direction_column": "center",
                 "vertical_alignment_flex_direction_column": "center",
                 "gap": 12,
                 "width": "fill",
@@ -330,8 +330,8 @@
       "name": "t:names.editorial",
       "settings": {
         "media_position": "left",
-        "media_width": "medium",
-        "media_height": "60svh",
+        "media_width": "wide",
+        "media_height": "50svh",
         "section_width": "full-width",
         "extend_media": true,
         "color_scheme": "scheme-87a3699f-e494-4023-b625-2dcf1cc781a7",
