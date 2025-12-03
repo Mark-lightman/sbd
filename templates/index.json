@@ -2149,7 +2149,7 @@
                 "text_PRriMj": {
                   "type": "text",
                   "settings": {
-                    "text": "<ol><li>From here your doors will take 5-7 weeks to build and deliver to site.</li></ol>",
+                    "text": "<p>From here your doors will take 5-7 weeks to build and deliver to site.</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
