@@ -2367,6 +2367,74 @@
         "padding-block-start": 48,
         "padding-block-end": 48
       }
+    },
+    "marquee_b8zmK9": {
+      "type": "marquee",
+      "blocks": {
+        "text_D63QXc": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Recent Project 1</p>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "custom",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "tight",
+            "letter_spacing": "tight",
+            "case": "none",
+            "wrap": "nowrap",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "text_rwriyj": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<p>Recent Project 2</p>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "text_D63QXc",
+        "text_rwriyj"
+      ],
+      "name": "t:names.marquee_section",
+      "settings": {
+        "movement_direction": "normal",
+        "color_scheme": "",
+        "padding-block-start": 24,
+        "padding-block-end": 24,
+        "gap_between_elements": 24
+      }
     }
   },
   "order": [
@@ -2380,6 +2448,7 @@
     "section_V9cwQh",
     "divider_rh8KUy",
     "section_byDzN4",
-    "section_TCayzy"
+    "section_TCayzy",
+    "marquee_b8zmK9"
   ]
 }
