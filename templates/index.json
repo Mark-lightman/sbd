@@ -578,8 +578,8 @@
               "name": "t:names.contact_form",
               "settings": {
                 "width": "custom",
-                "custom_width": 100,
-                "width_mobile": "fit-content",
+                "custom_width": 69,
+                "width_mobile": "custom",
                 "custom_width_mobile": 100,
                 "inherit_color_scheme": true,
                 "color_scheme": "",
