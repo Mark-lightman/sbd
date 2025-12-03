@@ -501,6 +501,7 @@
       "block_order": [
         "group_FQW8wK"
       ],
+      "disabled": true,
       "name": "t:names.multicolumn",
       "settings": {
         "content_direction": "row",
@@ -737,6 +738,7 @@
         "group_ajCtbh",
         "group_6dqc4X"
       ],
+      "disabled": true,
       "name": "t:names.multicolumn",
       "settings": {
         "content_direction": "row",
@@ -830,6 +832,7 @@
         "text_w9HF9C",
         "contact_form_kzzm39"
       ],
+      "disabled": true,
       "name": "t:names.contact_form",
       "settings": {
         "content_direction": "column",
