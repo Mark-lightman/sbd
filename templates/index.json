@@ -1486,7 +1486,7 @@
                 "text_rBwh3d": {
                   "type": "text",
                   "settings": {
-                    "text": "<h2>Intentional design</h2>",
+                    "text": "<p>Initial Contact</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
@@ -1636,7 +1636,7 @@
                 "text_W7amtG": {
                   "type": "text",
                   "settings": {
-                    "text": "<h2>Made with care</h2>",
+                    "text": "<p>Design Consultation</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
