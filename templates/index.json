@@ -276,7 +276,7 @@
                 "text_J4hajT": {
                   "type": "text",
                   "settings": {
-                    "text": "<ul><li>Up to 150 different colour and finish combinations</li><li>Colour match to existing fixtures and fittings</li><li>Various glass options from frosted and stained to fluted and mirrored</li><li>Fire rated options available</li><li>Various steel profiles</li><li>A wide choice of lever and bar or plated push pull handles<br/></li></ul>",
+                    "text": "<ul><li><strong>Up to 150 different colour and finish combinations</strong></li><li><strong>Colour match to existing fixtures and fittings</strong></li><li><strong>Various glass options from frosted and stained to fluted and mirrored</strong></li><li><strong>Fire rated options available</strong></li><li><strong>Various steel profiles</strong></li><li><strong>A wide choice of lever and bar or plated push pull handles</strong><br/></li></ul>",
                     "width": "100%",
                     "max_width": "none",
                     "alignment": "left",
