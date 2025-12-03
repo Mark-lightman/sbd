@@ -131,6 +131,7 @@
       "block_order": [
         "announcement_pKkKhT"
       ],
+      "disabled": true,
       "name": "t:names.announcement_bar",
       "settings": {
         "speed": 5,
@@ -145,11 +146,11 @@
       "type": "custom-liquid",
       "name": "t:names.custom_liquid",
       "settings": {
-        "custom_liquid": "<p>Click here for a quote <a href=\"#\">Click Here</a>P",
-        "color_scheme": "",
+        "custom_liquid": "<p style=\"text-align:center;\"><a href=\"#\">Click Here</a>for a quote </p>",
+        "color_scheme": "scheme-4",
         "section_width": "page-width",
-        "padding-block-start": 0,
-        "padding-block-end": 0
+        "padding-block-start": 40,
+        "padding-block-end": 40
       }
     }
   },
