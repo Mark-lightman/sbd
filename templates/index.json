@@ -537,7 +537,7 @@
           "type": "group",
           "name": "t:names.column",
           "settings": {
-            "content_direction": "row",
+            "content_direction": "column",
             "vertical_on_mobile": true,
             "horizontal_alignment": "flex-start",
             "vertical_alignment": "center",
@@ -545,7 +545,7 @@
             "horizontal_alignment_flex_direction_column": "center",
             "vertical_alignment_flex_direction_column": "center",
             "gap": 0,
-            "width": "custom",
+            "width": "fill",
             "custom_width": 50,
             "width_mobile": "fill",
             "custom_width_mobile": 100,
