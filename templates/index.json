@@ -369,8 +369,8 @@
           "name": "t:names.text",
           "settings": {
             "text": "<p>We offer a full end to end service from initial enquiry through a site survey, design consultation, ‘deliver and fit’ and removal of your old doors.</p>",
-            "width": "100%",
-            "max_width": "normal",
+            "width": "fit-content",
+            "max_width": "none",
             "alignment": "center",
             "type_preset": "h4",
             "font": "var(--font-body--family)",
