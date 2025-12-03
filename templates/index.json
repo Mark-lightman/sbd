@@ -2124,7 +2124,7 @@
                 "text_mnEr39": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Design Consultation</p>",
+                    "text": "<p>Manufacturing</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
@@ -2149,7 +2149,7 @@
                 "text_PRriMj": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Where your project comes to life. We can settle on options for handles, glass, colour, finish and design. Once this is done we will send somebody out to you to conduct a full site survey and measure up for the build. Full CAD drawings can be provided if requested.</p>",
+                    "text": "<ol><li>From here your doors will take 5-7 weeks to build and deliver to site.</li></ol>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
