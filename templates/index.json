@@ -306,7 +306,7 @@
             "icon_rmBJd3": {
               "type": "icon",
               "settings": {
-                "icon": "snowflake",
+                "icon": "whatsapp",
                 "width": 32,
                 "link": "",
                 "open_in_new_tab": false
@@ -456,7 +456,7 @@
             "icon_GMqafU": {
               "type": "icon",
               "settings": {
-                "icon": "heart",
+                "icon": "question_mark",
                 "width": 32,
                 "link": "",
                 "open_in_new_tab": false
@@ -655,7 +655,7 @@
                 "text_4xBRAz": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Quote & Order Confirmation</p>",
+                    "text": "<p>Site Survey</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
@@ -680,7 +680,7 @@
                 "text_caVMPk": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Once you are happy with your build and have received your quote we can confirm your order and move forward to install.</p>",
+                    "text": "<p>We will visit your site and carry out a full pre-built site survey to ensure fitting happens without a hitch</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
@@ -794,7 +794,7 @@
             "icon_RibY7L": {
               "type": "icon",
               "settings": {
-                "icon": "eye",
+                "icon": "check_box",
                 "width": 32,
                 "link": "",
                 "open_in_new_tab": false
@@ -944,7 +944,7 @@
             "icon_KDywNY": {
               "type": "icon",
               "settings": {
-                "icon": "heart",
+                "icon": "stopwatch",
                 "width": 32,
                 "link": "",
                 "open_in_new_tab": false
@@ -1018,7 +1018,7 @@
                 "text_PRriMj": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>From here your doors will take 5-7 weeks to build and deliver to site.</p>",
+                    "text": "<p>The factory will build your doors from the requirements in the spec sheet. From here your doors will take 4-6 weeks to build and deliver to site.</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
@@ -1094,7 +1094,7 @@
             "icon_BwT8L7": {
               "type": "icon",
               "settings": {
-                "icon": "silhouette",
+                "icon": "price_tag",
                 "width": 32,
                 "link": "",
                 "open_in_new_tab": false
@@ -1143,7 +1143,7 @@
                 "text_jGNmAe": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Site Survey </p>",
+                    "text": "<p>Quote & Order Confirmation</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
@@ -1168,7 +1168,7 @@
                 "text_ppncHi": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>We will visit your site and carry out a full pre-built site survey to ensure fitting happens without a hitch</p>",
+                    "text": "<p>Once you are happy with your build and have received your quote we can confirm your order and move forward to install.</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
