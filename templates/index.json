@@ -381,7 +381,7 @@
                 "text_zLyXXY": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>We would love to hear from you and about your project. We can talk briefly about options for materials and colours before a full design consultation so you know what is possible. We’re yet to have a request that we can’t make happen.</p>",
+                    "text": "<p>We would love to hear from you and all about your project. Every one is different, and we're yet to come across a request we can't make happen</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
@@ -531,7 +531,7 @@
                 "text_YFyT8P": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Where your project comes to life. We can settle on options for handles, glass, colour, finish and design. Once this is done we will send somebody out to you to conduct a full site survey and measure up for the build. Full CAD drawings can be provided if requested.</p>",
+                    "text": "<p>Where your project comes to life. We can settle on options for handles, glass, colour, finish and design. Full CAD drawings can be provided later if requested.</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
@@ -870,7 +870,7 @@
                 "text_36dD9t": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>One of our skilled technicians will meet your doors at site and install the doors as well as removing the old doors should this be required.</p>",
+                    "text": "<p>One of our skilled technicians will meet the delivery of your doors at site for the install. </p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
@@ -1021,7 +1021,7 @@
                 "text_PRriMj": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>The factory will build your doors from the requirements in the spec sheet. From here your doors will take 4-6 weeks to build and deliver to site.</p>",
+                    "text": "<p>The factory will build your doors from the requirements in the spec sheet. From here your doors will take 4-6 weeks to deliver to site.</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
@@ -1146,7 +1146,7 @@
                 "text_jGNmAe": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Quote & Order Confirmation</p>",
+                    "text": "<p>Quote & Order</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
@@ -1171,7 +1171,7 @@
                 "text_ppncHi": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Once you are happy with your build and have received your quote we can confirm your order and move forward to install.</p>",
+                    "text": "<p>Once you are happy with your build and have received your quote we can confirm your order and move forward to manufacture and fitting.</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
@@ -1422,7 +1422,7 @@
         "extend_media": true,
         "color_scheme": "scheme-87a3699f-e494-4023-b625-2dcf1cc781a7",
         "padding-block-start": 40,
-        "padding-block-end": 0
+        "padding-block-end": 40
       }
     },
     "divider_rh8KUy": {
@@ -1438,74 +1438,6 @@
         "alignment_horizontal": "center",
         "padding-block-start": 2,
         "padding-block-end": 1
-      }
-    },
-    "marquee_b8zmK9": {
-      "type": "marquee",
-      "blocks": {
-        "text_D63QXc": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Recent Project 1</p>",
-            "width": "fit-content",
-            "max_width": "normal",
-            "alignment": "left",
-            "type_preset": "custom",
-            "font": "var(--font-body--family)",
-            "font_size": "1rem",
-            "line_height": "tight",
-            "letter_spacing": "tight",
-            "case": "none",
-            "wrap": "nowrap",
-            "color": "var(--color-foreground)",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        },
-        "text_rwriyj": {
-          "type": "text",
-          "name": "t:names.text",
-          "settings": {
-            "text": "<p>Recent Project 2</p>",
-            "width": "fit-content",
-            "max_width": "normal",
-            "alignment": "left",
-            "type_preset": "rte",
-            "font": "var(--font-body--family)",
-            "font_size": "1rem",
-            "line_height": "normal",
-            "letter_spacing": "normal",
-            "case": "none",
-            "wrap": "pretty",
-            "color": "var(--color-foreground)",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "text_D63QXc",
-        "text_rwriyj"
-      ],
-      "name": "t:names.marquee_section",
-      "settings": {
-        "movement_direction": "normal",
-        "color_scheme": "scheme-87a3699f-e494-4023-b625-2dcf1cc781a7",
-        "padding-block-start": 24,
-        "padding-block-end": 24,
-        "gap_between_elements": 24
       }
     },
     "section_feeDCB": {
@@ -1710,7 +1642,6 @@
     "section_TCayzy",
     "media_with_content_7nqPJc",
     "divider_rh8KUy",
-    "marquee_b8zmK9",
     "section_feeDCB",
     "divider_GYG9AT"
   ]
