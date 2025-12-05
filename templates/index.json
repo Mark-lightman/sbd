@@ -456,7 +456,7 @@
             "icon_GMqafU": {
               "type": "icon",
               "settings": {
-                "icon": "question_mark",
+                "icon": "clipboard",
                 "width": 32,
                 "link": "",
                 "open_in_new_tab": false
@@ -606,7 +606,7 @@
             "icon_NPbGU3": {
               "type": "icon",
               "settings": {
-                "icon": "ruler",
+                "icon": "silhouette",
                 "width": 32,
                 "link": "",
                 "open_in_new_tab": false
@@ -794,7 +794,7 @@
             "icon_RibY7L": {
               "type": "icon",
               "settings": {
-                "icon": "check_box",
+                "icon": "ruler",
                 "width": 32,
                 "link": "",
                 "open_in_new_tab": false
@@ -945,6 +945,7 @@
               "type": "icon",
               "settings": {
                 "icon": "stopwatch",
+                "image_upload": "shopify://shop_images/svgviewer-png-output.png",
                 "width": 32,
                 "link": "",
                 "open_in_new_tab": false
@@ -1094,7 +1095,7 @@
             "icon_BwT8L7": {
               "type": "icon",
               "settings": {
-                "icon": "price_tag",
+                "icon": "check_box",
                 "width": 32,
                 "link": "",
                 "open_in_new_tab": false
