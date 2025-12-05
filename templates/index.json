@@ -307,7 +307,7 @@
               "type": "icon",
               "settings": {
                 "icon": "whatsapp",
-                "image_upload": "shopify://shop_images/svgviewer-output.svg",
+                "image_upload": "shopify://shop_images/phone.svg",
                 "width": 32,
                 "link": "",
                 "open_in_new_tab": false
@@ -945,8 +945,8 @@
             "icon_KDywNY": {
               "type": "icon",
               "settings": {
-                "icon": "stopwatch",
-                "image_upload": "shopify://shop_images/phone.svg",
+                "icon": "washing",
+                "image_upload": "shopify://shop_images/wrench.svg",
                 "width": 32,
                 "link": "",
                 "open_in_new_tab": false
