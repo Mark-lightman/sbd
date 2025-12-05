@@ -307,6 +307,7 @@
               "type": "icon",
               "settings": {
                 "icon": "whatsapp",
+                "image_upload": "shopify://shop_images/svgviewer-output.svg",
                 "width": 32,
                 "link": "",
                 "open_in_new_tab": false
