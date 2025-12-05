@@ -946,7 +946,7 @@
               "type": "icon",
               "settings": {
                 "icon": "stopwatch",
-                "image_upload": "shopify://shop_images/svgviewer-png-output.png",
+                "image_upload": "shopify://shop_images/phone.svg",
                 "width": 32,
                 "link": "",
                 "open_in_new_tab": false
