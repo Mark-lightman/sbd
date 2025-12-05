@@ -737,6 +737,7 @@
         "color_scheme": "scheme-4",
         "background_media": "none",
         "video_position": "cover",
+        "background_image": "shopify://shop_images/arrow-right.svg",
         "background_image_position": "cover",
         "border": "none",
         "border_width": 1,
