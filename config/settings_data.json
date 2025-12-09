@@ -681,5 +681,10 @@
         }
       }
     }
+  },
+  "platform_customizations": {
+    "custom_css": [
+      "shopify-section-template--27286874194267__section_TCayzy{display: none;}"
+    ]
   }
 }
