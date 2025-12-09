@@ -32,6 +32,7 @@
     {% endif %}
 
     {{ content_for_header }}
+   <link rel="stylesheet" media="all" href="{{ 'custom.css' | asset_url }}">
   </head>
 
   <body class="page-width-{{ settings.page_width }} card-hover-effect-{{ settings.card_hover_effect }}">
@@ -60,7 +61,7 @@
 
     {% sections 'footer-group' %}
 
-    {% render 'search-modal' %}
+    {% render 'search-modal' %} 
 
     {% if settings.quick_add or settings.mobile_quick_add %}
       {% render 'quick-add-modal' %}
