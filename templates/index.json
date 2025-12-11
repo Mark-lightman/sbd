@@ -708,11 +708,20 @@
                 "text_4xBRAz",
                 "text_caVMPk"
               ]
+            },
+            "custom_liquid_d3BWr8": {
+              "type": "custom-liquid",
+              "name": "t:names.custom_liquid",
+              "settings": {
+                "custom_liquid": "<div class=\"\" style=\"position:absolute; height:40px; width:40px; right:10%;\">\n<img src=\"https://cdn.shopify.com/s/files/1/0969/1679/9835/files/icons8-arrow-up-96.png?v=1765458451\" alt=\"arrow\" />\n</div>"
+              },
+              "blocks": {}
             }
           },
           "block_order": [
             "icon_NPbGU3",
-            "group_mNcRd9"
+            "group_mNcRd9",
+            "custom_liquid_d3BWr8"
           ]
         }
       },
