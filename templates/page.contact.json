@@ -6,7 +6,8 @@
  * or related systems. Please exercise caution as any changes
  * made to this file may be overwritten.
  * ------------------------------------------------------------
- */{
+ */
+{
   "sections": {
     "main": {
       "type": "main-page",
@@ -114,6 +115,7 @@
       "block_order": [
         "contact_form_UwiCkQ"
       ],
+      "disabled": true,
       "name": "t:names.contact_form",
       "settings": {
         "content_direction": "column",
@@ -142,10 +144,22 @@
         "padding-block-start": 32,
         "padding-block-end": 84
       }
+    },
+    "custom_liquid_VbbQhx": {
+      "type": "custom-liquid",
+      "name": "t:names.custom_liquid",
+      "settings": {
+        "custom_liquid": "<script src=\"https://js-eu1.hsforms.net/forms/embed/147439991.js\" defer></script>\n<div class=\"hs-form-frame\" data-region=\"eu1\" data-form-id=\"cb7e63a2-45fe-4a89-bba1-212e2f10c056\" data-portal-id=\"147439991\"></div>",
+        "color_scheme": "",
+        "section_width": "page-width",
+        "padding-block-start": 0,
+        "padding-block-end": 0
+      }
     }
   },
   "order": [
     "main",
-    "form"
+    "form",
+    "custom_liquid_VbbQhx"
   ]
 }
