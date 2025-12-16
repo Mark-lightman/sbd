@@ -2422,7 +2422,7 @@
       "settings": {
         "media_position": "left",
         "media_width": "wide",
-        "media_height": "50svh",
+        "media_height": "60svh",
         "section_width": "full-width",
         "extend_media": true,
         "color_scheme": "scheme-87a3699f-e494-4023-b625-2dcf1cc781a7",
