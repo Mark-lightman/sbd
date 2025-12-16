@@ -170,6 +170,7 @@
         },
         "social_links_Ew63Kq": {
           "type": "social-links",
+          "disabled": true,
           "settings": {
             "facebook_url": "https://www.facebook.com/",
             "instagram_url": "https://www.instagram.com/",
