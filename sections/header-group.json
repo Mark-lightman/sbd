@@ -145,7 +145,6 @@
     },
     "custom_liquid_jdQXaR": {
       "type": "custom-liquid",
-      "disabled": true,
       "name": "t:names.custom_liquid",
       "settings": {
         "custom_liquid": "<p style=\"text-decoration:none;text-align:center;font-size:28px;\"><a href=\"/pages/contact\">Click Here</a> for a free no obligation quote </p>",

@@ -218,7 +218,7 @@
           "primary_button_background": "#f8f9f4",
           "primary_button_text": "#24272e",
           "primary_button_border": "#1d3686",
-          "primary_button_hover_background": "#333333",
+          "primary_button_hover_background": "#707070",
           "primary_button_hover_text": "#ffffff",
           "primary_button_hover_border": "#000000",
           "secondary_button_background": "rgba(0,0,0,0)",
@@ -684,7 +684,7 @@
   },
   "platform_customizations": {
     "custom_css": [
-      "shopify-section-template--27286874194267__section_TCayzy{display: none;}"
+      "shopify-section-template--27286874194267__section_TCayzy {display: none;}"
     ]
   }
 }
