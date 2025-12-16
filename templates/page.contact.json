@@ -129,7 +129,7 @@
         "section_width": "page-width",
         "section_height": "",
         "section_height_custom": 50,
-        "color_scheme": "scheme-4",
+        "color_scheme": "scheme-87a3699f-e494-4023-b625-2dcf1cc781a7",
         "background_media": "none",
         "video_position": "cover",
         "background_image_position": "cover",
@@ -147,6 +147,9 @@
     },
     "custom_liquid_VbbQhx": {
       "type": "custom-liquid",
+      "custom_css": [
+        ".hs-form-virality-container {display: none;}"
+      ],
       "name": "t:names.custom_liquid",
       "settings": {
         "custom_liquid": "<script src=\"https://js-eu1.hsforms.net/forms/embed/147439991.js\" defer></script>\n<div class=\"hs-form-frame\" data-region=\"eu1\" data-form-id=\"cb7e63a2-45fe-4a89-bba1-212e2f10c056\" data-portal-id=\"147439991\"></div>",
