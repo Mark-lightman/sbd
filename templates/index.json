@@ -2367,11 +2367,11 @@
                 "text_J4hajT": {
                   "type": "text",
                   "settings": {
-                    "text": "<ul><li><strong>From order to install in 4 - 6 weeks</strong></li><li><strong>Choose from 150 different colour and finish combinations</strong></li><li><strong>We can colour match to to your existing fixtures and fittings</strong></li><li><strong>Various glass options from frosted and stained to fluted and mirrored</strong></li><li><strong>Fire rated options available</strong></li><li><strong>Various steel profiles</strong></li><li><strong>A wide choice of lever and bar or plated push pull handles</strong><br/></li></ul>",
+                    "text": "<ul><li><h4><strong>From order to install in 4 - 6 weeks</strong></h4></li><li><h4><strong>Choose from 150 different colour and finish combinations</strong></h4></li><li><h4><strong>We can colour match to to your existing fixtures and fittings</strong></h4></li><li><h4><strong>Various glass options from frosted and stained to fluted and mirrored</strong></h4></li><li><h4><strong>Fire rated options available</strong></h4></li><li><h4><strong>Various steel profiles</strong></h4></li><li><h4><strong>A wide choice of lever and bar or plated push pull handles</strong><br/></h4></li></ul>",
                     "width": "100%",
-                    "max_width": "none",
+                    "max_width": "normal",
                     "alignment": "left",
-                    "type_preset": "rte",
+                    "type_preset": "h3",
                     "font": "var(--font-body--family)",
                     "font_size": "1rem",
                     "line_height": "normal",
