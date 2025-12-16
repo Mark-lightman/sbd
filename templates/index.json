@@ -59,6 +59,7 @@
         "text_YLPk4p",
         "button_H9gpTf"
       ],
+      "disabled": true,
       "name": "t:names.hero",
       "settings": {
         "media_type_1": "image",
@@ -304,7 +305,7 @@
         "section_width": "full-width",
         "section_height": "large",
         "section_height_custom": 50,
-        "color_scheme": "scheme-4",
+        "color_scheme": "scheme-87a3699f-e494-4023-b625-2dcf1cc781a7",
         "background_media": "none",
         "video_position": "cover",
         "background_image_position": "cover",
