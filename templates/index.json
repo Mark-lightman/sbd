@@ -906,11 +906,20 @@
                     "padding-inline-end": 0
                   },
                   "blocks": {}
+                },
+                "custom_liquid_eQAhcM": {
+                  "type": "custom-liquid",
+                  "name": "Arrow",
+                  "settings": {
+                    "custom_liquid": "<div class=\"arrow-switch\" style=\"position:absolute; height:90px; width:90px; right:-10%;top:-30%;\">\n<img class=\"icon-arrow\" src=\"https://cdn.shopify.com/s/files/1/0969/1679/9835/files/arrow.png?v=1765965621\" alt=\"arrow\" width=\"64%\" height=\"auto\"/>\n</div>\n\n<style>\n.icon-arrow{\nwidth:64%;\n}\n@media only screen and (max-width: 768px) {\n.arrow-switch{\ndisplay:none;\n}\n}\n</style>"
+                  },
+                  "blocks": {}
                 }
               },
               "block_order": [
                 "text_rBwh3d",
-                "text_zLyXXY"
+                "text_zLyXXY",
+                "custom_liquid_eQAhcM"
               ]
             }
           },
@@ -1056,11 +1065,20 @@
                     "padding-inline-end": 0
                   },
                   "blocks": {}
+                },
+                "custom_liquid_PLPch6": {
+                  "type": "custom-liquid",
+                  "name": "Arrow",
+                  "settings": {
+                    "custom_liquid": "<div class=\"arrow-switch\" style=\"position:absolute; height:90px; width:90px; right:-10%;top:-30%;\">\n<img class=\"icon-arrow\" src=\"https://cdn.shopify.com/s/files/1/0969/1679/9835/files/arrow.png?v=1765965621\" alt=\"arrow\" width=\"64%\" height=\"auto\"/>\n</div>\n\n<style>\n.icon-arrow{\nwidth:64%;\n}\n@media only screen and (max-width: 768px) {\n.arrow-switch{\ndisplay:none;\n}\n}\n</style>"
+                  },
+                  "blocks": {}
                 }
               },
               "block_order": [
                 "text_W7amtG",
-                "text_YFyT8P"
+                "text_YFyT8P",
+                "custom_liquid_PLPch6"
               ]
             }
           },
@@ -1213,11 +1231,11 @@
                 "text_caVMPk"
               ]
             },
-            "custom_liquid_d3BWr8": {
+            "custom_liquid_xh9M4M": {
               "type": "custom-liquid",
               "name": "Arrow",
               "settings": {
-                "custom_liquid": "<div class=\"arrow-switch\" style=\"position:absolute; height:90px; width:90px; right:9%;bottom:-40%;\">\n<img class=\"icon-arrow\" src=\"https://cdn.shopify.com/s/files/1/0969/1679/9835/files/sbdfav-Asset_2_3x_7308f972-20a1-4eaa-b21e-e8b7fb6be148.png?v=1765459407\" alt=\"arrow\" width=\"64%\" height=\"auto\"/>\n</div>\n\n<style>\n.icon-arrow{\nwidth:64%;\n}\n@media only screen and (max-width: 768px) {\n.arrow-switch{\ndisplay:none;\n}\n}\n</style>"
+                "custom_liquid": "<div class=\"arrow-switch\" style=\"position:absolute; height:60px; width:60px; right:9%;bottom:-40%;\">\n<img class=\"icon-arrow\" src=\"https://cdn.shopify.com/s/files/1/0969/1679/9835/files/sbdfav-Asset_2_3x_7308f972-20a1-4eaa-b21e-e8b7fb6be148.png?v=1765459407\" alt=\"arrow\" width=\"24%\" height=\"auto\"/>\n</div>\n\n<style>\n.icon-arrow{\nwidth:64%;\n}\n@media only screen and (max-width: 768px) {\n.arrow-switch{\ndisplay:none;\n}\n}\n</style>"
               },
               "blocks": {}
             }
@@ -1225,7 +1243,7 @@
           "block_order": [
             "icon_NPbGU3",
             "group_mNcRd9",
-            "custom_liquid_d3BWr8"
+            "custom_liquid_xh9M4M"
           ]
         }
       },
@@ -1355,6 +1373,14 @@
                 "padding-inline-end": 0
               },
               "blocks": {
+                "custom_liquid_PYJPP7": {
+                  "type": "custom-liquid",
+                  "name": "Arrow",
+                  "settings": {
+                    "custom_liquid": "<div class=\"arrow-switch\" style=\"position:absolute; height:90px; width:90px; right:-9%;top:-40%;\">\n<img class=\"icon-arrow\" src=\"https://cdn.shopify.com/s/files/1/0969/1679/9835/files/left-arrow.png?v=1765965912\" alt=\"arrow\" width=\"24%\" height=\"auto\"/>\n</div>\n\n<style>\n.icon-arrow{\nwidth:64%;\n}\n@media only screen and (max-width: 768px) {\n.arrow-switch{\ndisplay:none;\n}\n}\n</style>"
+                  },
+                  "blocks": {}
+                },
                 "text_w7mQyL": {
                   "type": "text",
                   "settings": {
@@ -1407,6 +1433,7 @@
                 }
               },
               "block_order": [
+                "custom_liquid_PYJPP7",
                 "text_w7mQyL",
                 "text_36dD9t"
               ]
@@ -1506,6 +1533,14 @@
                 "padding-inline-end": 0
               },
               "blocks": {
+                "custom_liquid_KUVYRg": {
+                  "type": "custom-liquid",
+                  "name": "Arrow",
+                  "settings": {
+                    "custom_liquid": "<div class=\"arrow-switch\" style=\"position:absolute; height:90px; width:90px; right:-9%;top:-40%;\">\n<img class=\"icon-arrow\" src=\"https://cdn.shopify.com/s/files/1/0969/1679/9835/files/left-arrow.png?v=1765965912\" alt=\"arrow\" width=\"24%\" height=\"auto\"/>\n</div>\n\n<style>\n.icon-arrow{\nwidth:64%;\n}\n@media only screen and (max-width: 768px) {\n.arrow-switch{\ndisplay:none;\n}\n}\n</style>"
+                  },
+                  "blocks": {}
+                },
                 "text_mnEr39": {
                   "type": "text",
                   "settings": {
@@ -1558,6 +1593,7 @@
                 }
               },
               "block_order": [
+                "custom_liquid_KUVYRg",
                 "text_mnEr39",
                 "text_PRriMj"
               ]

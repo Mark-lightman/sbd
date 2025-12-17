@@ -268,7 +268,7 @@
               "type": "text",
               "name": "t:names.text",
               "settings": {
-                "text": "<p>Get a hassle free quote.</p><p></p><h3>How It Works:</h3><ol><li><strong>Enter Your Dimensions</strong> to see a rough price</li><li><strong>Submit Your Enquiry</strong> using our simple form</li><li><strong>We’ll Contact You</strong> to confirm details and provide a full design quote</li><li><strong>Survey, Manufacture, and Install</strong> – all managed by our expert team</li></ol>",
+                "text": "<p>Get a hassle free quote.</p><p></p><h3>How It Works:</h3><ol><li><strong>Enter Your Dimensions</strong> to get a rough price</li><li><strong>Submit Your Enquiry</strong> using our simple form</li><li><strong>We’ll Contact You</strong> to confirm details and provide a full design quote</li><li><strong>Survey, Manufacture, and Install</strong> – all managed by our expert team</li></ol>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
