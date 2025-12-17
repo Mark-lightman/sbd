@@ -248,6 +248,21 @@
                 "padding-inline-end": 0
               },
               "blocks": {}
+            },
+            "button_T8UWeC": {
+              "type": "button",
+              "name": "t:names.button",
+              "settings": {
+                "label": "Get a free quote",
+                "link": "shopify://pages/contact",
+                "open_in_new_tab": false,
+                "style_class": "button",
+                "width": "fit-content",
+                "custom_width": 100,
+                "width_mobile": "fit-content",
+                "custom_width_mobile": 100
+              },
+              "blocks": {}
             }
           },
           "block_order": [
@@ -255,7 +270,8 @@
             "divider_VJhene",
             "variant_picker_R3rGDr",
             "buy_buttons_eYQEYi",
-            "text_aEtTtq"
+            "text_aEtTtq",
+            "button_T8UWeC"
           ]
         }
       },
