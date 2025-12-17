@@ -263,6 +263,32 @@
                 "custom_width_mobile": 100
               },
               "blocks": {}
+            },
+            "text_gadB3w": {
+              "type": "text",
+              "name": "t:names.text",
+              "settings": {
+                "text": "<p>Get a hassle free quote.</p><p></p><h3>How It Works:</h3><ol><li><strong>Enter Your Dimensions</strong> to see a rough price</li><li><strong>Submit Your Enquiry</strong> using our simple form</li><li><strong>We’ll Contact You</strong> to confirm details and provide a full design quote</li><li><strong>Survey, Manufacture, and Install</strong> – all managed by our expert team</li></ol>",
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
             }
           },
           "block_order": [
@@ -271,7 +297,8 @@
             "variant_picker_R3rGDr",
             "buy_buttons_eYQEYi",
             "text_aEtTtq",
-            "button_T8UWeC"
+            "button_T8UWeC",
+            "text_gadB3w"
           ]
         }
       },
