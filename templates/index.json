@@ -1377,7 +1377,7 @@
                   "type": "custom-liquid",
                   "name": "Arrow",
                   "settings": {
-                    "custom_liquid": "<div class=\"arrow-switch\" style=\"position:absolute; height:90px; width:90px; right:-9%;top:-40%;\">\n<img class=\"icon-arrow\" src=\"https://cdn.shopify.com/s/files/1/0969/1679/9835/files/left-arrow.png?v=1765965912\" alt=\"arrow\" width=\"24%\" height=\"auto\"/>\n</div>\n\n<style>\n.icon-arrow{\nwidth:64%;\n}\n@media only screen and (max-width: 768px) {\n.arrow-switch{\ndisplay:none;\n}\n}\n</style>"
+                    "custom_liquid": "<div class=\"arrow-switch\" style=\"position:absolute; height:90px; width:90px; right:-9%;top:-40%;\">\n<img class=\"icon-arrow\" src=\"https://cdn.shopify.com/s/files/1/0969/1679/9835/files/left-arrow.png?v=1765965912\" alt=\"arrow\" width=\"24%\" height=\"auto\"/>\n</div>\n\n<style>\n.icon-arrow{\nwidth:64%;\n\n}\n@media only screen and (max-width: 768px) {\n.arrow-switch{\ndisplay:none;\n}\n}\n</style>"
                   },
                   "blocks": {}
                 },
