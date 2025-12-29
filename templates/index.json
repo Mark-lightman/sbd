@@ -123,7 +123,7 @@
               "type": "button",
               "name": "t:names.button",
               "settings": {
-                "label": "Interal Doors",
+                "label": "Internal Doors",
                 "link": "shopify://products/double-steel-doors",
                 "open_in_new_tab": false,
                 "style_class": "button-secondary",
