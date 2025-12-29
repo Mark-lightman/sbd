@@ -3290,7 +3290,7 @@
                 "open_in_new_tab": false,
                 "placeholder": "",
                 "padding-block-start": 0,
-                "padding-block-end": 36,
+                "padding-block-end": 43,
                 "padding-inline-start": 50,
                 "padding-inline-end": 0
               },
@@ -3315,7 +3315,7 @@
                     "background_color": "#00000026",
                     "corner_radius": 0,
                     "padding-block-start": 0,
-                    "padding-block-end": 0,
+                    "padding-block-end": 49,
                     "padding-inline-start": 0,
                     "padding-inline-end": 0
                   },
@@ -3324,6 +3324,7 @@
                 "text_XkATiR": {
                   "type": "text",
                   "name": "t:names.text",
+                  "disabled": true,
                   "settings": {
                     "text": "<p>We make things that work better and last longer. Our products solve real problems with clean design and honest materials.</p>",
                     "width": "fit-content",
@@ -3367,7 +3368,7 @@
                     "background_color": "#00000026",
                     "corner_radius": 0,
                     "padding-block-start": 0,
-                    "padding-block-end": 20,
+                    "padding-block-end": 56,
                     "padding-inline-start": 0,
                     "padding-inline-end": 0
                   },
