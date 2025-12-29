@@ -1926,7 +1926,7 @@
           "type": "button",
           "name": "t:names.button",
           "settings": {
-            "label": "Get a free Quote",
+            "label": "Get a Free Quote",
             "link": "shopify://pages/contact",
             "open_in_new_tab": false,
             "style_class": "button",
