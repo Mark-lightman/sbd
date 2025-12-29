@@ -3224,7 +3224,7 @@
                 "border_opacity": 100,
                 "border_radius": 0,
                 "toggle_overlay": false,
-                "overlay_color": "#00000026",
+                "overlay_color": "#dfdfdf",
                 "overlay_style": "solid",
                 "gradient_direction": "to top",
                 "link": "",
@@ -3324,7 +3324,7 @@
         "media_height": "60svh",
         "section_width": "page-width",
         "extend_media": false,
-        "color_scheme": "scheme-87a3699f-e494-4023-b625-2dcf1cc781a7",
+        "color_scheme": "scheme-1",
         "padding-block-start": 40,
         "padding-block-end": 40
       }
@@ -3494,7 +3494,7 @@
         "group_yDhWYn",
         "group_JQ8YBK"
       ],
-      "name": "t:names.multicolumn",
+      "name": "Reviews",
       "settings": {
         "content_direction": "row",
         "vertical_on_mobile": true,
