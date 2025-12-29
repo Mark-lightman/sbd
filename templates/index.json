@@ -3322,8 +3322,8 @@
         "media_position": "left",
         "media_width": "wide",
         "media_height": "60svh",
-        "section_width": "full-width",
-        "extend_media": true,
+        "section_width": "page-width",
+        "extend_media": false,
         "color_scheme": "scheme-87a3699f-e494-4023-b625-2dcf1cc781a7",
         "padding-block-start": 40,
         "padding-block-end": 40
