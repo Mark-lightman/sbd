@@ -1155,6 +1155,7 @@
         "group_ACEDhX",
         "group_y4qEzf"
       ],
+      "disabled": true,
       "name": "t:names.multicolumn",
       "settings": {
         "content_direction": "row",
@@ -1598,8 +1599,7 @@
       "block_order": [
         "group_y4hB4A"
       ],
-      "disabled": true,
-      "name": "2x2 - multi",
+      "name": "Title",
       "settings": {
         "content_direction": "row",
         "vertical_on_mobile": true,
