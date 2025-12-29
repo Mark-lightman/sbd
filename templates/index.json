@@ -112,10 +112,10 @@
                 "link": "shopify://pages/contact",
                 "open_in_new_tab": false,
                 "style_class": "button",
-                "width": "fit-content",
+                "width": "custom",
                 "custom_width": 100,
-                "width_mobile": "fit-content",
-                "custom_width_mobile": 100
+                "width_mobile": "custom",
+                "custom_width_mobile": 54
               },
               "blocks": {}
             },
@@ -129,8 +129,8 @@
                 "style_class": "button-secondary",
                 "width": "fit-content",
                 "custom_width": 100,
-                "width_mobile": "fit-content",
-                "custom_width_mobile": 100
+                "width_mobile": "custom",
+                "custom_width_mobile": 54
               },
               "blocks": {}
             }
