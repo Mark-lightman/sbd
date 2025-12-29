@@ -3144,6 +3144,297 @@
         "padding-block-end": 100
       }
     },
+    "section_irfEeQ": {
+      "type": "section",
+      "blocks": {
+        "group_wQXdX9": {
+          "type": "group",
+          "name": "t:names.column",
+          "settings": {
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "flex-end",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 0,
+            "width": "custom",
+            "custom_width": 50,
+            "width_mobile": "fit-content",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 51,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "link": "",
+            "open_in_new_tab": false,
+            "placeholder": "",
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 60,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "image_CzxqiE": {
+              "type": "image",
+              "name": "t:names.image",
+              "settings": {
+                "image": "shopify://shop_images/Large-SBD_1.png",
+                "link": "",
+                "image_ratio": "square",
+                "width": "custom",
+                "custom_width": 87,
+                "width_mobile": "custom",
+                "custom_width_mobile": 100,
+                "height": "fit",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "image_CzxqiE"
+          ]
+        },
+        "group_c8CjMb": {
+          "type": "group",
+          "name": "t:names.column",
+          "settings": {
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "center",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 100,
+            "width": "custom",
+            "custom_width": 50,
+            "width_mobile": "fit-content",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "toggle_overlay": true,
+            "overlay_color": "#f5f5f5",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "link": "",
+            "open_in_new_tab": false,
+            "placeholder": "",
+            "padding-block-start": 29,
+            "padding-block-end": 29,
+            "padding-inline-start": 0,
+            "padding-inline-end": 100
+          },
+          "blocks": {
+            "group_Y3dPny": {
+              "type": "group",
+              "name": "t:names.group",
+              "settings": {
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment": "flex-start",
+                "vertical_alignment": "center",
+                "align_baseline": false,
+                "horizontal_alignment_flex_direction_column": "flex-start",
+                "vertical_alignment_flex_direction_column": "center",
+                "gap": 12,
+                "width": "fill",
+                "custom_width": 100,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "height": "fit",
+                "custom_height": 100,
+                "inherit_color_scheme": true,
+                "color_scheme": "",
+                "background_media": "none",
+                "video_position": "cover",
+                "background_image_position": "cover",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 0,
+                "toggle_overlay": false,
+                "overlay_color": "#00000026",
+                "overlay_style": "solid",
+                "gradient_direction": "to top",
+                "link": "",
+                "open_in_new_tab": false,
+                "placeholder": "",
+                "padding-block-start": 0,
+                "padding-block-end": 36,
+                "padding-inline-start": 50,
+                "padding-inline-end": 0
+              },
+              "blocks": {
+                "text_CtijMy": {
+                  "type": "text",
+                  "name": "t:names.heading",
+                  "settings": {
+                    "text": "<h2>Crafting Legacies.<br/>Not Just Doors</h2>",
+                    "width": "100%",
+                    "max_width": "narrow",
+                    "alignment": "left",
+                    "type_preset": "h2",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                },
+                "text_XkATiR": {
+                  "type": "text",
+                  "name": "t:names.text",
+                  "settings": {
+                    "text": "<p>We make things that work better and last longer. Our products solve real problems with clean design and honest materials.</p>",
+                    "width": "fit-content",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                },
+                "text_gVdQjp": {
+                  "type": "text",
+                  "name": "t:names.description",
+                  "settings": {
+                    "text": "<ul><li><h5>From order to install in 4 - 6 weeks</h5></li><li><h5>Choose from 150 different colour and finish combinations</h5></li><li><h5>We can colour match to to your existing fixtures and fittings</h5></li><li><h5>Various glass options from frosted and stained to fluted and mirrored</h5></li><li><h5>Fire rated options available</h5></li><li><h5>Various steel profiles</h5></li><li><h5>A wide choice of lever and bar or plated push pull handles<strong><br/></strong></h5></li></ul>",
+                    "width": "100%",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 20,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                },
+                "button_kQAKTT": {
+                  "type": "button",
+                  "name": "t:names.button",
+                  "settings": {
+                    "label": "Get a Free Quote",
+                    "link": "shopify://collections/all",
+                    "open_in_new_tab": false,
+                    "style_class": "button",
+                    "width": "fit-content",
+                    "custom_width": 100,
+                    "width_mobile": "fit-content",
+                    "custom_width_mobile": 100
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_CtijMy",
+                "text_XkATiR",
+                "text_gVdQjp",
+                "button_kQAKTT"
+              ]
+            }
+          },
+          "block_order": [
+            "group_Y3dPny"
+          ]
+        }
+      },
+      "block_order": [
+        "group_wQXdX9",
+        "group_c8CjMb"
+      ],
+      "name": "t:names.multicolumn",
+      "settings": {
+        "content_direction": "row",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "flex-start",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "flex-start",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 0,
+        "section_width": "page-width",
+        "section_height": "",
+        "section_height_custom": 0,
+        "color_scheme": "scheme-1",
+        "background_media": "none",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "padding-block-start": 44,
+        "padding-block-end": 48
+      }
+    },
     "media_with_content_7nqPJc": {
       "type": "media-with-content",
       "blocks": {
@@ -3173,7 +3464,6 @@
             "text_3hYPCR": {
               "type": "text",
               "name": "t:names.caption",
-              "disabled": true,
               "settings": {
                 "text": "<p>Bestseller</p>",
                 "width": "fit-content",
@@ -3205,7 +3495,7 @@
                 "horizontal_alignment": "flex-start",
                 "vertical_alignment": "center",
                 "align_baseline": false,
-                "horizontal_alignment_flex_direction_column": "center",
+                "horizontal_alignment_flex_direction_column": "flex-start",
                 "vertical_alignment_flex_direction_column": "center",
                 "gap": 12,
                 "width": "custom",
@@ -3239,13 +3529,12 @@
                 "text_7cfifw": {
                   "type": "text",
                   "name": "t:names.heading",
-                  "disabled": true,
                   "settings": {
-                    "text": "<h2>Our signature product</h2>",
+                    "text": "<h2>Crafting Legacies.<br/>Not Just Doors</h2>",
                     "width": "fit-content",
-                    "max_width": "normal",
+                    "max_width": "narrow",
                     "alignment": "left",
-                    "type_preset": "h3",
+                    "type_preset": "h2",
                     "font": "var(--font-body--family)",
                     "font_size": "1rem",
                     "line_height": "normal",
@@ -3257,7 +3546,7 @@
                     "background_color": "#00000026",
                     "corner_radius": 0,
                     "padding-block-start": 0,
-                    "padding-block-end": 0,
+                    "padding-block-end": 29,
                     "padding-inline-start": 0,
                     "padding-inline-end": 0
                   },
@@ -3266,11 +3555,11 @@
                 "text_J4hajT": {
                   "type": "text",
                   "settings": {
-                    "text": "<ul><li><h4><strong>From order to install in 4 - 6 weeks</strong></h4></li><li><h4><strong>Choose from 150 different colour and finish combinations</strong></h4></li><li><h4><strong>We can colour match to to your existing fixtures and fittings</strong></h4></li><li><h4><strong>Various glass options from frosted and stained to fluted and mirrored</strong></h4></li><li><h4><strong>Fire rated options available</strong></h4></li><li><h4><strong>Various steel profiles</strong></h4></li><li><h4><strong>A wide choice of lever and bar or plated push pull handles</strong><br/></h4></li></ul>",
+                    "text": "<ul><li><h5>From order to install in 4 - 6 weeks</h5></li><li><h5>Choose from 150 different colour and finish combinations</h5></li><li><h5>We can colour match to to your existing fixtures and fittings</h5></li><li><h5>Various glass options from frosted and stained to fluted and mirrored</h5></li><li><h5>Fire rated options available</h5></li><li><h5>Various steel profiles</h5></li><li><h5>A wide choice of lever and bar or plated push pull handles<strong><br/></strong></h5></li></ul>",
                     "width": "100%",
-                    "max_width": "none",
+                    "max_width": "narrow",
                     "alignment": "left",
-                    "type_preset": "h3",
+                    "type_preset": "h4",
                     "font": "var(--font-body--family)",
                     "font_size": "1rem",
                     "line_height": "normal",
@@ -3317,6 +3606,7 @@
           ]
         }
       },
+      "disabled": true,
       "name": "t:names.editorial",
       "settings": {
         "media_position": "left",
@@ -3324,7 +3614,7 @@
         "media_height": "60svh",
         "section_width": "page-width",
         "extend_media": false,
-        "color_scheme": "scheme-1",
+        "color_scheme": "scheme-3",
         "padding-block-start": 40,
         "padding-block-end": 40
       }
@@ -3550,6 +3840,7 @@
     "section_byDzN4",
     "section_TCayzy",
     "section_hWmEmb",
+    "section_irfEeQ",
     "media_with_content_7nqPJc",
     "divider_rh8KUy",
     "section_feeDCB",
