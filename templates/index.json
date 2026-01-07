@@ -2191,8 +2191,17 @@
               },
               "blocks": {}
             },
+            "custom_liquid_aznG4B": {
+              "type": "custom-liquid",
+              "name": "t:names.custom_liquid",
+              "settings": {
+                "custom_liquid": "<span style=\"font-size: 28px; color: #F8F9F4;\">\n  <i class=\"fa-solid fa-phone\"></i></i>\n</span>"
+              },
+              "blocks": {}
+            },
             "icon_rmBJd3": {
               "type": "icon",
+              "disabled": true,
               "settings": {
                 "icon": "whatsapp",
                 "image_upload": "shopify://shop_images/phone.svg",
@@ -2309,6 +2318,7 @@
           },
           "block_order": [
             "custom_liquid_bwxcTJ",
+            "custom_liquid_aznG4B",
             "icon_rmBJd3",
             "group_Bb3P3d"
           ]
@@ -2352,14 +2362,6 @@
             "padding-inline-end": 0
           },
           "blocks": {
-            "custom_liquid_nKWwqB": {
-              "type": "custom-liquid",
-              "name": "t:names.custom_liquid",
-              "settings": {
-                "custom_liquid": "<span style=\"font-size: 48px; color: #F8F9F4;\">\n  <i class=\"fa-solid fa-phone\"></i></i>\n</span>"
-              },
-              "blocks": {}
-            },
             "icon_GMqafU": {
               "type": "icon",
               "settings": {
@@ -2476,7 +2478,6 @@
             }
           },
           "block_order": [
-            "custom_liquid_nKWwqB",
             "icon_GMqafU",
             "group_NrgRzW"
           ]
