@@ -2903,12 +2903,13 @@
               "name": "t:names.custom_liquid",
               "disabled": true,
               "settings": {
-                "custom_liquid": "<span style=\"font-size: 28px; color: #F8F9F4;\">\n  <i class=\"fa-solid fa-clipboard-check\"></i>\n</span>"
+                "custom_liquid": "<span style=\"font-size: 28px; color: #F8F9F4;\">\n<i class=\"fa-solid fa-wrench\"></i>\n</span>"
               },
               "blocks": {}
             },
             "icon_KDywNY": {
               "type": "icon",
+              "disabled": true,
               "settings": {
                 "icon": "washing",
                 "image_upload": "shopify://shop_images/wrench.svg",
