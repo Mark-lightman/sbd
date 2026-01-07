@@ -2729,6 +2729,15 @@
             "padding-inline-end": 0
           },
           "blocks": {
+            "custom_liquid_CGj6pU": {
+              "type": "custom-liquid",
+              "name": "t:names.custom_liquid",
+              "disabled": true,
+              "settings": {
+                "custom_liquid": "<span style=\"font-size: 28px; color: #F8F9F4;\">\n  <i class=\"fa-solid fa-clipboard-check\"></i>\n</span>"
+              },
+              "blocks": {}
+            },
             "icon_RibY7L": {
               "type": "icon",
               "settings": {
@@ -2845,6 +2854,7 @@
             }
           },
           "block_order": [
+            "custom_liquid_CGj6pU",
             "icon_RibY7L",
             "group_JnQTXT"
           ]
@@ -2888,6 +2898,15 @@
             "padding-inline-end": 0
           },
           "blocks": {
+            "custom_liquid_bUPrXA": {
+              "type": "custom-liquid",
+              "name": "t:names.custom_liquid",
+              "disabled": true,
+              "settings": {
+                "custom_liquid": "<span style=\"font-size: 28px; color: #F8F9F4;\">\n  <i class=\"fa-solid fa-clipboard-check\"></i>\n</span>"
+              },
+              "blocks": {}
+            },
             "icon_KDywNY": {
               "type": "icon",
               "settings": {
@@ -3005,6 +3024,7 @@
             }
           },
           "block_order": [
+            "custom_liquid_bUPrXA",
             "icon_KDywNY",
             "group_TxwPYw"
           ]
@@ -3048,8 +3068,17 @@
             "padding-inline-end": 0
           },
           "blocks": {
+            "custom_liquid_tYYGaw": {
+              "type": "custom-liquid",
+              "name": "t:names.custom_liquid",
+              "settings": {
+                "custom_liquid": "<span style=\"font-size: 28px; color: #F8F9F4;\">\n<i class=\"fa-solid fa-square-check\"></i>\n</span>"
+              },
+              "blocks": {}
+            },
             "icon_BwT8L7": {
               "type": "icon",
+              "disabled": true,
               "settings": {
                 "icon": "check_box",
                 "width": 32,
@@ -3155,6 +3184,7 @@
             }
           },
           "block_order": [
+            "custom_liquid_tYYGaw",
             "icon_BwT8L7",
             "group_MhhWtb"
           ]
