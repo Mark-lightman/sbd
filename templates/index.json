@@ -2403,7 +2403,6 @@
                 "custom_liquid_QTkpH7": {
                   "type": "custom-liquid",
                   "name": "t:names.custom_liquid",
-                  "disabled": true,
                   "settings": {
                     "custom_liquid": "<span style=\"font-size: 48px; color: #F8F9F4;\">\n  <i class=\"fa-solid fa-phone\"></i></i>\n</span>"
                   },
