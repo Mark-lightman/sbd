@@ -2521,8 +2521,17 @@
             "padding-inline-end": 0
           },
           "blocks": {
+            "custom_liquid_WNE8hb": {
+              "type": "custom-liquid",
+              "name": "t:names.custom_liquid",
+              "settings": {
+                "custom_liquid": "<span style=\"font-size: 28px; color: #F8F9F4;\">\n  <i class=\"fa-solid fa-clipboard-check\"></i>\n</span>"
+              },
+              "blocks": {}
+            },
             "icon_NPbGU3": {
               "type": "icon",
+              "disabled": true,
               "settings": {
                 "icon": "silhouette",
                 "width": 32,
@@ -2636,6 +2645,7 @@
             }
           },
           "block_order": [
+            "custom_liquid_WNE8hb",
             "icon_NPbGU3",
             "group_mNcRd9",
             "custom_liquid_xh9M4M"
