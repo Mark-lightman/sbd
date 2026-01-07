@@ -2400,6 +2400,15 @@
                 "padding-inline-end": 0
               },
               "blocks": {
+                "custom_liquid_QTkpH7": {
+                  "type": "custom-liquid",
+                  "name": "t:names.custom_liquid",
+                  "disabled": true,
+                  "settings": {
+                    "custom_liquid": "<span style=\"font-size: 48px; color: Dodgerblue;\">\n  <i class=\"fa-solid fa-camera\"></i>\n</span>"
+                  },
+                  "blocks": {}
+                },
                 "text_W7amtG": {
                   "type": "text",
                   "settings": {
@@ -2460,6 +2469,7 @@
                 }
               },
               "block_order": [
+                "custom_liquid_QTkpH7",
                 "text_W7amtG",
                 "text_YFyT8P",
                 "custom_liquid_PLPch6"
