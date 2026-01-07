@@ -2405,7 +2405,7 @@
                   "name": "t:names.custom_liquid",
                   "disabled": true,
                   "settings": {
-                    "custom_liquid": "<span style=\"font-size: 48px; color: Dodgerblue;\">\n  <i class=\"fa-solid fa-camera\"></i>\n</span>"
+                    "custom_liquid": "<span style=\"font-size: 48px; color: Dodgerblue;\">\n  <i class=\"fa-solid fa-phone\"></i></i>\n</span>"
                   },
                   "blocks": {}
                 },
