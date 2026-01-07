@@ -2186,7 +2186,7 @@
               "type": "custom-liquid",
               "name": "t:names.custom_liquid",
               "settings": {
-                "custom_liquid": "<i class=\"fa-sharp fa-solid fa-user\"></i>"
+                "custom_liquid": "<div class=\"fa-icons\">\n<i class=\"fa-sharp fa-solid fa-user\"></i>\n</div>"
               },
               "blocks": {}
             },
