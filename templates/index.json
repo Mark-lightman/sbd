@@ -2182,15 +2182,6 @@
             "padding-inline-end": 0
           },
           "blocks": {
-            "custom_liquid_bwxcTJ": {
-              "type": "custom-liquid",
-              "name": "t:names.custom_liquid",
-              "disabled": true,
-              "settings": {
-                "custom_liquid": "<div class=\"fa-icons\">\n<i class=\"fa-sharp fa-solid fa-user\"></i>\n</div>"
-              },
-              "blocks": {}
-            },
             "custom_liquid_aznG4B": {
               "type": "custom-liquid",
               "name": "t:names.custom_liquid",
@@ -2317,7 +2308,6 @@
             }
           },
           "block_order": [
-            "custom_liquid_bwxcTJ",
             "custom_liquid_aznG4B",
             "icon_rmBJd3",
             "group_Bb3P3d"
@@ -2362,6 +2352,14 @@
             "padding-inline-end": 0
           },
           "blocks": {
+            "custom_liquid_f3DLrf": {
+              "type": "custom-liquid",
+              "name": "t:names.custom_liquid",
+              "settings": {
+                "custom_liquid": "<span style=\"font-size: 28px; color: #F8F9F4;\">\n  <i class=\"fa-solid fa-clipboard-list\"></i>\n</span>"
+              },
+              "blocks": {}
+            },
             "icon_GMqafU": {
               "type": "icon",
               "settings": {
@@ -2478,6 +2476,7 @@
             }
           },
           "block_order": [
+            "custom_liquid_f3DLrf",
             "icon_GMqafU",
             "group_NrgRzW"
           ]
