@@ -3426,6 +3426,14 @@
             "padding-inline-end": 0
           },
           "blocks": {
+            "custom_liquid_eE97qb": {
+              "type": "custom-liquid",
+              "name": "t:names.custom_liquid",
+              "settings": {
+                "custom_liquid": "<span style=\"font-size: 28px; color: #F8F9F4;\">\n<i class=\"fa-solid fa-wrench\"></i>\n</span>"
+              },
+              "blocks": {}
+            },
             "icon_cyqxhr": {
               "type": "icon",
               "settings": {
@@ -3534,6 +3542,7 @@
             }
           },
           "block_order": [
+            "custom_liquid_eE97qb",
             "icon_cyqxhr",
             "group_4GqR4U"
           ]
