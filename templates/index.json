@@ -2362,6 +2362,7 @@
             },
             "icon_GMqafU": {
               "type": "icon",
+              "disabled": true,
               "settings": {
                 "icon": "clipboard",
                 "width": 32,
