@@ -18,7 +18,7 @@
           "settings": {
             "text": "<h1>{{ closest.page.title }}</h1>",
             "width": "100%",
-            "max_width": "normal",
+            "max_width": "narrow",
             "alignment": "left",
             "type_preset": "h2",
             "font": "var(--font-primary--family)",
@@ -48,11 +48,10 @@
         "heading",
         "page-content"
       ],
-      "disabled": true,
       "settings": {
         "content_direction": "column",
-        "gap": 23,
-        "color_scheme": "",
+        "gap": 30,
+        "color_scheme": "scheme-3",
         "padding-block-start": 18,
         "padding-block-end": 30
       }
