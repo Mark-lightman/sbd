@@ -42,11 +42,32 @@
           "type": "page-content",
           "settings": {},
           "blocks": {}
+        },
+        "logo_7JLVXw": {
+          "type": "logo",
+          "name": "t:names.logo",
+          "settings": {
+            "inverse": false,
+            "font": "heading",
+            "unit": "pixel",
+            "percent_width": 100,
+            "pixel_height": 120,
+            "custom_mobile_size": false,
+            "unit_mobile": "percent",
+            "percent_width_mobile": 100,
+            "pixel_height_mobile": 120,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
         }
       },
       "block_order": [
         "heading",
-        "page-content"
+        "page-content",
+        "logo_7JLVXw"
       ],
       "settings": {
         "content_direction": "column",
