@@ -120,6 +120,7 @@
       "block_order": [
         "title"
       ],
+      "disabled": true,
       "settings": {
         "color_scheme": "scheme-3",
         "padding-block-start": 0,
@@ -134,7 +135,7 @@
           "name": "t:names.title",
           "static": true,
           "settings": {
-            "text": "<p>Projects</p>",
+            "text": "<h2>Projects</h2>",
             "width": "fit-content",
             "max_width": "normal",
             "alignment": "left",
@@ -200,7 +201,7 @@
                 "case": "none",
                 "wrap": "pretty",
                 "color": "var(--color-foreground)",
-                "text": "<h4>{{ closest.article.title }}</h4>",
+                "text": "<p>{{ section.settings.blog.title }}</p>",
                 "read_only": false,
                 "alignment": "left",
                 "show_alignment": false,
@@ -250,7 +251,7 @@
       },
       "name": "t:names.blog_posts_grid",
       "settings": {
-        "blog": "",
+        "blog": "projects",
         "layout_type": "grid",
         "carousel_on_mobile": false,
         "post_limit": 3,
