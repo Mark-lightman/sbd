@@ -2418,7 +2418,7 @@
           "settings": {
             "label": "View our Projects",
             "link": "shopify://collections/all",
-            "open_in_new_tab": false,
+            "open_in_new_tab": true,
             "style_class": "button",
             "width": "fit-content",
             "custom_width": 100,
@@ -2457,7 +2457,7 @@
         "overlay_color": "#00000026",
         "overlay_style": "solid",
         "gradient_direction": "to top",
-        "padding-block-start": 0,
+        "padding-block-start": 11,
         "padding-block-end": 29
       }
     },
