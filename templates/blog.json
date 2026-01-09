@@ -201,7 +201,7 @@
                 "case": "none",
                 "wrap": "pretty",
                 "color": "var(--color-foreground)",
-                "text": "<p>{{ closest.article.title }} </p>{{ closest.article.excerpt }}",
+                "text": "<p>{{ closest.article.title }} </p>",
                 "read_only": false,
                 "alignment": "left",
                 "show_alignment": false,
@@ -265,7 +265,7 @@
         "icons_shape": "none",
         "section_width": "page-width",
         "gap": 12,
-        "color_scheme": "scheme-3",
+        "color_scheme": "scheme-1",
         "padding-block-start": 48,
         "padding-block-end": 48
       }
