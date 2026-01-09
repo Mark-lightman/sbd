@@ -135,7 +135,7 @@
           "name": "t:names.title",
           "static": true,
           "settings": {
-            "text": "<h2>Projects</h2>",
+            "text": "<h2>Our Projects</h2>",
             "width": "fit-content",
             "max_width": "normal",
             "alignment": "left",
@@ -150,8 +150,8 @@
             "background": false,
             "background_color": "#00000026",
             "corner_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
+            "padding-block-start": 20,
+            "padding-block-end": 20,
             "padding-inline-start": 0,
             "padding-inline-end": 0
           },
