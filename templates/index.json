@@ -2527,7 +2527,7 @@
           "name": "t:names.button",
           "settings": {
             "label": "View our Projects",
-            "link": "shopify://pages/nottingham-dressing-room",
+            "link": "shopify://blogs/projects",
             "open_in_new_tab": false,
             "style_class": "button",
             "width": "fit-content",
