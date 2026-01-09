@@ -2442,7 +2442,7 @@
                 "text_AHDBKG": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Dressing Room Partition</p>",
+                    "text": "<p>Utility Room Door</p>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
@@ -2467,7 +2467,7 @@
                 "text_j9HGhX": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Nottingham</p>",
+                    "text": "<p>Nantwich</p>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
