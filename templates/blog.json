@@ -201,7 +201,7 @@
                 "case": "none",
                 "wrap": "pretty",
                 "color": "var(--color-foreground)",
-                "text": "<p>{{ section.settings.blog.title }}</p>",
+                "text": "<p>{{ closest.article.title }} </p>{{ closest.article.excerpt }}",
                 "read_only": false,
                 "alignment": "left",
                 "show_alignment": false,
