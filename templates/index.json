@@ -1400,8 +1400,8 @@
             "custom_width": 50,
             "width_mobile": "fit-content",
             "custom_width_mobile": 100,
-            "height": "fit",
-            "custom_height": 51,
+            "height": "custom",
+            "custom_height": 100,
             "inherit_color_scheme": true,
             "color_scheme": "",
             "background_media": "none",
@@ -1420,7 +1420,7 @@
             "placeholder": "",
             "padding-block-start": 0,
             "padding-block-end": 0,
-            "padding-inline-start": 60,
+            "padding-inline-start": 0,
             "padding-inline-end": 0
           },
           "blocks": {
@@ -1432,7 +1432,7 @@
                 "link": "",
                 "image_ratio": "square",
                 "width": "custom",
-                "custom_width": 87,
+                "custom_width": 78,
                 "width_mobile": "custom",
                 "custom_width_mobile": 100,
                 "height": "fit",
