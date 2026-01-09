@@ -58,7 +58,7 @@
           "type": "_blog-post-featured-image",
           "static": true,
           "settings": {
-            "image_ratio": "adapt",
+            "image_ratio": "landscape",
             "width": "fill",
             "custom_width": 100,
             "width_mobile": "fill",
