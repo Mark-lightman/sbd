@@ -1942,7 +1942,6 @@
         "text_gWGmy9",
         "button_bRbkjm"
       ],
-      "disabled": true,
       "name": "t:names.rich_text_section",
       "settings": {
         "content_direction": "column",
@@ -2005,7 +2004,6 @@
       "block_order": [
         "text_TVAUtb"
       ],
-      "disabled": true,
       "name": "We offer...",
       "settings": {
         "content_direction": "column",
