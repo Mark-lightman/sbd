@@ -2130,7 +2130,7 @@
           "type": "_slide",
           "settings": {
             "media_type_1": "image",
-            "image_1": "shopify://shop_images/luxury-modern-home-interior-with-black-steel-doors.jpg",
+            "image_1": "shopify://shop_images/686DB7B1-2154-49CB-9292-FF42FFF9D459_1_105_c.jpg",
             "content_direction": "column",
             "vertical_on_mobile": true,
             "horizontal_alignment": "flex-start",
@@ -2142,9 +2142,9 @@
             "inherit_color_scheme": true,
             "color_scheme": "",
             "toggle_overlay": true,
-            "overlay_color": "#00000059",
-            "overlay_style": "solid",
-            "gradient_direction": "to top",
+            "overlay_color": "#0000009c",
+            "overlay_style": "gradient",
+            "gradient_direction": "to bottom",
             "padding-block-start": 0,
             "padding-block-end": 0,
             "padding-inline-start": 0,
@@ -2193,11 +2193,11 @@
                 "text_6e6rNa": {
                   "type": "text",
                   "settings": {
-                    "text": "<h2>Hampstead Residence</h2>",
+                    "text": "<p>Dressing Room Partition</p>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
-                    "type_preset": "rte",
+                    "type_preset": "h2",
                     "font": "var(--font-body--family)",
                     "font_size": "1rem",
                     "line_height": "normal",
@@ -2218,7 +2218,7 @@
                 "text_iWtt6j": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>London</p>",
+                    "text": "<p>Nottingham</p>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
