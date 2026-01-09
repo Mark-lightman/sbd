@@ -2125,6 +2125,131 @@
     "slideshow_pGij47": {
       "type": "slideshow",
       "blocks": {
+        "slide_FEbCcq": {
+          "type": "_slide",
+          "settings": {
+            "media_type_1": "image",
+            "image_1": "shopify://shop_images/luxury-modern-home-interior-with-black-steel-doors.jpg",
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "flex-end",
+            "gap": 12,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "toggle_overlay": true,
+            "overlay_color": "#0000009c",
+            "overlay_style": "gradient",
+            "gradient_direction": "to bottom",
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "group_wb9ztr": {
+              "type": "group",
+              "settings": {
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment": "flex-start",
+                "vertical_alignment": "center",
+                "align_baseline": false,
+                "horizontal_alignment_flex_direction_column": "flex-start",
+                "vertical_alignment_flex_direction_column": "center",
+                "gap": 12,
+                "width": "custom",
+                "custom_width": 50,
+                "width_mobile": "custom",
+                "custom_width_mobile": 85,
+                "height": "fit",
+                "custom_height": 100,
+                "inherit_color_scheme": false,
+                "color_scheme": "scheme-6",
+                "background_media": "none",
+                "video_position": "cover",
+                "background_image_position": "cover",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 0,
+                "toggle_overlay": false,
+                "overlay_color": "#00000026",
+                "overlay_style": "solid",
+                "gradient_direction": "to top",
+                "link": "",
+                "open_in_new_tab": false,
+                "placeholder": "",
+                "padding-block-start": 48,
+                "padding-block-end": 48,
+                "padding-inline-start": 48,
+                "padding-inline-end": 48
+              },
+              "blocks": {
+                "text_w3PbKY": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>Sliding Door To Match Exiting Externals</p>",
+                    "width": "fit-content",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "h2",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                },
+                "text_bAtiew": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>Wolverhampton</p>",
+                    "width": "fit-content",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 20,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_w3PbKY",
+                "text_bAtiew"
+              ]
+            }
+          },
+          "block_order": [
+            "group_wb9ztr"
+          ]
+        },
         "slide_TqNe3V": {
           "type": "_slide",
           "settings": {
@@ -2250,11 +2375,11 @@
             "group_9JGyMV"
           ]
         },
-        "slide_FEbCcq": {
+        "slide_LW7drr": {
           "type": "_slide",
           "settings": {
             "media_type_1": "image",
-            "image_1": "shopify://shop_images/luxury-modern-home-interior-with-black-steel-doors.jpg",
+            "image_1": "shopify://shop_images/AD381D93-2A0B-4558-A95B-6DDE156B9419_1_105_c-_1.jpg",
             "content_direction": "column",
             "vertical_on_mobile": true,
             "horizontal_alignment": "flex-start",
@@ -2275,7 +2400,7 @@
             "padding-inline-end": 0
           },
           "blocks": {
-            "group_wb9ztr": {
+            "group_tkfgpt": {
               "type": "group",
               "settings": {
                 "content_direction": "column",
@@ -2314,10 +2439,10 @@
                 "padding-inline-end": 48
               },
               "blocks": {
-                "text_w3PbKY": {
+                "text_AHDBKG": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Sliding Door To Match Exiting Externals</p>",
+                    "text": "<p>Dressing Room Partition</p>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
@@ -2339,10 +2464,10 @@
                   },
                   "blocks": {}
                 },
-                "text_bAtiew": {
+                "text_j9HGhX": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Wolverhampton</p>",
+                    "text": "<p>Nottingham</p>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
@@ -2366,19 +2491,20 @@
                 }
               },
               "block_order": [
-                "text_w3PbKY",
-                "text_bAtiew"
+                "text_AHDBKG",
+                "text_j9HGhX"
               ]
             }
           },
           "block_order": [
-            "group_wb9ztr"
+            "group_tkfgpt"
           ]
         }
       },
       "block_order": [
+        "slide_FEbCcq",
         "slide_TqNe3V",
-        "slide_FEbCcq"
+        "slide_LW7drr"
       ],
       "name": "t:names.slideshow",
       "settings": {
