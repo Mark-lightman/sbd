@@ -43,19 +43,22 @@
           "settings": {},
           "blocks": {}
         },
-        "logo_7JLVXw": {
-          "type": "logo",
-          "name": "t:names.logo",
+        "image_LHxNAD": {
+          "type": "image",
+          "name": "t:names.image",
           "settings": {
-            "inverse": false,
-            "font": "heading",
-            "unit": "pixel",
-            "percent_width": 100,
-            "pixel_height": 120,
-            "custom_mobile_size": false,
-            "unit_mobile": "percent",
-            "percent_width_mobile": 100,
-            "pixel_height_mobile": 120,
+            "image": "shopify://shop_images/sbdsvg-logo.svg",
+            "link": "",
+            "image_ratio": "adapt",
+            "width": "custom",
+            "custom_width": 20,
+            "width_mobile": "custom",
+            "custom_width_mobile": 25,
+            "height": "fit",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
             "padding-block-start": 0,
             "padding-block-end": 0,
             "padding-inline-start": 0,
@@ -67,7 +70,7 @@
       "block_order": [
         "heading",
         "page-content",
-        "logo_7JLVXw"
+        "image_LHxNAD"
       ],
       "settings": {
         "content_direction": "column",
