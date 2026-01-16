@@ -1430,7 +1430,7 @@
               "settings": {
                 "image": "shopify://shop_images/Large-SBD_1.png",
                 "link": "",
-                "image_ratio": "square",
+                "image_ratio": "adapt",
                 "width": "fill",
                 "custom_width": 79,
                 "width_mobile": "custom",
@@ -1486,8 +1486,8 @@
             "link": "",
             "open_in_new_tab": false,
             "placeholder": "",
-            "padding-block-start": 100,
-            "padding-block-end": 100,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
             "padding-inline-start": 35,
             "padding-inline-end": 100
           },
@@ -1527,8 +1527,8 @@
                 "open_in_new_tab": false,
                 "placeholder": "",
                 "padding-block-start": 15,
-                "padding-block-end": 43,
-                "padding-inline-start": 50,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
                 "padding-inline-end": 0
               },
               "blocks": {
