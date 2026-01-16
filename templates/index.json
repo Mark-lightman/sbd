@@ -1463,7 +1463,7 @@
             "align_baseline": false,
             "horizontal_alignment_flex_direction_column": "center",
             "vertical_alignment_flex_direction_column": "center",
-            "gap": 100,
+            "gap": 34,
             "width": "fit-content",
             "custom_width": 50,
             "width_mobile": "fit-content",
@@ -1526,7 +1526,7 @@
                 "link": "",
                 "open_in_new_tab": false,
                 "placeholder": "",
-                "padding-block-start": 0,
+                "padding-block-start": 15,
                 "padding-block-end": 43,
                 "padding-inline-start": 50,
                 "padding-inline-end": 0
