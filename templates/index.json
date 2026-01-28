@@ -2194,7 +2194,7 @@
                 "text_w3PbKY": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Sliding Door To Match Exiting Externals</p>",
+                    "text": "<p>Sliding Door To Match Existing Externals</p>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
