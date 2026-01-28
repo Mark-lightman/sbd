@@ -42,7 +42,7 @@
           "type": "text",
           "name": "t:names.text",
           "settings": {
-            "text": "<p>Fully bespoke steel doors and window, quoted, delivered and installed in 4 - 6 week.</p>",
+            "text": "<p>Fully bespoke steel doors and windows, quoted, delivered and installed in 4 - 6 week.</p>",
             "width": "fit-content",
             "max_width": "normal",
             "alignment": "left",
