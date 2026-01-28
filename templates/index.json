@@ -16,7 +16,7 @@
           "type": "text",
           "name": "t:names.heading",
           "settings": {
-            "text": "<p>Luxury Steel <br/>Doors, Designed &<br/> Crafted in the UK</p>",
+            "text": "<p>Luxury Steel Doors<br/>Designed & Crafted in the UK</p>",
             "width": "100%",
             "max_width": "normal",
             "alignment": "left",
