@@ -122,6 +122,7 @@
             "button_AzkxaC": {
               "type": "button",
               "name": "t:names.button",
+              "disabled": true,
               "settings": {
                 "label": "Internal Doors",
                 "link": "shopify://products/double-steel-doors",
