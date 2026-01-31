@@ -1,12 +1,3 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "sections": {
     "main": {
@@ -16,7 +7,7 @@
           "type": "text",
           "name": "Title",
           "settings": {
-            "text": "<p>Projects</p>",
+            "text": "<p>Projects<\/p>",
             "width": "fit-content",
             "max_width": "narrow",
             "alignment": "left",
@@ -135,7 +126,7 @@
           "name": "t:names.title",
           "static": true,
           "settings": {
-            "text": "<h2>Our Projects</h2>",
+            "text": "<h2>Our Projects<\/h2>",
             "width": "fit-content",
             "max_width": "normal",
             "alignment": "left",
@@ -201,7 +192,7 @@
                 "case": "none",
                 "wrap": "pretty",
                 "color": "var(--color-foreground)",
-                "text": "<p>{{ closest.article.title }} </p>",
+                "text": "<p>{{ closest.article.title }} <\/p>",
                 "read_only": false,
                 "alignment": "left",
                 "show_alignment": false,

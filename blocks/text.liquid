@@ -311,6 +311,21 @@
       "visible_if": "{{ block.settings.type_preset != 'rte' }}"
     },
     {
+      "type": "checkbox",
+      "id": "enable_highlight_syntax",
+      "label": "t:settings.enable_highlight_syntax",
+      "default": false,
+      "info": "t:info.highlight_syntax"
+    },
+    {
+      "type": "color",
+      "id": "highlight_color",
+      "label": "t:settings.highlight_color",
+      "alpha": true,
+      "default": "#0d0d0d",
+      "visible_if": "{{ block.settings.enable_highlight_syntax }}"
+    },
+    {
       "type": "header",
       "content": "t:content.appearance"
     },

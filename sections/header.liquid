@@ -60,7 +60,7 @@
   endcapture
 
   capture actions
-    render 'header-actions'
+    render 'header-actions', section: section
   endcapture
 
   if shop.customer_accounts_enabled
@@ -193,6 +193,7 @@
   {% endif %}
   {% if sticky %}
     sticky="{{ sticky }}"
+    style="--header-bg-color-sticky: {{ section.settings.sticky_header_background_color | default: '#1A1A1A' }};"
   {% endif %}
   data-skip-node-update
   data-scroll-direction="none"
@@ -348,13 +349,15 @@
           .menu-list__list-item[slot='overflow'] .menu-list__link:is(:hover, [aria-expanded='true'], [data-animating])
         )
     ) {
-    /* while transparent, header-row ignores its color-scheme settings, pull from the header-component */
-    --color-foreground: inherit;
-    --color-foreground-rgb: inherit;
+    /* while transparent, use initial link colour for header */
+    --color-foreground: #BBBBBB;
+    --color-foreground-rgb: 187, 187, 187;
     --color-border: inherit;
     --color-border-rgb: inherit;
     --color-primary-button-background: inherit;
     --color-primary-button-text: inherit;
+    --menu-top-level-font-color: #BBBBBB;
+    --menu-top-level-font-color-rgb: 187, 187, 187;
   }
 
   .header--inherit-color-scheme-on-menu-open:has(.mega-menu__list:hover) .header__row,
@@ -392,17 +395,80 @@
   }
 
   .header[data-sticky-state] {
-    transition: opacity var(--animation-speed) var(--animation-easing);
+    transition: opacity var(--animation-speed-slow) var(--animation-easing),
+      transform var(--animation-speed-slow) var(--animation-easing);
     opacity: 1;
+    transform: translateY(0);
   }
 
   .header[data-sticky-state='active'] {
     view-transition-name: sticky-header;
+    --header-bg-color: var(--header-bg-color-sticky);
   }
 
-  .header[data-sticky-state='idle'],
+  #header-component[data-sticky-state='active'] .header__row {
+    background-color: var(--header-bg-color-sticky) !important;
+    --color-foreground: #fff;
+    --color-foreground-rgb: 255, 255, 255;
+    --color-foreground-heading: #fff;
+    --color-foreground-heading-rgb: 255, 255, 255;
+    --menu-top-level-font-color: #fff;
+    --menu-top-level-font-color-rgb: 255, 255, 255;
+    --color-border: rgb(255 255 255 / 0.2);
+    --color-border-rgb: 255, 255, 255;
+  }
+
+  #header-component[data-sticky-state='active'] .header__row,
+  #header-component[data-sticky-state='active'] .header__row * {
+    color: #fff !important;
+  }
+
+  #header-component[data-sticky-state='active'] .header__row .header-actions__custom-button {
+    color: rgb(255 255 255) !important;
+    background-color: rgb(26 26 26) !important;
+    border-color: rgb(255 255 255 / 0.3) !important;
+  }
+
+  #header-component[data-sticky-state='active'] .header__row .header-actions__custom-button:hover {
+    color: rgb(26 26 26) !important;
+    background-color: rgb(255 255 255) !important;
+    border-color: rgb(255 255 255) !important;
+  }
+
+  #header-component[data-sticky-state='active'] .header__row .menu-list__link,
+  #header-component[data-sticky-state='active'] .header__row .menu-list__link * {
+    color: #BBBBBB !important;
+  }
+
+  #header-component[data-sticky-state='active'] .header__row .menu-list__link:hover,
+  #header-component[data-sticky-state='active'] .header__row .menu-list__link:focus,
+  #header-component[data-sticky-state='active'] .header__row .menu-list__list-item:hover .menu-list__link,
+  #header-component[data-sticky-state='active'] .header__row .menu-list__list-item:focus-within .menu-list__link {
+    color: #C8A873 !important;
+  }
+
+  #header-component[data-sticky-state='active'] .header__row .menu-list__link--active,
+  #header-component[data-sticky-state='active'] .header__row .menu-list__link--active * {
+    color: #C8A873 !important;
+  }
+
+  #header-component[data-sticky-state='active'] .header__row .menu-list__list-item:hover .menu-list__link *,
+  #header-component[data-sticky-state='active'] .header__row .menu-list__list-item:focus-within .menu-list__link * {
+    color: inherit !important;
+  }
+
+  #header-component[data-sticky-state='active'] .header__row svg {
+    fill: currentColor !important;
+  }
+
+  .header[data-sticky-state='idle'] {
+    opacity: 0;
+  }
+
+  /* Show: start above viewport; hide: slide up + fade out */
   .header[data-sticky-state='active'][data-animating] {
     opacity: 0;
+    transform: translateY(-100%);
   }
 
   .header__row {
@@ -887,6 +953,29 @@
     },
     {
       "type": "header",
+      "content": "Custom button"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_header_custom_button",
+      "label": "Show custom button",
+      "default": false
+    },
+    {
+      "type": "text",
+      "id": "header_custom_button_text",
+      "label": "Button text",
+      "default": "Get a quote",
+      "visible_if": "{{ section.settings.show_header_custom_button }}"
+    },
+    {
+      "type": "url",
+      "id": "header_custom_button_link",
+      "label": "Button link",
+      "visible_if": "{{ section.settings.show_header_custom_button }}"
+    },
+    {
+      "type": "header",
       "content": "t:content.appearance"
     },
     {
@@ -939,6 +1028,13 @@
         }
       ],
       "default": "always"
+    },
+    {
+      "type": "color",
+      "id": "sticky_header_background_color",
+      "label": "t:settings.sticky_header_background_color",
+      "default": "#1A1A1A",
+      "visible_if": "{{ section.settings.enable_sticky_header != 'never' }}"
     },
     {
       "type": "range",

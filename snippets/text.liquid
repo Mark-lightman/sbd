@@ -56,6 +56,8 @@
   style="
     {% render 'spacing-padding', settings: block_settings %}
     {% render 'typography-style', settings: block_settings %}
+    {% if block_settings.font_size != blank %} --font-size: {{ block_settings.font_size }}; {% endif %}
+    {% if block_settings.font_weight != blank %} --font-weight: {{ block_settings.font_weight }}; {% endif %}
     --width: {{ text_width }};
     --max-width: var(--max-width--{{ type }}-{{ block_settings.max_width }});
     {% if text_width == "100%" %}
@@ -65,6 +67,9 @@
       --text-background-color: {{ block_settings.background_color | default: 'rgb(255 255 255 / 1.0)' }};
       --text-corner-radius: {{ block_settings.corner_radius }}px;
       --text-padding: max(var(--padding-2xs), calc((var(--text-corner-radius) + var(--padding-xs)) * (1 - cos(45deg))));
+    {% endif %}
+    {% if block_settings.enable_highlight_syntax %}
+      --text-highlight-color: {{ block_settings.highlight_color | default: 'var(--color-primary)' }};
     {% endif %}
   "
 
@@ -81,13 +86,20 @@
   endif
 %}
 
+{% liquid
+  assign text_to_output = block.settings.text
+  if block_settings.enable_highlight_syntax and text_to_output != blank
+    assign text_to_output = text_to_output | replace: '&lt;&lt;', '<span class="text-block__highlight">' | replace: '&gt;&gt;', '</span>'
+    assign text_to_output = text_to_output | replace: '<<', '<span class="text-block__highlight">' | replace: '>>', '</span>'
+  endif
+%}
 {% if fallback_text != blank and plain_text == blank %}
   <div {{ attributes }}>
     {{ fallback_text }}
   </div>
 {% elsif plain_text != blank %}
   <{{ element }} {{ attributes }}>
-    {{ block.settings.text }}
+    {{ text_to_output }}
   </{{ element }}>
 {% endif %}
 
@@ -129,6 +141,13 @@
     max-width: var(--max-width, 100%);
     text-align: var(--text-align, var(--text-align-default));
     text-wrap: var(--text-wrap);
+  }
+
+  /* Allow blocks (e.g. product card description) to override size/weight via --font-size, --font-weight on wrapper */
+  .text-block.paragraph > *,
+  .text-block.rte > * {
+    font-size: var(--font-size, var(--font-paragraph--size));
+    font-weight: var(--font-weight, var(--font-paragraph--weight));
   }
 
   .text-block:not(.text-block--full-width).rte,
@@ -214,5 +233,9 @@
   .custom-color,
   .custom-color > :is(h1, h2, h3, h4, h5, h6, p, *) {
     color: var(--color);
+  }
+
+  .text-block__highlight {
+    color: var(--text-highlight-color, var(--color-primary));
   }
 {% endstylesheet %}

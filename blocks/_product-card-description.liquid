@@ -1,0 +1,74 @@
+
+{% liquid
+  assign truncate_at = block.settings.truncate_words | default: 20
+  if closest.product != blank
+    assign description_text = closest.product.description | strip_html | truncatewords: truncate_at
+    assign description_html = '<span class="product-card-description__text">' | append: description_text | append: '</span>'
+  else
+    assign description_html = '<span class="product-card-description__text"></span>'
+  endif
+%}
+{% render 'text', fallback_text: description_html, block: block %}
+
+{% schema %}
+{
+  "name": "Product description",
+  "tag": "div",
+  "settings": [
+    {
+      "type": "paragraph",
+      "content": "Shows truncated product description. Used in product cards."
+    },
+    {
+      "type": "range",
+      "id": "truncate_words",
+      "label": "Max words",
+      "min": 10,
+      "max": 50,
+      "step": 1,
+      "default": 20
+    },
+    {
+      "type": "header",
+      "content": "t:content.typography"
+    },
+    {
+      "type": "select",
+      "id": "type_preset",
+      "label": "t:settings.preset",
+      "options": [
+        { "value": "rte", "label": "t:options.default" },
+        { "value": "paragraph", "label": "t:options.paragraph" }
+      ],
+      "default": "paragraph"
+    },
+    {
+      "type": "select",
+      "id": "font_size",
+      "label": "t:settings.size",
+      "options": [
+        { "value": "", "label": "t:options.default" },
+        { "value": "0.75rem", "label": "12px" },
+        { "value": "0.875rem", "label": "14px" },
+        { "value": "1rem", "label": "16px" },
+        { "value": "1.125rem", "label": "18px" }
+      ],
+      "default": "0.875rem"
+    },
+    {
+      "type": "select",
+      "id": "font_weight",
+      "label": "t:settings.font_weight",
+      "options": [
+        { "value": "", "label": "t:options.default" },
+        { "value": "300", "label": "t:options.light" },
+        { "value": "400", "label": "t:options.normal" },
+        { "value": "500", "label": "t:options.medium" },
+        { "value": "600", "label": "t:options.semibold" },
+        { "value": "700", "label": "t:options.bold" }
+      ],
+      "default": ""
+    }
+  ]
+}
+{% endschema %}

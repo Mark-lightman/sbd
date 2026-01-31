@@ -1,12 +1,3 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "type": "header",
   "name": "Header",
@@ -62,27 +53,28 @@
           "static": true,
           "settings": {
             "menu": "main-menu",
-            "color_scheme": "scheme-87a3699f-e494-4023-b625-2dcf1cc781a7",
-            "type_font_primary_size": "1.125rem",
+            "color_scheme": "scheme-5",
+            "type_font_primary_size": "0.875rem",
             "menu_font_style": "inverse",
-            "type_font_primary_link": "subheading",
-            "type_case_primary_link": "none",
+            "type_font_primary_link": "accent",
+            "type_case_primary_link": "uppercase",
+            "link_hover_color": "#c8a873",
             "menu_style": "featured_products",
             "featured_products_aspect_ratio": "adapt",
-            "featured_collections_aspect_ratio": "16 / 9",
+            "featured_collections_aspect_ratio": "16 \/ 9",
             "image_border_radius": 1,
             "navigation_bar": false,
             "color_scheme_navigation_bar": "",
             "drawer_accordion": true,
             "drawer_accordion_expand_first": true,
-            "drawer_dividers": false
+            "drawer_dividers": true
           },
           "blocks": {}
         }
       },
       "settings": {
         "logo_position": "left",
-        "menu_position": "center",
+        "menu_position": "right",
         "menu_row": "top",
         "show_search": false,
         "search_position": "right",
@@ -90,19 +82,23 @@
         "show_country": true,
         "country_selector_style": false,
         "show_language": true,
-        "localization_font": "heading",
+        "localization_font": "accent",
         "localization_font_size": "0.875rem",
         "localization_position": "right",
         "localization_row": "top",
+        "show_header_custom_button": false,
+        "header_custom_button_text": "Get a quote",
+        "header_custom_button_link": "",
         "section_width": "page-width",
-        "section_height": "standard",
-        "enable_sticky_header": "always",
+        "section_height": "compact",
+        "enable_sticky_header": "scroll-up",
+        "sticky_header_background_color": "#121212",
         "divider_width": 0,
         "divider_size": "page-width",
-        "border_width": 0,
-        "color_scheme_top": "scheme-4",
+        "border_width": 0.5,
+        "color_scheme_top": "scheme-5",
         "color_scheme_bottom": "",
-        "color_scheme_transparent": "scheme-4",
+        "color_scheme_transparent": "scheme-5",
         "enable_transparent_header_home": true,
         "home_color_scheme": "inverse",
         "enable_transparent_header_product": false,
@@ -147,7 +143,7 @@
       "disabled": true,
       "name": "t:names.custom_liquid",
       "settings": {
-        "custom_liquid": "<p style=\"text-decoration:none;text-align:center;font-size:28px;\"><a href=\"/pages/contact\">Click Here</a> for a free no obligation quote </p>",
+        "custom_liquid": "<p style=\"text-decoration:none;text-align:center;font-size:28px;\"><a href=\"\/pages\/contact\">Click Here<\/a> for a free no obligation quote <\/p>",
         "color_scheme": "scheme-4",
         "section_width": "page-width",
         "padding-block-start": 35,

@@ -1,0 +1,87 @@
+{% liquid
+  assign collection = block.settings.collection
+  assign image_resource = block.settings.image
+  if image_resource == blank and collection != blank
+    assign image_resource = collection.image
+    if image_resource == blank and collection.products.size > 0
+      assign image_resource = collection.products.first.featured_image
+    endif
+  endif
+  assign item_title = block.settings.title | default: collection.title
+  assign item_link = block.settings.link | default: collection.url
+  assign ratio = 1
+  case block.settings.image_ratio
+    when 'landscape'
+      assign ratio = '16 / 9'
+    when 'portrait'
+      assign ratio = '4 / 5'
+    when 'square'
+      assign ratio = '1 / 1'
+    when 'adapt'
+      if image_resource != blank and image_resource.aspect_ratio != 0
+        assign ratio = image_resource.aspect_ratio
+      endif
+  endcase
+  assign widths = '240, 352, 832, 1200, 1600, 1920, 2560, 3840'
+  assign image_alt = block.settings.image_alt | default: image_resource.alt | default: item_title
+%}
+
+{% style %}
+  .bespoke-collection-item[data-block-id="{{ block.id }}"] {
+    --bespoke-item-ratio: {{ ratio }};
+  }
+{% endstyle %}
+
+<div
+  class="bespoke-collection-item bespoke-collection-item--{{ block.id }}"
+  data-block-id="{{ block.id }}"
+  {{ block.shopify_attributes }}
+>
+  <a
+    class="bespoke-collection-item__link"
+    href="{{ item_link }}"
+    {% if item_title != blank %}aria-label="{{ item_title | escape }}"{% endif %}
+  >
+    <span class="visually-hidden">{{ item_title }}</span>
+  </a>
+  <div class="bespoke-collection-item__inner">
+    <div class="bespoke-collection-item__image-wrapper">
+      {% if image_resource != blank %}
+        {{
+          image_resource
+          | image_url: width: 3840
+          | image_tag: widths: widths, class: 'bespoke-collection-item__image', sizes: '(min-width: 750px) 50vw, 100vw', loading: 'lazy', alt: image_alt
+        }}
+      {% else %}
+        <div class="bespoke-collection-item__image bespoke-collection-item__image--placeholder">
+          {{ 'collection-1' | placeholder_svg_tag: 'placeholder' }}
+        </div>
+      {% endif %}
+    </div>
+    <div class="bespoke-collection-item__content">
+      {% if item_title != blank %}
+        <h3 class="bespoke-collection-item__title" style="
+          {% if block.settings.title_font_size != '' %}font-size: {{ block.settings.title_font_size }};{% endif %}
+          {% if block.settings.title_color != '' %}color: {{ block.settings.title_color }};{% endif %}
+          font-weight: {{ block.settings.title_font_weight }};
+        ">
+          {{ item_title }}
+        </h3>
+      {% endif %}
+      {% if block.settings.description != blank %}
+        <p class="bespoke-collection-item__description" style="
+          {% if block.settings.description_font_size != '' %}font-size: {{ block.settings.description_font_size }};{% endif %}
+          {% if block.settings.description_color != '' %}color: {{ block.settings.description_color }};{% endif %}
+        ">
+          {{ block.settings.description }}
+        </p>
+      {% endif %}
+      <span class="bespoke-collection-item__arrow" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="5" y1="12" x2="19" y2="12"></line>
+          <polyline points="12 5 19 12 12 19"></polyline>
+        </svg>
+      </span>
+    </div>
+  </div>
+</div>

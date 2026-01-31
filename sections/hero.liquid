@@ -388,7 +388,14 @@
     {% else %}
       --hero-min-height: var(--section-height-{{ section.settings.section_height }});
     {% endif %}
+    {% if section.settings.section_height_mobile == 'custom' %}--hero-min-height-mobile: {{ section.settings.section_height_custom_mobile }}dvh;{% endif %}
+    {% if section.settings.section_height_mobile == 'full-screen' %}--hero-min-height-mobile: 100dvh;{% endif %}
+    {% if section.settings.section_height_mobile == 'auto' %}--hero-min-height-mobile: auto;{% endif %}
+    {% if section.settings.section_height_mobile == 'small' %}--hero-min-height-mobile: var(--section-height-small);{% endif %}
+    {% if section.settings.section_height_mobile == 'medium' %}--hero-min-height-mobile: var(--section-height-medium);{% endif %}
+    {% if section.settings.section_height_mobile == 'large' %}--hero-min-height-mobile: var(--section-height-large);{% endif %}
   "
+  data-mobile-height="{{ section.settings.section_height_mobile }}"
   {% if request.visual_preview_mode %}
     data-shopify-visual-preview
   {% endif %}
@@ -422,7 +429,7 @@
 
   <div
     class="hero__container spacing-style section section--full-width"
-    style="{% render 'spacing-style', settings: section.settings %}"
+    style="{% render 'spacing-style', settings: section.settings %} --padding-block-start-mobile: {{ section.settings['padding-block-start_mobile'] }}px; --padding-block-end-mobile: {{ section.settings['padding-block-end_mobile'] }}px;{% if section.settings.padding-inline-start_mobile > 0 %} --padding-inline-start-mobile: {{ section.settings['padding-inline-start_mobile'] }}px;{% endif %}{% if section.settings.padding-inline-end_mobile > 0 %} --padding-inline-end-mobile: {{ section.settings['padding-inline-end_mobile'] }}px;{% endif %}{% if section.settings.h1_mobile_font_size > 0 %} --hero-h1-mobile-size: {{ section.settings.h1_mobile_font_size }}px;{% endif %}"
   >
     {%- if section.settings.link != blank -%}
       <a
@@ -452,13 +459,91 @@
         layout-panel-flex--{{ section.settings.content_direction }}
         {% if section.settings.vertical_on_mobile %}mobile-column{% endif %}
         section-content-wrapper
-        {{section.settings.section_width}}
+        {{ section.settings.section_width }}
+        {% if section.settings.section_width == 'content-middle' %}hero__content-wrapper--middle{% endif %}
         {% if request.design_mode %}hero__content-wrapper--design-mode{% endif %}
       "
       style="{% render 'layout-panel-style', settings: section.settings %}"
     >
       {% content_for 'blocks' %}
     </div>
+    {% if section.settings.show_value_props_bar %}
+      <div
+        class="hero__value-props hero__value-props--align-{{ section.settings.value_props_align }} hero__value-props--vertical-{{ section.settings.value_props_vertical_align }}{% if section.settings.value_props_marquee %} hero__value-props--marquee{% endif %} color-{{ section.settings.color_scheme }}"
+        style="
+          {% if section.settings.value_props_bg != blank %}--value-props-bg: {{ section.settings.value_props_bg }};{% endif %}
+          {% if section.settings.value_props_height > 0 %}--value-props-height: {{ section.settings.value_props_height }}px;{% endif %}
+          --value-props-gap-mobile: {{ section.settings.value_props_gap_mobile | default: 12 }}px;
+        "
+      >
+        <div class="hero__value-props-inner">
+          <div class="hero__value-props-track">
+          {% for i in (1..4) %}
+            {% assign icon_key = 'value_prop_' | append: i | append: '_icon' %}
+            {% assign text_key = 'value_prop_' | append: i | append: '_text' %}
+            {% assign icon_val = section.settings[icon_key] %}
+            {% assign text_val = section.settings[text_key] %}
+            {% if text_val != blank %}
+              <div class="hero__value-prop-item">
+                {% if icon_val != blank and icon_val != 'none' %}
+                  <span class="hero__value-prop-icon" aria-hidden="true">
+                    {% if icon_val == 'star' %}
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" style="color: #c4a84a;">
+                        <path fill="currentColor" d="m9.625 13.7 0.9 -2.875 -2.375 -1.85h2.9L12 6l0.925 2.975h2.925l-2.375 1.85 0.875 2.875 -2.35 -1.775 -2.375 1.775ZM6.1 23V15.4c-0.75 -0.78335 -1.2875 -1.64165 -1.6125 -2.575C4.1625 11.89165 4 10.95 4 10c0 -2.26665 0.766665 -4.16665 2.3 -5.7C7.83335 2.766665 9.73335 2 12 2c2.26665 0 4.16665 0.766665 5.7 2.3C19.23335 5.83335 20 7.73335 20 10c0 0.95 -0.1625 1.89165 -0.4875 2.825 -0.325 0.93335 -0.8625 1.79165 -1.6125 2.575V23L12 21.025 6.1 23ZM12 16.5c1.81665 0 3.35415 -0.62915 4.6125 -1.8875C17.87085 13.35415 18.5 11.81665 18.5 10c0 -1.81665 -0.62915 -3.35415 -1.8875 -4.6125C15.35415 4.129165 13.81665 3.5 12 3.5c-1.81665 0 -3.35415 0.629165 -4.6125 1.8875C6.12915 6.64585 5.5 8.18335 5.5 10c0 1.81665 0.62915 3.35415 1.8875 4.6125C8.64585 15.87085 10.18335 16.5 12 16.5Zm-4.4 4.4 4.4 -1.375 4.4 1.375v-4.275c-0.66665 0.48335 -1.38335 0.83335 -2.15 1.05 -0.76665 0.21665 -1.51665 0.325 -2.25 0.325s-1.48335 -0.10835 -2.25 -0.325 -1.48335 -0.56665 -2.15 -1.05v4.275Z"></path>
+                      </svg>
+                    {% elsif icon_val == 'check_box' %}
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16"><path fill="#c4a84a" fill-rule="evenodd" d="M7.67 14.72h.71L10.1 13h2.4l.5-.5v-2.42l1.74-1.72v-.71l-1.71-1.72V3.49l-.5-.49H10.1L8.38 1.29h-.71L6 3H3.53L3 3.5v2.43L1.31 7.65v.71L3 10.08v2.42l.53.5H6zM6.16 12H4V9.87l-.12-.35L2.37 8l1.48-1.51l.15-.35V4h2.16l.36-.14L8 2.35l1.54 1.51l.35.14H12v2.14l.17.35L13.69 8l-1.55 1.52l-.14.35V12H9.89l-.38.15L8 13.66l-1.48-1.52zm.57-1.52h.71l3.77-3.77L10.5 6L7.09 9.42L5.71 8.04L5 8.75z" clip-rule="evenodd"/></svg>
+                    {% elsif icon_val == 'clipboard' %}
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#c4a84a" d="m9.108 11.758l2.284-2.29l-2.054-2.06l-1.157 1.157l-.708-.707L8.625 6.7L6.673 4.748l-2.29 2.29zm7.834 7.84l2.29-2.29l-1.951-1.952l-1.158 1.152l-.708-.708l1.152-1.158l-2.04-2.034l-2.285 2.284zM17.273 5l1.733 1.733zM7.153 20H4v-3.154l4.394-4.394L3 7.038l3.673-3.673l5.439 5.42l4.467-4.473q.165-.166.348-.239t.39-.073t.39.073t.349.239l1.632 1.696q.166.165.23.348t.063.39t-.064.378q-.063.17-.229.336l-4.428 4.453l5.375 5.414L16.962 21l-5.414-5.394zM5 19h1.727l9.82-9.813l-1.734-1.733L5 17.274zM15.692 8.313l-.879-.86l1.733 1.734z"/></svg>
+                    {% elsif icon_val == 'wrench' %}
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#c4a84a" d="M9 15c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4m-6 4c.22-.72 3.31-2 6-2c2.7 0 5.8 1.29 6 2zM4.74 9H5c0 2.21 1.79 4 4 4s4-1.79 4-4h.26c.27 0 .49-.22.49-.49v-.02a.49.49 0 0 0-.49-.49H13c0-1.48-.81-2.75-2-3.45v.95c0 .28-.22.5-.5.5s-.5-.22-.5-.5V4.14C9.68 4.06 9.35 4 9 4s-.68.06-1 .14V5.5c0 .28-.22.5-.5.5S7 5.78 7 5.5v-.95C5.81 5.25 5 6.52 5 8h-.26a.49.49 0 0 0-.49.49v.03c0 .26.22.48.49.48M11 9c0 1.1-.9 2-2 2s-2-.9-2-2zm10.98-2.77l.93-.83l-.75-1.3l-1.19.39c-.14-.11-.3-.2-.47-.27L20.25 3h-1.5l-.25 1.22c-.17.07-.33.16-.48.27l-1.18-.39l-.75 1.3l.93.83c-.02.17-.02.35 0 .52l-.93.85l.75 1.3l1.2-.38c.13.1.28.18.43.25l.28 1.23h1.5l.27-1.22c.16-.07.3-.15.44-.25l1.19.38l.75-1.3l-.93-.85c.03-.19.02-.36.01-.53M19.5 7.75a1.25 1.25 0 1 1 0-2.5a1.25 1.25 0 0 1 0 2.5m-.1 3.04l-.85.28c-.1-.08-.21-.14-.33-.19l-.18-.88h-1.07l-.18.87c-.12.05-.24.12-.34.19l-.84-.28l-.54.93l.66.59c-.01.13-.01.25 0 .37l-.66.61l.54.93l.86-.27c.1.07.2.13.31.18l.18.88h1.07l.19-.87c.11-.05.22-.11.32-.18l.85.27l.54-.93l-.66-.61c.01-.13.01-.25 0-.37l.66-.59zm-1.9 2.6c-.49 0-.89-.4-.89-.89s.4-.89.89-.89s.89.4.89.89s-.4.89-.89.89"/></path></svg>
+                    {% else %}
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 20 20" fill="currentColor">
+                        {% render 'icon', icon: icon_val %}
+                      </svg>
+                    {% endif %}
+                  </span>
+                {% endif %}
+                <span class="hero__value-prop-text">{{ text_val }}</span>
+              </div>
+            {% endif %}
+          {% endfor %}
+          {% if section.settings.value_props_marquee %}
+          {% for i in (1..4) %}
+            {% assign icon_key = 'value_prop_' | append: i | append: '_icon' %}
+            {% assign text_key = 'value_prop_' | append: i | append: '_text' %}
+            {% assign icon_val = section.settings[icon_key] %}
+            {% assign text_val = section.settings[text_key] %}
+            {% if text_val != blank %}
+              <div class="hero__value-prop-item" aria-hidden="true">
+                {% if icon_val != blank and icon_val != 'none' %}
+                  <span class="hero__value-prop-icon" aria-hidden="true">
+                    {% if icon_val == 'star' %}
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" style="color: #c4a84a;">
+                        <path fill="currentColor" d="m9.625 13.7 0.9 -2.875 -2.375 -1.85h2.9L12 6l0.925 2.975h2.925l-2.375 1.85 0.875 2.875 -2.35 -1.775 -2.375 1.775ZM6.1 23V15.4c-0.75 -0.78335 -1.2875 -1.64165 -1.6125 -2.575C4.1625 11.89165 4 10.95 4 10c0 -2.26665 0.766665 -4.16665 2.3 -5.7C7.83335 2.766665 9.73335 2 12 2c2.26665 0 4.16665 0.766665 5.7 2.3C19.23335 5.83335 20 7.73335 20 10c0 0.95 -0.1625 1.89165 -0.4875 2.825 -0.325 0.93335 -0.8625 1.79165 -1.6125 2.575V23L12 21.025 6.1 23ZM12 16.5c1.81665 0 3.35415 -0.62915 4.6125 -1.8875C17.87085 13.35415 18.5 11.81665 18.5 10c0 -1.81665 -0.62915 -3.35415 -1.8875 -4.6125C15.35415 4.129165 13.81665 3.5 12 3.5c-1.81665 0 -3.35415 0.629165 -4.6125 1.8875C6.12915 6.64585 5.5 8.18335 5.5 10c0 1.81665 0.62915 3.35415 1.8875 4.6125C8.64585 15.87085 10.18335 16.5 12 16.5Zm-4.4 4.4 4.4 -1.375 4.4 1.375v-4.275c-0.66665 0.48335 -1.38335 0.83335 -2.15 1.05 -0.76665 0.21665 -1.51665 0.325 -2.25 0.325s-1.48335 -0.10835 -2.25 -0.325 -1.48335 -0.56665 -2.15 -1.05v4.275Z"></path>
+                      </svg>
+                    {% elsif icon_val == 'check_box' %}
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16"><path fill="#c4a84a" fill-rule="evenodd" d="M7.67 14.72h.71L10.1 13h2.4l.5-.5v-2.42l1.74-1.72v-.71l-1.71-1.72V3.49l-.5-.49H10.1L8.38 1.29h-.71L6 3H3.53L3 3.5v2.43L1.31 7.65v.71L3 10.08v2.42l.53.5H6zM6.16 12H4V9.87l-.12-.35L2.37 8l1.48-1.51l.15-.35V4h2.16l.36-.14L8 2.35l1.54 1.51l.35.14H12v2.14l.17.35L13.69 8l-1.55 1.52l-.14.35V12H9.89l-.38.15L8 13.66l-1.48-1.52zm.57-1.52h.71l3.77-3.77L10.5 6L7.09 9.42L5.71 8.04L5 8.75z" clip-rule="evenodd"/></svg>
+                    {% elsif icon_val == 'clipboard' %}
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#c4a84a" d="m9.108 11.758l2.284-2.29l-2.054-2.06l-1.157 1.157l-.708-.707L8.625 6.7L6.673 4.748l-2.29 2.29zm7.834 7.84l2.29-2.29l-1.951-1.952l-1.158 1.152l-.708-.708l1.152-1.158l-2.04-2.034l-2.285 2.284zM17.273 5l1.733 1.733zM7.153 20H4v-3.154l4.394-4.394L3 7.038l3.673-3.673l5.439 5.42l4.467-4.473q.165-.166.348-.239t.39-.073t.39.073t.349.239l1.632 1.696q.166.165.23.348t.063.39t-.064.378q-.063.17-.229.336l-4.428 4.453l5.375 5.414L16.962 21l-5.414-5.394zM5 19h1.727l9.82-9.813l-1.734-1.733L5 17.274zM15.692 8.313l-.879-.86l1.733 1.734z"/></svg>
+                    {% elsif icon_val == 'wrench' %}
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#c4a84a" d="M9 15c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4m-6 4c.22-.72 3.31-2 6-2c2.7 0 5.8 1.29 6 2zM4.74 9H5c0 2.21 1.79 4 4 4s4-1.79 4-4h.26c.27 0 .49-.22.49-.49v-.02a.49.49 0 0 0-.49-.49H13c0-1.48-.81-2.75-2-3.45v.95c0 .28-.22.5-.5.5s-.5-.22-.5-.5V4.14C9.68 4.06 9.35 4 9 4s-.68.06-1 .14V5.5c0 .28-.22.5-.5.5S7 5.78 7 5.5v-.95C5.81 5.25 5 6.52 5 8h-.26a.49.49 0 0 0-.49.49v.03c0 .26.22.48.49.48M11 9c0 1.1-.9 2-2 2s-2-.9-2-2zm10.98-2.77l.93-.83l-.75-1.3l-1.19.39c-.14-.11-.3-.2-.47-.27L20.25 3h-1.5l-.25 1.22c-.17.07-.33.16-.48.27l-1.18-.39l-.75 1.3l.93.83c-.02.17-.02.35 0 .52l-.93.85l.75 1.3l1.2-.38c.13.1.28.18.43.25l.28 1.23h1.5l.27-1.22c.16-.07.3-.15.44-.25l1.19.38l.75-1.3l-.93-.85c.03-.19.02-.36.01-.53M19.5 7.75a1.25 1.25 0 1 1 0-2.5a1.25 1.25 0 0 1 0 2.5m-.1 3.04l-.85.28c-.1-.08-.21-.14-.33-.19l-.18-.88h-1.07l-.18.87c-.12.05-.24.12-.34.19l-.84-.28l-.54.93l.66.59c-.01.13-.01.25 0 .37l-.66.61l.54.93l.86-.27c.1.07.2.13.31.18l.18.88h1.07l.19-.87c.11-.05.22-.11.32-.18l.85.27l.54-.93l-.66-.61c.01-.13.01-.25 0-.37l.66-.59zm-1.9 2.6c-.49 0-.89-.4-.89-.89s.4-.89.89-.89s.89.4.89.89s-.4.89-.89.89"/></path></svg>
+                    {% else %}
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 20 20" fill="currentColor">
+                        {% render 'icon', icon: icon_val %}
+                      </svg>
+                    {% endif %}
+                  </span>
+                {% endif %}
+                <span class="hero__value-prop-text">{{ text_val }}</span>
+              </div>
+            {% endif %}
+          {% endfor %}
+          {% endif %}
+          </div>
+        </div>
+      </div>
+    {% endif %}
   </div>
 </div>
 
@@ -475,6 +560,15 @@
   .hero {
     position: relative;
     min-height: calc(var(--hero-min-height) - var(--hero-height-offset));
+  }
+
+  @media screen and (max-width: 749px) {
+    .hero[data-mobile-height="auto"] {
+      min-height: auto;
+    }
+    .hero[data-mobile-height]:not([data-mobile-height="auto"]) {
+      min-height: calc(var(--hero-min-height-mobile, var(--hero-min-height)) - var(--hero-height-offset));
+    }
   }
 
   .hero[data-shopify-visual-preview] {
@@ -495,10 +589,30 @@
     @media screen and (min-width: 750px) {
       align-items: var(--vertical-alignment);
     }
+
+    @media screen and (max-width: 749px) {
+      padding-block-start: calc(var(--padding-block-start-mobile) + var(--section-top-offset, 0px));
+      padding-block-end: var(--padding-block-end-mobile);
+      padding-inline-start: var(--padding-inline-start-mobile, var(--padding-inline-start));
+      padding-inline-end: var(--padding-inline-end-mobile, var(--padding-inline-end));
+    }
+  }
+
+  @media screen and (max-width: 749px) {
+    .hero__content-wrapper .text-block.h1 > * {
+      font-size: var(--hero-h1-mobile-size, var(--font-size, var(--font-h1--size))) !important;
+    }
   }
 
   .hero__content-wrapper.page-width {
     grid-column: 2 / 3;
+  }
+
+  .hero__content-wrapper--middle {
+    grid-column: 1 / -1;
+    --horizontal-alignment: center;
+    --vertical-alignment: center;
+    --vertical-alignment-mobile: center;
   }
 
   .hero__content-wrapper {
@@ -517,6 +631,20 @@
     display: grid;
     grid-column: 1 / -1;
     grid-template-columns: repeat(var(--hero-media-count, 1), 1fr);
+  }
+
+  .hero__media-wrapper::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.65) 0%,
+      transparent 25%,
+      transparent 100%
+    );
+    z-index: calc(var(--layer-base) + 1);
   }
 
   .hero--auto .hero__image,
@@ -611,6 +739,132 @@
 
   .hero__content-wrapper--design-mode * {
     pointer-events: auto;
+  }
+
+  .hero__value-props {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: var(--layer-flat);
+    display: flex;
+    min-height: var(--value-props-height, auto);
+    padding: var(--padding-s) var(--page-margin);
+    background: var(--value-props-bg, rgb(var(--color-background)));
+    border-block-start: 1px solid rgb(var(--color-border-rgb) / 0.2);
+  }
+
+  .hero__value-props--vertical-top {
+    align-items: flex-start;
+  }
+
+  .hero__value-props--vertical-middle {
+    align-items: center;
+  }
+
+  .hero__value-props--vertical-bottom {
+    align-items: flex-end;
+  }
+
+  .hero__value-props-inner {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--padding-s) var(--padding-m);
+    max-width: var(--page-width);
+    width: 100%;
+    margin-inline: auto;
+    align-items: center;
+  }
+
+  .hero__value-props-track {
+    display: contents;
+  }
+
+  @media screen and (min-width: 750px) {
+    .hero__value-props .hero__value-prop-item[aria-hidden="true"] {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 749px) {
+    .hero__value-props-inner {
+      grid-template-columns: repeat(2, 1fr);
+      gap: var(--value-props-gap-mobile, var(--padding-s));
+    }
+
+    .hero__value-props--marquee .hero__value-props-inner {
+      display: block;
+      overflow: hidden;
+      max-width: none;
+    }
+
+    .hero__value-props--marquee .hero__value-props-track {
+      display: flex;
+      flex-wrap: nowrap;
+      gap: var(--value-props-gap-mobile, var(--padding-m));
+      align-items: center;
+      width: max-content;
+      animation: hero-value-props-marquee 30s linear infinite;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .hero__value-props--marquee .hero__value-props-track {
+        animation: none;
+      }
+    }
+  }
+
+  @keyframes hero-value-props-marquee {
+    to {
+      transform: translate3d(-50%, 0, 0);
+    }
+  }
+
+  .hero__value-prop-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: var(--padding-xs);
+  }
+
+  @media screen and (max-width: 749px) {
+    .hero__value-props--marquee .hero__value-prop-item {
+      flex-shrink: 0;
+    }
+  }
+
+  .hero__value-props--align-left .hero__value-prop-item {
+    justify-content: flex-start;
+    text-align: left;
+  }
+
+  .hero__value-props--align-center .hero__value-prop-item {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .hero__value-props--align-right .hero__value-prop-item {
+    justify-content: flex-end;
+    text-align: right;
+  }
+
+  .hero__value-prop-icon {
+    display: flex;
+    flex-shrink: 0;
+    color: rgb(var(--color-foreground));
+  }
+
+  .hero__value-prop-icon svg {
+    width: 32px;
+    height: 32px;
+  }
+
+  .hero__value-prop-text {
+    font-size: 0.75rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: rgb(var(--color-foreground));
   }
 
   .hero[data-blur-shadow='true'] {
@@ -1019,6 +1273,10 @@
         {
           "value": "full-width",
           "label": "t:options.full"
+        },
+        {
+          "value": "content-middle",
+          "label": "t:options.middle"
         }
       ],
       "default": "page-width"
@@ -1065,6 +1323,49 @@
       "default": 50,
       "unit": "%",
       "visible_if": "{{ section.settings.section_height == 'custom' }}"
+    },
+    {
+      "type": "select",
+      "id": "section_height_mobile",
+      "label": "t:settings.mobile_height",
+      "options": [
+        {
+          "value": "auto",
+          "label": "t:options.auto"
+        },
+        {
+          "value": "small",
+          "label": "t:options.small"
+        },
+        {
+          "value": "medium",
+          "label": "t:options.medium"
+        },
+        {
+          "value": "large",
+          "label": "t:options.large"
+        },
+        {
+          "value": "full-screen",
+          "label": "t:options.full_screen"
+        },
+        {
+          "value": "custom",
+          "label": "t:options.custom"
+        }
+      ],
+      "default": "medium"
+    },
+    {
+      "type": "range",
+      "id": "section_height_custom_mobile",
+      "label": "t:settings.custom_height",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "default": 50,
+      "unit": "%",
+      "visible_if": "{{ section.settings.section_height_mobile == 'custom' }}"
     },
     {
       "type": "header",
@@ -1165,6 +1466,218 @@
       "step": 1,
       "unit": "px",
       "default": 0
+    },
+    {
+      "type": "header",
+      "content": "t:content.padding_mobile"
+    },
+    {
+      "type": "range",
+      "id": "padding-block-start_mobile",
+      "label": "t:settings.top",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding-block-end_mobile",
+      "label": "t:settings.bottom",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding-inline-start_mobile",
+      "label": "t:settings.left",
+      "min": 0,
+      "max": 80,
+      "step": 4,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding-inline-end_mobile",
+      "label": "t:settings.right",
+      "min": 0,
+      "max": 80,
+      "step": 4,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "h1_mobile_font_size",
+      "label": "t:settings.h1_mobile_font_size",
+      "min": 0,
+      "max": 72,
+      "step": 2,
+      "unit": "px",
+      "default": 0,
+      "info": "t:settings.h1_mobile_font_size_info"
+    },
+    {
+      "type": "header",
+      "content": "t:content.hero_value_props_bar"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_value_props_bar",
+      "label": "t:settings.show_value_props_bar",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "value_props_marquee",
+      "label": "t:settings.value_props_marquee",
+      "default": false,
+      "visible_if": "{{ section.settings.show_value_props_bar }}"
+    },
+    {
+      "type": "color",
+      "id": "value_props_bg",
+      "label": "t:settings.value_props_bg",
+      "visible_if": "{{ section.settings.show_value_props_bar }}"
+    },
+    {
+      "type": "range",
+      "id": "value_props_height",
+      "label": "t:settings.value_props_height",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "default": 0,
+      "visible_if": "{{ section.settings.show_value_props_bar }}"
+    },
+    {
+      "type": "range",
+      "id": "value_props_gap_mobile",
+      "label": "t:settings.value_props_gap_mobile",
+      "min": 0,
+      "max": 48,
+      "step": 4,
+      "unit": "px",
+      "default": 12,
+      "visible_if": "{{ section.settings.show_value_props_bar }}"
+    },
+    {
+      "type": "select",
+      "id": "value_props_align",
+      "label": "t:settings.value_props_align",
+      "options": [
+        { "value": "left", "label": "t:options.left" },
+        { "value": "center", "label": "t:options.center" },
+        { "value": "right", "label": "t:options.right" }
+      ],
+      "default": "center",
+      "visible_if": "{{ section.settings.show_value_props_bar }}"
+    },
+    {
+      "type": "select",
+      "id": "value_props_vertical_align",
+      "label": "t:settings.value_props_vertical_align",
+      "options": [
+        { "value": "top", "label": "t:options.top" },
+        { "value": "middle", "label": "t:options.middle" },
+        { "value": "bottom", "label": "t:options.bottom" }
+      ],
+      "default": "middle",
+      "visible_if": "{{ section.settings.show_value_props_bar }}"
+    },
+    {
+      "type": "select",
+      "id": "value_prop_1_icon",
+      "label": "t:settings.value_prop_icon",
+      "options": [
+        { "value": "none", "label": "t:options.none" },
+        { "value": "star", "label": "t:options.star" },
+        { "value": "check_box", "label": "t:options.check_box" },
+        { "value": "lock", "label": "t:options.lock" },
+        { "value": "clipboard", "label": "t:options.clipboard" },
+        { "value": "wrench", "label": "t:options.wrench" },
+        { "value": "silhouette", "label": "t:options.silhouette" }
+      ],
+      "default": "star",
+      "visible_if": "{{ section.settings.show_value_props_bar }}"
+    },
+    {
+      "type": "text",
+      "id": "value_prop_1_text",
+      "label": "t:settings.value_prop_1_text",
+      "visible_if": "{{ section.settings.show_value_props_bar }}"
+    },
+    {
+      "type": "select",
+      "id": "value_prop_2_icon",
+      "label": "t:settings.value_prop_icon",
+      "options": [
+        { "value": "none", "label": "t:options.none" },
+        { "value": "star", "label": "t:options.star" },
+        { "value": "check_box", "label": "t:options.check_box" },
+        { "value": "lock", "label": "t:options.lock" },
+        { "value": "clipboard", "label": "t:options.clipboard" },
+        { "value": "wrench", "label": "t:options.wrench" },
+        { "value": "silhouette", "label": "t:options.silhouette" }
+      ],
+      "default": "check_box",
+      "visible_if": "{{ section.settings.show_value_props_bar }}"
+    },
+    {
+      "type": "text",
+      "id": "value_prop_2_text",
+      "label": "t:settings.value_prop_2_text",
+      "visible_if": "{{ section.settings.show_value_props_bar }}"
+    },
+    {
+      "type": "select",
+      "id": "value_prop_3_icon",
+      "label": "t:settings.value_prop_icon",
+      "options": [
+        { "value": "none", "label": "t:options.none" },
+        { "value": "star", "label": "t:options.star" },
+        { "value": "check_box", "label": "t:options.check_box" },
+        { "value": "lock", "label": "t:options.lock" },
+        { "value": "clipboard", "label": "t:options.clipboard" },
+        { "value": "wrench", "label": "t:options.wrench" },
+        { "value": "silhouette", "label": "t:options.silhouette" }
+      ],
+      "default": "clipboard",
+      "visible_if": "{{ section.settings.show_value_props_bar }}"
+    },
+    {
+      "type": "text",
+      "id": "value_prop_3_text",
+      "label": "t:settings.value_prop_3_text",
+      "visible_if": "{{ section.settings.show_value_props_bar }}"
+    },
+    {
+      "type": "select",
+      "id": "value_prop_4_icon",
+      "label": "t:settings.value_prop_icon",
+      "options": [
+        { "value": "none", "label": "t:options.none" },
+        { "value": "star", "label": "t:options.star" },
+        { "value": "check_box", "label": "t:options.check_box" },
+        { "value": "lock", "label": "t:options.lock" },
+        { "value": "clipboard", "label": "t:options.clipboard" },
+        { "value": "wrench", "label": "t:options.wrench" },
+        { "value": "silhouette", "label": "t:options.silhouette" }
+      ],
+      "default": "wrench",
+      "visible_if": "{{ section.settings.show_value_props_bar }}"
+    },
+    {
+      "type": "text",
+      "id": "value_prop_4_text",
+      "label": "t:settings.value_prop_4_text",
+      "visible_if": "{{ section.settings.show_value_props_bar }}"
     }
   ],
   "presets": [
@@ -1205,6 +1718,8 @@
         "color_scheme": "scheme-5",
         "padding-block-start": 40,
         "padding-block-end": 40,
+        "padding-block-start_mobile": 24,
+        "padding-block-end_mobile": 24,
         "toggle_overlay": true,
         "overlay_style": "gradient"
       }
@@ -1250,6 +1765,8 @@
         "color_scheme": "scheme-5",
         "padding-block-start": 0,
         "padding-block-end": 40,
+        "padding-block-start_mobile": 0,
+        "padding-block-end_mobile": 24,
         "toggle_overlay": true,
         "overlay_style": "gradient"
       }
@@ -1416,6 +1933,8 @@
         "color_scheme": "scheme-5",
         "padding-block-start": 40,
         "padding-block-end": 40,
+        "padding-block-start_mobile": 24,
+        "padding-block-end_mobile": 24,
         "toggle_overlay": true,
         "overlay_style": "gradient",
         "gradient_direction": "to top"

@@ -1,12 +1,3 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "sections": {
     "hero_jVaWmY": {
@@ -16,11 +7,11 @@
           "type": "text",
           "name": "t:names.heading",
           "settings": {
-            "text": "<p>Luxury Steel Doors<br/>Designed & Crafted<br/> in the UK</p>",
+            "text": "<h1>Luxury Steel Doors<br\/>Designed &lt;&lt;&&gt;&gt; Crafted<br\/> in the UK<\/h1>",
             "width": "100%",
             "max_width": "normal",
             "alignment": "left",
-            "type_preset": "h2",
+            "type_preset": "h1",
             "font": "var(--font-body--family)",
             "font_size": "1rem",
             "line_height": "normal",
@@ -28,6 +19,8 @@
             "case": "none",
             "wrap": "pretty",
             "color": "var(--color-foreground-heading)",
+            "enable_highlight_syntax": true,
+            "highlight_color": "#c8a873",
             "background": false,
             "background_color": "#1e1e1ecf",
             "corner_radius": 0,
@@ -42,18 +35,20 @@
           "type": "text",
           "name": "t:names.text",
           "settings": {
-            "text": "<p>Fully bespoke steel doors and windows<br/>Quoted, delivered and installed in 4 - 6 weeks</p>",
+            "text": "<p>Fully bespoke steel doors and windows<br\/>Quoted, delivered and installed in 4 - 6 weeks<\/p>",
             "width": "fit-content",
             "max_width": "normal",
             "alignment": "left",
-            "type_preset": "rte",
+            "type_preset": "custom",
             "font": "var(--font-body--family)",
-            "font_size": "1rem",
-            "line_height": "normal",
-            "letter_spacing": "normal",
+            "font_size": "1.125rem",
+            "line_height": "loose",
+            "letter_spacing": "loose",
             "case": "none",
             "wrap": "pretty",
             "color": "var(--color-foreground)",
+            "enable_highlight_syntax": false,
+            "highlight_color": "#0d0d0d",
             "background": false,
             "background_color": "#00000026",
             "corner_radius": 0,
@@ -109,13 +104,15 @@
               "name": "t:names.button",
               "settings": {
                 "label": "Get a free Quote",
-                "link": "shopify://pages/contact",
+                "link": "shopify:\/\/pages\/contact",
                 "open_in_new_tab": false,
                 "style_class": "button",
+                "font_size": "",
+                "font_weight": "300",
                 "width": "fit-content",
                 "custom_width": 100,
                 "width_mobile": "custom",
-                "custom_width_mobile": 54
+                "custom_width_mobile": 100
               },
               "blocks": {}
             },
@@ -125,9 +122,11 @@
               "disabled": true,
               "settings": {
                 "label": "Internal Doors",
-                "link": "shopify://products/double-steel-doors",
+                "link": "shopify:\/\/products\/double-steel-doors",
                 "open_in_new_tab": false,
                 "style_class": "button-secondary",
+                "font_size": "",
+                "font_weight": "",
                 "width": "fit-content",
                 "custom_width": 100,
                 "width_mobile": "custom",
@@ -150,7 +149,7 @@
       "name": "Hero V2",
       "settings": {
         "media_type_1": "image",
-        "image_1": "shopify://shop_images/Large-SBD_1.png",
+        "image_1": "shopify:\/\/shop_images\/Large-SBD_1.png",
         "media_type_2": "image",
         "stack_media_on_mobile": false,
         "custom_mobile_media": false,
@@ -164,11 +163,13 @@
         "vertical_alignment": "flex-end",
         "align_baseline": true,
         "horizontal_alignment_flex_direction_column": "flex-start",
-        "vertical_alignment_flex_direction_column": "flex-start",
+        "vertical_alignment_flex_direction_column": "center",
         "gap": 24,
         "section_width": "page-width",
-        "section_height": "medium",
+        "section_height": "full-screen",
         "section_height_custom": 50,
+        "section_height_mobile": "full-screen",
+        "section_height_custom_mobile": 50,
         "color_scheme": "scheme-5",
         "toggle_overlay": true,
         "overlay_color": "#121212b3",
@@ -176,8 +177,267 @@
         "gradient_direction": "to top",
         "blurred_reflection": false,
         "reflection_opacity": 75,
+        "padding-block-start": 0,
+        "padding-block-end": 88,
+        "padding-block-start_mobile": 0,
+        "padding-block-end_mobile": 100,
+        "padding-inline-start_mobile": 0,
+        "padding-inline-end_mobile": 0,
+        "h1_mobile_font_size": 50,
+        "show_value_props_bar": true,
+        "value_props_marquee": true,
+        "value_props_bg": "#121212",
+        "value_props_height": 88,
+        "value_props_gap_mobile": 20,
+        "value_props_align": "center",
+        "value_props_vertical_align": "middle",
+        "value_prop_1_icon": "star",
+        "value_prop_1_text": "UK Crafted Excellence",
+        "value_prop_2_icon": "check_box",
+        "value_prop_2_text": "10 Year Guarantee",
+        "value_prop_3_icon": "clipboard",
+        "value_prop_3_text": "Bespoke Design",
+        "value_prop_4_icon": "wrench",
+        "value_prop_4_text": "Expert Installation"
+      }
+    },
+    "featured_collection_grid_iXij8U": {
+      "type": "featured-collection-grid",
+      "blocks": {
+        "static-header": {
+          "type": "_product-list-content",
+          "name": "t:names.header",
+          "static": true,
+          "settings": {
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "center",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "center",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 16,
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 52,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "product_list_text_WDkYCr": {
+              "type": "_product-list-text",
+              "name": "Subheading",
+              "settings": {
+                "text": "<p>CRAFTSMANSHIP<\/p>",
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "center",
+                "type_preset": "custom",
+                "font": "var(--font-accent--family)",
+                "font_size": "0.875rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "uppercase",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 8,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "product_list_text_gqEynA": {
+              "type": "_product-list-text",
+              "name": "Heading",
+              "settings": {
+                "text": "<h2>Our Bespoke Collections<\/h2>",
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "center",
+                "type_preset": "h2",
+                "font": "var(--font-heading--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 12,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "divider_xxiCeX": {
+              "type": "_divider",
+              "name": "t:names.divider",
+              "settings": {
+                "thickness": 1,
+                "corner_radius": "square",
+                "width_percent": 9,
+                "color": "#c8a873",
+                "padding-block-start": 0,
+                "padding-block-end": 14
+              },
+              "blocks": {}
+            },
+            "product_list_text_8B3HdM": {
+              "type": "_product-list-text",
+              "name": "Description",
+              "settings": {
+                "text": "<p>Explore our range of bespoke steel doors and glazing solutions, each crafted to elevate your architectural vision.<\/p>",
+                "width": "100%",
+                "max_width": "normal",
+                "alignment": "center",
+                "type_preset": "custom",
+                "font": "var(--font-body--family)",
+                "font_size": "1.125rem",
+                "line_height": "loose",
+                "letter_spacing": "loose",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "product_list_text_WDkYCr",
+            "product_list_text_gqEynA",
+            "divider_xxiCeX",
+            "product_list_text_8B3HdM"
+          ]
+        },
+        "static-product-card": {
+          "type": "_product-card",
+          "name": "t:names.product_card",
+          "static": true,
+          "settings": {
+            "product_card_gap": 10,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 20,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "product_card_gallery_ychFCr": {
+              "type": "_product-card-gallery",
+              "name": "t:names.product_card_media",
+              "settings": {
+                "image_ratio": "landscape",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "product_title_amWEG7": {
+              "type": "product-title",
+              "name": "t:names.product_title",
+              "settings": {
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "h3",
+                "font": "var(--font-body--family)",
+                "font_size": "1.125rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground-heading)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 20,
+                "padding-block-end": 10,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "product_card_description_m4ghH7": {
+              "type": "_product-card-description",
+              "name": "Product description",
+              "settings": {
+                "truncate_words": 16,
+                "type_preset": "paragraph",
+                "font_size": "0.875rem",
+                "font_weight": "300"
+              },
+              "blocks": {}
+            },
+            "product_card_arrow_nx6HT3": {
+              "type": "_product-card-arrow",
+              "name": "Arrow",
+              "settings": {},
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "product_card_gallery_ychFCr",
+            "product_title_amWEG7",
+            "product_card_description_m4ghH7",
+            "product_card_arrow_nx6HT3"
+          ]
+        }
+      },
+      "name": "Featured collection grid",
+      "settings": {
+        "subheading_color": "#c8a873",
+        "collection": "frontpage",
+        "layout_type": "grid",
+        "max_products": 4,
+        "columns": 2,
+        "mobile_columns": "1",
+        "columns_gap": 24,
+        "rows_gap": 49,
+        "section_width": "page-width",
+        "horizontal_alignment": "center",
+        "gap": 29,
+        "color_scheme": "scheme-87a3699f-e494-4023-b625-2dcf1cc781a7",
         "padding-block-start": 100,
-        "padding-block-end": 72
+        "padding-block-end": 100
       }
     },
     "section_3DF7Pf": {
@@ -204,7 +464,7 @@
             "color_scheme": "scheme-4",
             "background_media": "image",
             "video_position": "cover",
-            "background_image": "shopify://shop_images/balcony-black-steel-door-090721224530.jpg",
+            "background_image": "shopify:\/\/shop_images\/balcony-black-steel-door-090721224530.jpg",
             "background_image_position": "cover",
             "border": "none",
             "border_width": 1,
@@ -227,7 +487,7 @@
               "type": "text",
               "name": "t:names.heading",
               "settings": {
-                "text": "<h2>WE SUPPLY & FIT LUXURY STEEL DOORS ALL ACROSS THE UK</h2>",
+                "text": "<h2>WE SUPPLY & FIT LUXURY STEEL DOORS ALL ACROSS THE UK<\/h2>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
@@ -239,6 +499,8 @@
                 "case": "none",
                 "wrap": "pretty",
                 "color": "var(--color-foreground)",
+                "enable_highlight_syntax": false,
+                "highlight_color": "#0d0d0d",
                 "background": false,
                 "background_color": "#00000026",
                 "corner_radius": 0,
@@ -253,9 +515,11 @@
               "type": "button",
               "settings": {
                 "label": "Get your Free Quote",
-                "link": "shopify://pages/contact",
+                "link": "shopify:\/\/pages\/contact",
                 "open_in_new_tab": false,
                 "style_class": "button",
+                "font_size": "",
+                "font_weight": "",
                 "width": "fit-content",
                 "custom_width": 100,
                 "width_mobile": "fit-content",
@@ -290,7 +554,7 @@
             "color_scheme": "scheme-87a3699f-e494-4023-b625-2dcf1cc781a7",
             "background_media": "image",
             "video_position": "cover",
-            "background_image": "shopify://shop_images/double-hung.webp",
+            "background_image": "shopify:\/\/shop_images\/double-hung.webp",
             "background_image_position": "cover",
             "border": "none",
             "border_width": 1,
@@ -346,7 +610,7 @@
               "type": "text",
               "disabled": true,
               "settings": {
-                "text": "<h3>Bestsellers</h3>",
+                "text": "<h3>Bestsellers<\/h3>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "center",
@@ -358,6 +622,8 @@
                 "case": "none",
                 "wrap": "pretty",
                 "color": "var(--color-foreground)",
+                "enable_highlight_syntax": false,
+                "highlight_color": "#0d0d0d",
                 "background": false,
                 "background_color": "#00000026",
                 "corner_radius": 0,
@@ -468,7 +734,7 @@
               "type": "text",
               "name": "t:names.heading",
               "settings": {
-                "text": "<h2>Free Quote</h2>",
+                "text": "<h2>Free Quote<\/h2>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "center",
@@ -480,6 +746,8 @@
                 "case": "none",
                 "wrap": "pretty",
                 "color": "var(--color-foreground)",
+                "enable_highlight_syntax": false,
+                "highlight_color": "#0d0d0d",
                 "background": false,
                 "background_color": "#00000026",
                 "corner_radius": 0,
@@ -551,7 +819,7 @@
               "type": "text",
               "name": "t:names.heading",
               "settings": {
-                "text": "<h2>Free Quote</h2>",
+                "text": "<h2>Free Quote<\/h2>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "center",
@@ -563,6 +831,8 @@
                 "case": "none",
                 "wrap": "pretty",
                 "color": "var(--color-foreground)",
+                "enable_highlight_syntax": false,
+                "highlight_color": "#0d0d0d",
                 "background": false,
                 "background_color": "#00000026",
                 "corner_radius": 0,
@@ -634,7 +904,7 @@
               "type": "text",
               "name": "t:names.heading",
               "settings": {
-                "text": "<h2>Free Quote</h2>",
+                "text": "<h2>Free Quote<\/h2>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "center",
@@ -646,6 +916,8 @@
                 "case": "none",
                 "wrap": "pretty",
                 "color": "var(--color-foreground)",
+                "enable_highlight_syntax": false,
+                "highlight_color": "#0d0d0d",
                 "background": false,
                 "background_color": "#00000026",
                 "corner_radius": 0,
@@ -717,7 +989,7 @@
               "type": "text",
               "name": "t:names.heading",
               "settings": {
-                "text": "<h2>Free Quote</h2>",
+                "text": "<h2>Free Quote<\/h2>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "center",
@@ -729,6 +1001,8 @@
                 "case": "none",
                 "wrap": "pretty",
                 "color": "var(--color-foreground)",
+                "enable_highlight_syntax": false,
+                "highlight_color": "#0d0d0d",
                 "background": false,
                 "background_color": "#00000026",
                 "corner_radius": 0,
@@ -829,7 +1103,7 @@
               "type": "image",
               "name": "t:names.image",
               "settings": {
-                "image": "shopify://shop_images/WhatsApp_Image_2025-07-21_at_20.07.27_2.jpg",
+                "image": "shopify:\/\/shop_images\/WhatsApp_Image_2025-07-21_at_20.07.27_2.jpg",
                 "link": "",
                 "image_ratio": "landscape",
                 "width": "custom",
@@ -892,7 +1166,7 @@
                   "type": "text",
                   "name": "t:names.heading",
                   "settings": {
-                    "text": "<h2>Intentional design</h2>",
+                    "text": "<h2>Intentional design<\/h2>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
@@ -904,6 +1178,8 @@
                     "case": "none",
                     "wrap": "pretty",
                     "color": "var(--color-foreground)",
+                    "enable_highlight_syntax": false,
+                    "highlight_color": "#0d0d0d",
                     "background": false,
                     "background_color": "#00000026",
                     "corner_radius": 0,
@@ -918,7 +1194,7 @@
                   "type": "text",
                   "name": "t:names.description",
                   "settings": {
-                    "text": "<p>We create with intention. Our products solve real problems with clean design and honest materials.</p>",
+                    "text": "<p>We create with intention. Our products solve real problems with clean design and honest materials.<\/p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
@@ -930,6 +1206,8 @@
                     "case": "none",
                     "wrap": "pretty",
                     "color": "var(--color-foreground)",
+                    "enable_highlight_syntax": false,
+                    "highlight_color": "#0d0d0d",
                     "background": false,
                     "background_color": "#00000026",
                     "corner_radius": 0,
@@ -945,9 +1223,11 @@
                   "name": "t:names.button",
                   "settings": {
                     "label": "Shop now",
-                    "link": "shopify://collections/all",
+                    "link": "shopify:\/\/collections\/all",
                     "open_in_new_tab": false,
                     "style_class": "link",
+                    "font_size": "",
+                    "font_weight": "",
                     "width": "fit-content",
                     "custom_width": 100,
                     "width_mobile": "fit-content",
@@ -1012,7 +1292,7 @@
               "type": "image",
               "name": "t:names.image",
               "settings": {
-                "image": "shopify://shop_images/WhatsApp_Image_2025-07-21_at_20.07.27_2.jpg",
+                "image": "shopify:\/\/shop_images\/WhatsApp_Image_2025-07-21_at_20.07.27_2.jpg",
                 "link": "",
                 "image_ratio": "landscape",
                 "width": "custom",
@@ -1075,7 +1355,7 @@
                   "type": "text",
                   "name": "t:names.heading",
                   "settings": {
-                    "text": "<h2>Intentional design</h2>",
+                    "text": "<h2>Intentional design<\/h2>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
@@ -1087,6 +1367,8 @@
                     "case": "none",
                     "wrap": "pretty",
                     "color": "var(--color-foreground)",
+                    "enable_highlight_syntax": false,
+                    "highlight_color": "#0d0d0d",
                     "background": false,
                     "background_color": "#00000026",
                     "corner_radius": 0,
@@ -1101,7 +1383,7 @@
                   "type": "text",
                   "name": "t:names.description",
                   "settings": {
-                    "text": "<p>We create with intention. Our products solve real problems with clean design and honest materials.</p>",
+                    "text": "<p>We create with intention. Our products solve real problems with clean design and honest materials.<\/p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
@@ -1113,6 +1395,8 @@
                     "case": "none",
                     "wrap": "pretty",
                     "color": "var(--color-foreground)",
+                    "enable_highlight_syntax": false,
+                    "highlight_color": "#0d0d0d",
                     "background": false,
                     "background_color": "#00000026",
                     "corner_radius": 0,
@@ -1128,9 +1412,11 @@
                   "name": "t:names.button",
                   "settings": {
                     "label": "Shop now",
-                    "link": "shopify://collections/all",
+                    "link": "shopify:\/\/collections\/all",
                     "open_in_new_tab": false,
                     "style_class": "link",
+                    "font_size": "",
+                    "font_weight": "",
                     "width": "fit-content",
                     "custom_width": 100,
                     "width_mobile": "fit-content",
@@ -1227,7 +1513,7 @@
               "type": "_product-list-text",
               "name": "t:names.collection_title",
               "settings": {
-                "text": "<h3>INTERNAL STEEL & GLASS DOORS</h3>",
+                "text": "<h3>INTERNAL STEEL & GLASS DOORS<\/h3>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "center",
@@ -1361,6 +1647,7 @@
           ]
         }
       },
+      "disabled": true,
       "name": "t:names.products_carousel",
       "settings": {
         "collection": "frontpage",
@@ -1429,7 +1716,7 @@
               "type": "image",
               "name": "t:names.image",
               "settings": {
-                "image": "shopify://shop_images/Large-SBD_1.png",
+                "image": "shopify:\/\/shop_images\/Large-SBD_1.png",
                 "link": "",
                 "image_ratio": "adapt",
                 "width": "fill",
@@ -1481,7 +1768,7 @@
             "border_opacity": 100,
             "border_radius": 0,
             "toggle_overlay": true,
-            "overlay_color": "#f5f5f5",
+            "overlay_color": "#ffffff",
             "overlay_style": "solid",
             "gradient_direction": "to top",
             "link": "",
@@ -1537,7 +1824,7 @@
                   "type": "text",
                   "name": "t:names.heading",
                   "settings": {
-                    "text": "<h2>Crafting Legacies.<br/>Not Just Doors</h2>",
+                    "text": "<h2>Crafting Legacies.<br\/>Not Just Doors<\/h2>",
                     "width": "100%",
                     "max_width": "narrow",
                     "alignment": "left",
@@ -1549,6 +1836,8 @@
                     "case": "none",
                     "wrap": "pretty",
                     "color": "var(--color-foreground)",
+                    "enable_highlight_syntax": false,
+                    "highlight_color": "#0d0d0d",
                     "background": false,
                     "background_color": "#00000026",
                     "corner_radius": 0,
@@ -1564,7 +1853,7 @@
                   "name": "t:names.text",
                   "disabled": true,
                   "settings": {
-                    "text": "<p>We make things that work better and last longer. Our products solve real problems with clean design and honest materials.</p>",
+                    "text": "<p>We make things that work better and last longer. Our products solve real problems with clean design and honest materials.<\/p>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
@@ -1576,6 +1865,8 @@
                     "case": "none",
                     "wrap": "pretty",
                     "color": "var(--color-foreground)",
+                    "enable_highlight_syntax": false,
+                    "highlight_color": "#0d0d0d",
                     "background": false,
                     "background_color": "#00000026",
                     "corner_radius": 0,
@@ -1590,7 +1881,7 @@
                   "type": "text",
                   "name": "t:names.description",
                   "settings": {
-                    "text": "<ul><li><h5>From order to install in 4 - 6 weeks</h5></li><li><h5>Choose from 150 different colour and finish combinations</h5></li><li><h5>We can colour match to to your existing fixtures and fittings</h5></li><li><h5>Various glass options from frosted and stained to fluted and mirrored</h5></li><li><h5>Fire rated options available</h5></li><li><h5>Various steel profiles</h5></li><li><h5>A wide choice of lever and bar or plated push pull handles<strong><br/></strong></h5></li></ul>",
+                    "text": "<ul><li><h5>From order to install in 4 - 6 weeks<\/h5><\/li><li><h5>Choose from 150 different colour and finish combinations<\/h5><\/li><li><h5>We can colour match to to your existing fixtures and fittings<\/h5><\/li><li><h5>Various glass options from frosted and stained to fluted and mirrored<\/h5><\/li><li><h5>Fire rated options available<\/h5><\/li><li><h5>Various steel profiles<\/h5><\/li><li><h5>A wide choice of lever and bar or plated push pull handles<strong><br\/><\/strong><\/h5><\/li><\/ul>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
@@ -1602,6 +1893,8 @@
                     "case": "none",
                     "wrap": "pretty",
                     "color": "var(--color-foreground)",
+                    "enable_highlight_syntax": false,
+                    "highlight_color": "#0d0d0d",
                     "background": false,
                     "background_color": "#00000026",
                     "corner_radius": 0,
@@ -1617,9 +1910,11 @@
                   "name": "t:names.button",
                   "settings": {
                     "label": "Get a Free Quote",
-                    "link": "shopify://pages/contact",
+                    "link": "shopify:\/\/pages\/contact",
                     "open_in_new_tab": false,
                     "style_class": "button",
+                    "font_size": "",
+                    "font_weight": "",
                     "width": "fit-content",
                     "custom_width": 100,
                     "width_mobile": "fit-content",
@@ -1721,7 +2016,7 @@
               "type": "text",
               "name": "t:names.heading",
               "settings": {
-                "text": "<h2>Featured Projects</h2>",
+                "text": "<h2>Featured Projects<\/h2>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
@@ -1733,6 +2028,8 @@
                 "case": "none",
                 "wrap": "pretty",
                 "color": "var(--color-foreground)",
+                "enable_highlight_syntax": false,
+                "highlight_color": "#0d0d0d",
                 "background": false,
                 "background_color": "#00000026",
                 "corner_radius": 0,
@@ -1747,7 +2044,7 @@
               "type": "text",
               "name": "t:names.text",
               "settings": {
-                "text": "<p>We make things that work better and last longer. Our products solve real problems with clean design and honest materials.</p>",
+                "text": "<p>We make things that work better and last longer. Our products solve real problems with clean design and honest materials.<\/p>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
@@ -1759,6 +2056,8 @@
                 "case": "none",
                 "wrap": "pretty",
                 "color": "var(--color-foreground)",
+                "enable_highlight_syntax": false,
+                "highlight_color": "#0d0d0d",
                 "background": false,
                 "background_color": "#00000026",
                 "corner_radius": 0,
@@ -1813,7 +2112,7 @@
                   "type": "image",
                   "name": "t:names.image",
                   "settings": {
-                    "image": "shopify://shop_images/Large-SBD_1.png",
+                    "image": "shopify:\/\/shop_images\/Large-SBD_1.png",
                     "link": "",
                     "image_ratio": "landscape",
                     "width": "fill",
@@ -1837,9 +2136,11 @@
                   "name": "t:names.button",
                   "settings": {
                     "label": "View All Projects",
-                    "link": "shopify://pages/contact",
+                    "link": "shopify:\/\/pages\/contact",
                     "open_in_new_tab": false,
                     "style_class": "button",
+                    "font_size": "",
+                    "font_weight": "",
                     "width": "fit-content",
                     "custom_width": 100,
                     "width_mobile": "fit-content",
@@ -1901,7 +2202,7 @@
           "type": "text",
           "name": "t:names.heading",
           "settings": {
-            "text": "<h3>Contact us to get a no hassle quote</h3>",
+            "text": "<h3>Contact us to get a no hassle quote<\/h3>",
             "width": "fit-content",
             "max_width": "normal",
             "alignment": "left",
@@ -1913,6 +2214,8 @@
             "case": "none",
             "wrap": "pretty",
             "color": "var(--color-foreground)",
+            "enable_highlight_syntax": false,
+            "highlight_color": "#0d0d0d",
             "background": false,
             "background_color": "#00000026",
             "corner_radius": 0,
@@ -1928,9 +2231,11 @@
           "name": "t:names.button",
           "settings": {
             "label": "Get a Free Quote",
-            "link": "shopify://pages/contact",
+            "link": "shopify:\/\/pages\/contact",
             "open_in_new_tab": false,
             "style_class": "button",
+            "font_size": "",
+            "font_weight": "",
             "width": "fit-content",
             "custom_width": 100,
             "width_mobile": "fit-content",
@@ -1980,7 +2285,7 @@
           "type": "text",
           "name": "t:names.text",
           "settings": {
-            "text": "<p>We offer a full end to end service from initial enquiry through a site survey, design consultation, ‘deliver and fit’ and removal of your old doors.</p>",
+            "text": "<p>We offer a full end to end service from initial enquiry through a site survey, design consultation, ‘deliver and fit’ and removal of your old doors.<\/p>",
             "width": "fit-content",
             "max_width": "normal",
             "alignment": "center",
@@ -1992,6 +2297,8 @@
             "case": "none",
             "wrap": "pretty",
             "color": "var(--color-foreground-heading)",
+            "enable_highlight_syntax": false,
+            "highlight_color": "#0d0d0d",
             "background": false,
             "background_color": "#00000026",
             "corner_radius": 0,
@@ -2043,7 +2350,7 @@
           "type": "text",
           "name": "t:names.heading",
           "settings": {
-            "text": "<h3>Featured Projects</h3>",
+            "text": "<h3>Featured Projects<\/h3>",
             "width": "fit-content",
             "max_width": "normal",
             "alignment": "left",
@@ -2055,6 +2362,8 @@
             "case": "none",
             "wrap": "pretty",
             "color": "var(--color-foreground)",
+            "enable_highlight_syntax": false,
+            "highlight_color": "#0d0d0d",
             "background": false,
             "background_color": "#00000026",
             "corner_radius": 0,
@@ -2069,7 +2378,7 @@
           "type": "text",
           "name": "t:names.text",
           "settings": {
-            "text": "<p>Discover how we've transformed visions into reality with  our<br/>bespoke steel solutions.</p>",
+            "text": "<p>Discover how we've transformed visions into reality with  our<br\/>bespoke steel solutions.<\/p>",
             "width": "fit-content",
             "max_width": "normal",
             "alignment": "center",
@@ -2081,6 +2390,8 @@
             "case": "none",
             "wrap": "pretty",
             "color": "var(--color-foreground-heading)",
+            "enable_highlight_syntax": false,
+            "highlight_color": "#0d0d0d",
             "background": false,
             "background_color": "#00000026",
             "corner_radius": 0,
@@ -2109,7 +2420,7 @@
         "section_width": "page-width",
         "section_height": "",
         "section_height_custom": 50,
-        "color_scheme": "scheme-a002bcda-53d4-4265-bb02-b70300dca1f1",
+        "color_scheme": "scheme-5",
         "background_media": "none",
         "video_position": "cover",
         "background_image_position": "cover",
@@ -2132,7 +2443,7 @@
           "type": "_slide",
           "settings": {
             "media_type_1": "image",
-            "image_1": "shopify://shop_images/luxury-modern-home-interior-with-black-steel-doors.jpg",
+            "image_1": "shopify:\/\/shop_images\/luxury-modern-home-interior-with-black-steel-doors.jpg",
             "content_direction": "column",
             "vertical_on_mobile": true,
             "horizontal_alignment": "flex-start",
@@ -2195,7 +2506,7 @@
                 "text_w3PbKY": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Sliding Door To Match Existing Externals</p>",
+                    "text": "<p>Sliding Door To Match Existing Externals<\/p>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
@@ -2207,6 +2518,8 @@
                     "case": "none",
                     "wrap": "pretty",
                     "color": "var(--color-foreground)",
+                    "enable_highlight_syntax": false,
+                    "highlight_color": "#0d0d0d",
                     "background": false,
                     "background_color": "#00000026",
                     "corner_radius": 0,
@@ -2220,7 +2533,7 @@
                 "text_bAtiew": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Wolverhampton</p>",
+                    "text": "<p>Wolverhampton<\/p>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
@@ -2232,6 +2545,8 @@
                     "case": "none",
                     "wrap": "pretty",
                     "color": "var(--color-foreground)",
+                    "enable_highlight_syntax": false,
+                    "highlight_color": "#0d0d0d",
                     "background": false,
                     "background_color": "#00000026",
                     "corner_radius": 0,
@@ -2257,7 +2572,7 @@
           "type": "_slide",
           "settings": {
             "media_type_1": "image",
-            "image_1": "shopify://shop_images/686DB7B1-2154-49CB-9292-FF42FFF9D459_1_105_c.jpg",
+            "image_1": "shopify:\/\/shop_images\/686DB7B1-2154-49CB-9292-FF42FFF9D459_1_105_c.jpg",
             "content_direction": "column",
             "vertical_on_mobile": true,
             "horizontal_alignment": "flex-start",
@@ -2320,7 +2635,7 @@
                 "text_6e6rNa": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Dressing Room Partition</p>",
+                    "text": "<p>Dressing Room Partition<\/p>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
@@ -2332,6 +2647,8 @@
                     "case": "none",
                     "wrap": "pretty",
                     "color": "var(--color-foreground)",
+                    "enable_highlight_syntax": false,
+                    "highlight_color": "#0d0d0d",
                     "background": false,
                     "background_color": "#00000026",
                     "corner_radius": 0,
@@ -2345,7 +2662,7 @@
                 "text_iWtt6j": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Nottingham</p>",
+                    "text": "<p>Nottingham<\/p>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
@@ -2357,6 +2674,8 @@
                     "case": "none",
                     "wrap": "pretty",
                     "color": "var(--color-foreground)",
+                    "enable_highlight_syntax": false,
+                    "highlight_color": "#0d0d0d",
                     "background": false,
                     "background_color": "#00000026",
                     "corner_radius": 0,
@@ -2382,7 +2701,7 @@
           "type": "_slide",
           "settings": {
             "media_type_1": "image",
-            "image_1": "shopify://shop_images/AD381D93-2A0B-4558-A95B-6DDE156B9419_1_105_c-_1.jpg",
+            "image_1": "shopify:\/\/shop_images\/AD381D93-2A0B-4558-A95B-6DDE156B9419_1_105_c-_1.jpg",
             "content_direction": "column",
             "vertical_on_mobile": true,
             "horizontal_alignment": "flex-start",
@@ -2445,7 +2764,7 @@
                 "text_AHDBKG": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Utility Room Door</p>",
+                    "text": "<p>Utility Room Door<\/p>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
@@ -2457,6 +2776,8 @@
                     "case": "none",
                     "wrap": "pretty",
                     "color": "var(--color-foreground)",
+                    "enable_highlight_syntax": false,
+                    "highlight_color": "#0d0d0d",
                     "background": false,
                     "background_color": "#00000026",
                     "corner_radius": 0,
@@ -2470,7 +2791,7 @@
                 "text_j9HGhX": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Nantwich</p>",
+                    "text": "<p>Nantwich<\/p>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
@@ -2482,6 +2803,8 @@
                     "case": "none",
                     "wrap": "pretty",
                     "color": "var(--color-foreground)",
+                    "enable_highlight_syntax": false,
+                    "highlight_color": "#0d0d0d",
                     "background": false,
                     "background_color": "#00000026",
                     "corner_radius": 0,
@@ -2513,7 +2836,7 @@
       "settings": {
         "icons_style": "chevron_large",
         "slideshow_controls_style": "dots",
-        "color_scheme": "scheme-a002bcda-53d4-4265-bb02-b70300dca1f1",
+        "color_scheme": "scheme-5",
         "autoplay": false,
         "autoplay_speed": 4,
         "section_width": "page-width",
@@ -2530,9 +2853,11 @@
           "name": "t:names.button",
           "settings": {
             "label": "View our Projects",
-            "link": "shopify://blogs/projects",
+            "link": "shopify:\/\/blogs\/projects",
             "open_in_new_tab": false,
-            "style_class": "button",
+            "style_class": "button-secondary",
+            "font_size": "",
+            "font_weight": "",
             "width": "fit-content",
             "custom_width": 100,
             "width_mobile": "fit-content",
@@ -2557,7 +2882,7 @@
         "section_width": "page-width",
         "section_height": "",
         "section_height_custom": 50,
-        "color_scheme": "scheme-a002bcda-53d4-4265-bb02-b70300dca1f1",
+        "color_scheme": "scheme-5",
         "background_media": "none",
         "video_position": "cover",
         "background_image_position": "cover",
@@ -2620,7 +2945,7 @@
               "type": "text",
               "name": "t:names.heading",
               "settings": {
-                "text": "<h2>Our 6 Stage Process</h2>",
+                "text": "<h2>Our 6 Stage Process<\/h2>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "center",
@@ -2632,6 +2957,8 @@
                 "case": "none",
                 "wrap": "pretty",
                 "color": "var(--color-foreground)",
+                "enable_highlight_syntax": false,
+                "highlight_color": "#0d0d0d",
                 "background": false,
                 "background_color": "#00000026",
                 "corner_radius": 0,
@@ -2664,7 +2991,7 @@
         "section_width": "page-width",
         "section_height": "",
         "section_height_custom": 50,
-        "color_scheme": "scheme-4",
+        "color_scheme": "scheme-5",
         "background_media": "none",
         "video_position": "cover",
         "background_image_position": "cover",
@@ -2726,7 +3053,7 @@
               "type": "custom-liquid",
               "name": "t:names.custom_liquid",
               "settings": {
-                "custom_liquid": "<span style=\"font-size: 28px; color: #F8F9F4;\">\n  <i class=\"fa-solid fa-phone\"></i></i>\n</span>"
+                "custom_liquid": "<span style=\"font-size: 28px; color: #F8F9F4;\">\n  <i class=\"fa-solid fa-phone\"><\/i><\/i>\n<\/span>"
               },
               "blocks": {}
             },
@@ -2735,7 +3062,7 @@
               "disabled": true,
               "settings": {
                 "icon": "whatsapp",
-                "image_upload": "shopify://shop_images/phone.svg",
+                "image_upload": "shopify:\/\/shop_images\/phone.svg",
                 "width": 32,
                 "link": "",
                 "open_in_new_tab": false
@@ -2784,7 +3111,7 @@
                 "text_rBwh3d": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Initial Contact</p>",
+                    "text": "<p>Initial Contact<\/p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
@@ -2796,6 +3123,8 @@
                     "case": "none",
                     "wrap": "pretty",
                     "color": "var(--color-foreground)",
+                    "enable_highlight_syntax": false,
+                    "highlight_color": "#0d0d0d",
                     "background": false,
                     "background_color": "#00000026",
                     "corner_radius": 0,
@@ -2809,7 +3138,7 @@
                 "text_zLyXXY": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>We would love to hear from you and all about your project. Every one is different, and we're yet to come across a request we can't make happen</p>",
+                    "text": "<p>We would love to hear from you and all about your project. Every one is different, and we're yet to come across a request we can't make happen<\/p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
@@ -2821,6 +3150,8 @@
                     "case": "none",
                     "wrap": "pretty",
                     "color": "var(--color-foreground)",
+                    "enable_highlight_syntax": false,
+                    "highlight_color": "#0d0d0d",
                     "background": false,
                     "background_color": "#00000026",
                     "corner_radius": 0,
@@ -2835,7 +3166,7 @@
                   "type": "custom-liquid",
                   "name": "Arrow",
                   "settings": {
-                    "custom_liquid": "<div class=\"arrow-switch rotate-left\" style=\"position:absolute; height:90px; width:90px; right:-10%;top:-30%;\">\n<img class=\"icon-arrow\" src=\"https://cdn.shopify.com/s/files/1/0969/1679/9835/files/arrow.png?v=1765965621\" alt=\"arrow\" width=\"64%\" height=\"auto\"/>\n</div>\n\n<style>\n.icon-arrow{\nwidth:64%;\n}\n.rotate-left{\ntransform:rotate(-30deg);\n}\n@media only screen and (max-width: 768px) {\n.arrow-switch{\ndisplay:none;\n}\n}\n</style>"
+                    "custom_liquid": "<div class=\"arrow-switch rotate-left\" style=\"position:absolute; height:90px; width:90px; right:-10%;top:-30%;\">\n<img class=\"icon-arrow\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0969\/1679\/9835\/files\/arrow.png?v=1765965621\" alt=\"arrow\" width=\"64%\" height=\"auto\"\/>\n<\/div>\n\n<style>\n.icon-arrow{\nwidth:64%;\n}\n.rotate-left{\ntransform:rotate(-30deg);\n}\n@media only screen and (max-width: 768px) {\n.arrow-switch{\ndisplay:none;\n}\n}\n<\/style>"
                   },
                   "blocks": {}
                 }
@@ -2896,7 +3227,7 @@
               "type": "custom-liquid",
               "name": "t:names.custom_liquid",
               "settings": {
-                "custom_liquid": "<span style=\"font-size: 28px; color: #F8F9F4;\">\n  <i class=\"fa-solid fa-clipboard-list\"></i>\n</span>"
+                "custom_liquid": "<span style=\"font-size: 28px; color: #F8F9F4;\">\n  <i class=\"fa-solid fa-clipboard-list\"><\/i>\n<\/span>"
               },
               "blocks": {}
             },
@@ -2953,7 +3284,7 @@
                 "text_W7amtG": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Design Consultation</p>",
+                    "text": "<p>Design Consultation<\/p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
@@ -2965,6 +3296,8 @@
                     "case": "none",
                     "wrap": "pretty",
                     "color": "var(--color-foreground)",
+                    "enable_highlight_syntax": false,
+                    "highlight_color": "#0d0d0d",
                     "background": false,
                     "background_color": "#00000026",
                     "corner_radius": 0,
@@ -2978,7 +3311,7 @@
                 "text_YFyT8P": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Where your project comes to life. We can settle on options for handles, glass, colour, finish and design. Full CAD drawings can be provided later if requested.</p>",
+                    "text": "<p>Where your project comes to life. We can settle on options for handles, glass, colour, finish and design. Full CAD drawings can be provided later if requested.<\/p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
@@ -2990,6 +3323,8 @@
                     "case": "none",
                     "wrap": "pretty",
                     "color": "var(--color-foreground)",
+                    "enable_highlight_syntax": false,
+                    "highlight_color": "#0d0d0d",
                     "background": false,
                     "background_color": "#00000026",
                     "corner_radius": 0,
@@ -3004,7 +3339,7 @@
                   "type": "custom-liquid",
                   "name": "Arrow",
                   "settings": {
-                    "custom_liquid": "<div class=\"arrow-switch rotate-left\" style=\"position:absolute; height:90px; width:90px; right:-10%;top:-30%;\">\n<img class=\"icon-arrow\" src=\"https://cdn.shopify.com/s/files/1/0969/1679/9835/files/arrow.png?v=1765965621\" alt=\"arrow\" width=\"64%\" height=\"auto\"/>\n</div>\n\n<style>\n.icon-arrow{\nwidth:64%;\n}\n.rotate-left{\ntransform:rotate(-30deg);\n}\n@media only screen and (max-width: 768px) {\n.arrow-switch{\ndisplay:none;\n}\n}\n</style>"
+                    "custom_liquid": "<div class=\"arrow-switch rotate-left\" style=\"position:absolute; height:90px; width:90px; right:-10%;top:-30%;\">\n<img class=\"icon-arrow\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0969\/1679\/9835\/files\/arrow.png?v=1765965621\" alt=\"arrow\" width=\"64%\" height=\"auto\"\/>\n<\/div>\n\n<style>\n.icon-arrow{\nwidth:64%;\n}\n.rotate-left{\ntransform:rotate(-30deg);\n}\n@media only screen and (max-width: 768px) {\n.arrow-switch{\ndisplay:none;\n}\n}\n<\/style>"
                   },
                   "blocks": {}
                 }
@@ -3065,7 +3400,7 @@
               "type": "custom-liquid",
               "name": "t:names.custom_liquid",
               "settings": {
-                "custom_liquid": "<span style=\"font-size: 28px; color: #F8F9F4;\">\n  <i class=\"fa-solid fa-clipboard-check\"></i>\n</span>"
+                "custom_liquid": "<span style=\"font-size: 28px; color: #F8F9F4;\">\n  <i class=\"fa-solid fa-clipboard-check\"><\/i>\n<\/span>"
               },
               "blocks": {}
             },
@@ -3122,7 +3457,7 @@
                 "text_4xBRAz": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Site Survey</p>",
+                    "text": "<p>Site Survey<\/p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
@@ -3134,6 +3469,8 @@
                     "case": "none",
                     "wrap": "pretty",
                     "color": "var(--color-foreground)",
+                    "enable_highlight_syntax": false,
+                    "highlight_color": "#0d0d0d",
                     "background": false,
                     "background_color": "#00000026",
                     "corner_radius": 0,
@@ -3147,7 +3484,7 @@
                 "text_caVMPk": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>We will visit your site and carry out a full pre-built site survey to ensure fitting happens without a hitch</p>",
+                    "text": "<p>We will visit your site and carry out a full pre-built site survey to ensure fitting happens without a hitch<\/p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
@@ -3159,6 +3496,8 @@
                     "case": "none",
                     "wrap": "pretty",
                     "color": "var(--color-foreground)",
+                    "enable_highlight_syntax": false,
+                    "highlight_color": "#0d0d0d",
                     "background": false,
                     "background_color": "#00000026",
                     "corner_radius": 0,
@@ -3179,7 +3518,7 @@
               "type": "custom-liquid",
               "name": "Arrow",
               "settings": {
-                "custom_liquid": "<div class=\"arrow-switch\" style=\"position:absolute; height:60px; width:60px; right:9%;bottom:-40%;\">\n<img class=\"icon-arrow\" src=\"https://cdn.shopify.com/s/files/1/0969/1679/9835/files/sbdfav-Asset_2_3x_7308f972-20a1-4eaa-b21e-e8b7fb6be148.png?v=1765459407\" alt=\"arrow\" width=\"24%\" height=\"auto\"/>\n</div>\n\n<style>\n.icon-arrow{\nwidth:64%;\n}\n@media only screen and (max-width: 768px) {\n.arrow-switch{\ndisplay:none;\n}\n}\n</style>"
+                "custom_liquid": "<div class=\"arrow-switch\" style=\"position:absolute; height:60px; width:60px; right:9%;bottom:-40%;\">\n<img class=\"icon-arrow\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0969\/1679\/9835\/files\/sbdfav-Asset_2_3x_7308f972-20a1-4eaa-b21e-e8b7fb6be148.png?v=1765459407\" alt=\"arrow\" width=\"24%\" height=\"auto\"\/>\n<\/div>\n\n<style>\n.icon-arrow{\nwidth:64%;\n}\n@media only screen and (max-width: 768px) {\n.arrow-switch{\ndisplay:none;\n}\n}\n<\/style>"
               },
               "blocks": {}
             }
@@ -3210,10 +3549,10 @@
         "section_width": "page-width",
         "section_height": "",
         "section_height_custom": 50,
-        "color_scheme": "scheme-4",
+        "color_scheme": "scheme-5",
         "background_media": "none",
         "video_position": "cover",
-        "background_image": "shopify://shop_images/arrow-right.svg",
+        "background_image": "shopify:\/\/shop_images\/arrow-right.svg",
         "background_image_position": "cover",
         "border": "none",
         "border_width": 1,
@@ -3273,7 +3612,7 @@
               "type": "custom-liquid",
               "name": "t:names.custom_liquid",
               "settings": {
-                "custom_liquid": "<span style=\"font-size: 28px; color: #F8F9F4;\">\n<i class=\"fa-solid fa-ruler\"></i>\n</span>"
+                "custom_liquid": "<span style=\"font-size: 28px; color: #F8F9F4;\">\n<i class=\"fa-solid fa-ruler\"><\/i>\n<\/span>"
               },
               "blocks": {}
             },
@@ -3331,14 +3670,14 @@
                   "type": "custom-liquid",
                   "name": "Arrow",
                   "settings": {
-                    "custom_liquid": "<div class=\"arrow-switch arrow-rotate\" style=\"position:absolute; height:90px; width:90px; right:-9%;top:-40%;\">\n<img class=\"icon-arrow\" src=\"https://cdn.shopify.com/s/files/1/0969/1679/9835/files/left-arrow.png?v=1765965912\" alt=\"arrow\" width=\"24%\" height=\"auto\"/>\n</div>\n\n<style>\n.icon-arrow{\nwidth:64%;\n}\n.arrow-rotate{\ntransform: rotate(30deg);}\n@media only screen and (max-width: 768px) {\n.arrow-switch{\ndisplay:none;\n}\n}\n</style>"
+                    "custom_liquid": "<div class=\"arrow-switch arrow-rotate\" style=\"position:absolute; height:90px; width:90px; right:-9%;top:-40%;\">\n<img class=\"icon-arrow\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0969\/1679\/9835\/files\/left-arrow.png?v=1765965912\" alt=\"arrow\" width=\"24%\" height=\"auto\"\/>\n<\/div>\n\n<style>\n.icon-arrow{\nwidth:64%;\n}\n.arrow-rotate{\ntransform: rotate(30deg);}\n@media only screen and (max-width: 768px) {\n.arrow-switch{\ndisplay:none;\n}\n}\n<\/style>"
                   },
                   "blocks": {}
                 },
                 "text_w7mQyL": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Fitting</p>",
+                    "text": "<p>Fitting<\/p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
@@ -3350,6 +3689,8 @@
                     "case": "none",
                     "wrap": "pretty",
                     "color": "var(--color-foreground)",
+                    "enable_highlight_syntax": false,
+                    "highlight_color": "#0d0d0d",
                     "background": false,
                     "background_color": "#00000026",
                     "corner_radius": 0,
@@ -3363,7 +3704,7 @@
                 "text_36dD9t": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>One of our skilled technicians will meet the delivery of your doors at site for the install. </p>",
+                    "text": "<p>One of our skilled technicians will meet the delivery of your doors at site for the install. <\/p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
@@ -3375,6 +3716,8 @@
                     "case": "none",
                     "wrap": "pretty",
                     "color": "var(--color-foreground)",
+                    "enable_highlight_syntax": false,
+                    "highlight_color": "#0d0d0d",
                     "background": false,
                     "background_color": "#00000026",
                     "corner_radius": 0,
@@ -3442,7 +3785,7 @@
               "type": "custom-liquid",
               "name": "t:names.custom_liquid",
               "settings": {
-                "custom_liquid": "<span style=\"font-size: 28px; color: #F8F9F4;\">\n<i class=\"fa-solid fa-wrench\"></i>\n</span>"
+                "custom_liquid": "<span style=\"font-size: 28px; color: #F8F9F4;\">\n<i class=\"fa-solid fa-wrench\"><\/i>\n<\/span>"
               },
               "blocks": {}
             },
@@ -3451,7 +3794,7 @@
               "disabled": true,
               "settings": {
                 "icon": "washing",
-                "image_upload": "shopify://shop_images/wrench.svg",
+                "image_upload": "shopify:\/\/shop_images\/wrench.svg",
                 "width": 32,
                 "link": "",
                 "open_in_new_tab": false
@@ -3501,14 +3844,14 @@
                   "type": "custom-liquid",
                   "name": "Arrow",
                   "settings": {
-                    "custom_liquid": "<div class=\"arrow-switch arrow-rotate\" style=\"position:absolute; height:90px; width:90px; right:-9%;top:-40%;\">\n<img class=\"icon-arrow\" src=\"https://cdn.shopify.com/s/files/1/0969/1679/9835/files/left-arrow.png?v=1765965912\" alt=\"arrow\" width=\"24%\" height=\"auto\"/>\n</div>\n\n<style>\n.icon-arrow{\nwidth:64%;\n}\n.arrow-rotate{\ntransform: rotate(30deg);}\n@media only screen and (max-width: 768px) {\n.arrow-switch{\ndisplay:none;\n}\n}\n</style>"
+                    "custom_liquid": "<div class=\"arrow-switch arrow-rotate\" style=\"position:absolute; height:90px; width:90px; right:-9%;top:-40%;\">\n<img class=\"icon-arrow\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0969\/1679\/9835\/files\/left-arrow.png?v=1765965912\" alt=\"arrow\" width=\"24%\" height=\"auto\"\/>\n<\/div>\n\n<style>\n.icon-arrow{\nwidth:64%;\n}\n.arrow-rotate{\ntransform: rotate(30deg);}\n@media only screen and (max-width: 768px) {\n.arrow-switch{\ndisplay:none;\n}\n}\n<\/style>"
                   },
                   "blocks": {}
                 },
                 "text_mnEr39": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Manufacturing</p>",
+                    "text": "<p>Manufacturing<\/p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
@@ -3520,6 +3863,8 @@
                     "case": "none",
                     "wrap": "pretty",
                     "color": "var(--color-foreground)",
+                    "enable_highlight_syntax": false,
+                    "highlight_color": "#0d0d0d",
                     "background": false,
                     "background_color": "#00000026",
                     "corner_radius": 0,
@@ -3533,7 +3878,7 @@
                 "text_PRriMj": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>The factory will build your doors from the requirements in the spec sheet. From here your doors will take 4-6 weeks to deliver to site.</p>",
+                    "text": "<p>The factory will build your doors from the requirements in the spec sheet. From here your doors will take 4-6 weeks to deliver to site.<\/p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
@@ -3545,6 +3890,8 @@
                     "case": "none",
                     "wrap": "pretty",
                     "color": "var(--color-foreground)",
+                    "enable_highlight_syntax": false,
+                    "highlight_color": "#0d0d0d",
                     "background": false,
                     "background_color": "#00000026",
                     "corner_radius": 0,
@@ -3612,7 +3959,7 @@
               "type": "custom-liquid",
               "name": "t:names.custom_liquid",
               "settings": {
-                "custom_liquid": "<span style=\"font-size: 28px; color: #F8F9F4;\">\n<i class=\"fa-solid fa-square-check\"></i>\n</span>"
+                "custom_liquid": "<span style=\"font-size: 28px; color: #F8F9F4;\">\n<i class=\"fa-solid fa-square-check\"><\/i>\n<\/span>"
               },
               "blocks": {}
             },
@@ -3669,7 +4016,7 @@
                 "text_jGNmAe": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Quote & Order</p>",
+                    "text": "<p>Quote & Order<\/p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
@@ -3681,6 +4028,8 @@
                     "case": "none",
                     "wrap": "pretty",
                     "color": "var(--color-foreground)",
+                    "enable_highlight_syntax": false,
+                    "highlight_color": "#0d0d0d",
                     "background": false,
                     "background_color": "#00000026",
                     "corner_radius": 0,
@@ -3694,7 +4043,7 @@
                 "text_ppncHi": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Once you are happy with your build and have received your quote we can confirm your order and move forward to manufacture and fitting.</p>",
+                    "text": "<p>Once you are happy with your build and have received your quote we can confirm your order and move forward to manufacture and fitting.<\/p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
@@ -3706,6 +4055,8 @@
                     "case": "none",
                     "wrap": "pretty",
                     "color": "var(--color-foreground)",
+                    "enable_highlight_syntax": false,
+                    "highlight_color": "#0d0d0d",
                     "background": false,
                     "background_color": "#00000026",
                     "corner_radius": 0,
@@ -3748,7 +4099,7 @@
         "section_width": "page-width",
         "section_height": "",
         "section_height_custom": 50,
-        "color_scheme": "scheme-4",
+        "color_scheme": "scheme-5",
         "background_media": "none",
         "video_position": "cover",
         "background_image_position": "cover",
@@ -3810,7 +4161,7 @@
               "type": "custom-liquid",
               "name": "t:names.custom_liquid",
               "settings": {
-                "custom_liquid": "<span style=\"font-size: 28px; color: #F8F9F4;\">\n<i class=\"fa-solid fa-square-check\"></i>\n</span>"
+                "custom_liquid": "<span style=\"font-size: 28px; color: #F8F9F4;\">\n<i class=\"fa-solid fa-square-check\"><\/i>\n<\/span>"
               },
               "blocks": {}
             },
@@ -3867,7 +4218,7 @@
                 "text_dNHJre": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Quote & Order</p>",
+                    "text": "<p>Quote & Order<\/p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
@@ -3879,6 +4230,8 @@
                     "case": "none",
                     "wrap": "pretty",
                     "color": "var(--color-foreground)",
+                    "enable_highlight_syntax": false,
+                    "highlight_color": "#0d0d0d",
                     "background": false,
                     "background_color": "#00000026",
                     "corner_radius": 0,
@@ -3892,7 +4245,7 @@
                 "text_zekne3": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Once you are happy with your build and have received your quote we can confirm your order and move forward to manufacture and fitting.</p>",
+                    "text": "<p>Once you are happy with your build and have received your quote we can confirm your order and move forward to manufacture and fitting.<\/p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
@@ -3904,6 +4257,8 @@
                     "case": "none",
                     "wrap": "pretty",
                     "color": "var(--color-foreground)",
+                    "enable_highlight_syntax": false,
+                    "highlight_color": "#0d0d0d",
                     "background": false,
                     "background_color": "#00000026",
                     "corner_radius": 0,
@@ -3970,7 +4325,7 @@
               "type": "custom-liquid",
               "name": "t:names.custom_liquid",
               "settings": {
-                "custom_liquid": "<span style=\"font-size: 28px; color: #F8F9F4;\">\n<i class=\"fa-solid fa-wrench\"></i>\n</span>"
+                "custom_liquid": "<span style=\"font-size: 28px; color: #F8F9F4;\">\n<i class=\"fa-solid fa-wrench\"><\/i>\n<\/span>"
               },
               "blocks": {}
             },
@@ -3979,7 +4334,7 @@
               "disabled": true,
               "settings": {
                 "icon": "washing",
-                "image_upload": "shopify://shop_images/wrench.svg",
+                "image_upload": "shopify:\/\/shop_images\/wrench.svg",
                 "width": 32,
                 "link": "",
                 "open_in_new_tab": false
@@ -4028,7 +4383,7 @@
                 "text_bnMAmK": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Manufacturing</p>",
+                    "text": "<p>Manufacturing<\/p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
@@ -4040,6 +4395,8 @@
                     "case": "none",
                     "wrap": "pretty",
                     "color": "var(--color-foreground)",
+                    "enable_highlight_syntax": false,
+                    "highlight_color": "#0d0d0d",
                     "background": false,
                     "background_color": "#00000026",
                     "corner_radius": 0,
@@ -4053,7 +4410,7 @@
                 "text_fYkNzC": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>The factory will build your doors from the requirements in the spec sheet. From here your doors will take 4-6 weeks to deliver to site.</p>",
+                    "text": "<p>The factory will build your doors from the requirements in the spec sheet. From here your doors will take 4-6 weeks to deliver to site.<\/p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
@@ -4065,6 +4422,8 @@
                     "case": "none",
                     "wrap": "pretty",
                     "color": "var(--color-foreground)",
+                    "enable_highlight_syntax": false,
+                    "highlight_color": "#0d0d0d",
                     "background": false,
                     "background_color": "#00000026",
                     "corner_radius": 0,
@@ -4131,7 +4490,7 @@
               "type": "custom-liquid",
               "name": "t:names.custom_liquid",
               "settings": {
-                "custom_liquid": "<span style=\"font-size: 28px; color: #F8F9F4;\">\n<i class=\"fa-solid fa-ruler\"></i>\n</span>"
+                "custom_liquid": "<span style=\"font-size: 28px; color: #F8F9F4;\">\n<i class=\"fa-solid fa-ruler\"><\/i>\n<\/span>"
               },
               "blocks": {}
             },
@@ -4188,7 +4547,7 @@
                 "text_RPDgMG": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Fitting</p>",
+                    "text": "<p>Fitting<\/p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
@@ -4200,6 +4559,8 @@
                     "case": "none",
                     "wrap": "pretty",
                     "color": "var(--color-foreground)",
+                    "enable_highlight_syntax": false,
+                    "highlight_color": "#0d0d0d",
                     "background": false,
                     "background_color": "#00000026",
                     "corner_radius": 0,
@@ -4213,7 +4574,7 @@
                 "text_JqTx9L": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>One of our skilled technicians will meet the delivery of your doors at site for the install. </p>",
+                    "text": "<p>One of our skilled technicians will meet the delivery of your doors at site for the install. <\/p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
@@ -4225,6 +4586,8 @@
                     "case": "none",
                     "wrap": "pretty",
                     "color": "var(--color-foreground)",
+                    "enable_highlight_syntax": false,
+                    "highlight_color": "#0d0d0d",
                     "background": false,
                     "background_color": "#00000026",
                     "corner_radius": 0,
@@ -4270,7 +4633,7 @@
         "section_width": "page-width",
         "section_height": "",
         "section_height_custom": 50,
-        "color_scheme": "scheme-4",
+        "color_scheme": "scheme-5",
         "background_media": "none",
         "video_position": "cover",
         "background_image_position": "cover",
@@ -4294,7 +4657,7 @@
           "static": true,
           "settings": {
             "media_type": "image",
-            "image": "shopify://shop_images/double-doors-2_1.png",
+            "image": "shopify:\/\/shop_images\/double-doors-2_1.png",
             "link": "",
             "video_loop": true,
             "video_autoplay": false,
@@ -4316,7 +4679,7 @@
               "type": "text",
               "name": "t:names.caption",
               "settings": {
-                "text": "<p>Bestseller</p>",
+                "text": "<p>Bestseller<\/p>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
@@ -4328,6 +4691,8 @@
                 "case": "none",
                 "wrap": "pretty",
                 "color": "var(--color-foreground)",
+                "enable_highlight_syntax": false,
+                "highlight_color": "#0d0d0d",
                 "background": false,
                 "background_color": "#00000026",
                 "corner_radius": 0,
@@ -4381,7 +4746,7 @@
                   "type": "text",
                   "name": "t:names.heading",
                   "settings": {
-                    "text": "<h2>Crafting Legacies.<br/>Not Just Doors</h2>",
+                    "text": "<h2>Crafting Legacies.<br\/>Not Just Doors<\/h2>",
                     "width": "fit-content",
                     "max_width": "narrow",
                     "alignment": "left",
@@ -4393,6 +4758,8 @@
                     "case": "none",
                     "wrap": "pretty",
                     "color": "var(--color-foreground)",
+                    "enable_highlight_syntax": false,
+                    "highlight_color": "#0d0d0d",
                     "background": false,
                     "background_color": "#00000026",
                     "corner_radius": 0,
@@ -4406,7 +4773,7 @@
                 "text_J4hajT": {
                   "type": "text",
                   "settings": {
-                    "text": "<ul><li><h5>From order to install in 4 - 6 weeks</h5></li><li><h5>Choose from 150 different colour and finish combinations</h5></li><li><h5>We can colour match to to your existing fixtures and fittings</h5></li><li><h5>Various glass options from frosted and stained to fluted and mirrored</h5></li><li><h5>Fire rated options available</h5></li><li><h5>Various steel profiles</h5></li><li><h5>A wide choice of lever and bar or plated push pull handles<strong><br/></strong></h5></li></ul>",
+                    "text": "<ul><li><h5>From order to install in 4 - 6 weeks<\/h5><\/li><li><h5>Choose from 150 different colour and finish combinations<\/h5><\/li><li><h5>We can colour match to to your existing fixtures and fittings<\/h5><\/li><li><h5>Various glass options from frosted and stained to fluted and mirrored<\/h5><\/li><li><h5>Fire rated options available<\/h5><\/li><li><h5>Various steel profiles<\/h5><\/li><li><h5>A wide choice of lever and bar or plated push pull handles<strong><br\/><\/strong><\/h5><\/li><\/ul>",
                     "width": "100%",
                     "max_width": "narrow",
                     "alignment": "left",
@@ -4418,6 +4785,8 @@
                     "case": "none",
                     "wrap": "pretty",
                     "color": "var(--color-foreground)",
+                    "enable_highlight_syntax": false,
+                    "highlight_color": "#0d0d0d",
                     "background": false,
                     "background_color": "#00000026",
                     "corner_radius": 0,
@@ -4439,9 +4808,11 @@
               "disabled": true,
               "settings": {
                 "label": "Shop now",
-                "link": "shopify://collections/all",
+                "link": "shopify:\/\/collections\/all",
                 "open_in_new_tab": false,
                 "style_class": "link",
+                "font_size": "",
+                "font_weight": "",
                 "width": "fit-content",
                 "custom_width": 100,
                 "width_mobile": "fit-content",
@@ -4532,7 +4903,7 @@
               "type": "text",
               "name": "t:names.description",
               "settings": {
-                "text": "<h4>Sarah B -<br/><em>\"Simple ordering process and outstanding quality, they look amazing and you can just tell they’re built to last. 5 stars.</em></h4><h4></h4><h4></h4><h4><em>--</em></h4>",
+                "text": "<h4>Sarah B -<br\/><em>\"Simple ordering process and outstanding quality, they look amazing and you can just tell they’re built to last. 5 stars.<\/em><\/h4><h4><\/h4><h4><\/h4><h4><em>--<\/em><\/h4>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "center",
@@ -4544,6 +4915,8 @@
                 "case": "none",
                 "wrap": "pretty",
                 "color": "var(--color-foreground)",
+                "enable_highlight_syntax": false,
+                "highlight_color": "#0d0d0d",
                 "background": false,
                 "background_color": "#00000026",
                 "corner_radius": 0,
@@ -4603,7 +4976,7 @@
               "type": "text",
               "name": "t:names.description",
               "settings": {
-                "text": "<h4>Carl T -<br/><em>\"The site survey gave us real confidence the doors would fit perfectly, and they did. Combined with a smooth ordering process and excellent quality, the whole process exceeded expectations\"</em></h4><h4><em>--</em></h4>",
+                "text": "<h4>Carl T -<br\/><em>\"The site survey gave us real confidence the doors would fit perfectly, and they did. Combined with a smooth ordering process and excellent quality, the whole process exceeded expectations\"<\/em><\/h4><h4><em>--<\/em><\/h4>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "center",
@@ -4615,6 +4988,8 @@
                 "case": "none",
                 "wrap": "pretty",
                 "color": "var(--color-foreground)",
+                "enable_highlight_syntax": false,
+                "highlight_color": "#0d0d0d",
                 "background": false,
                 "background_color": "#00000026",
                 "corner_radius": 0,
@@ -4681,6 +5056,7 @@
   },
   "order": [
     "hero_jVaWmY",
+    "featured_collection_grid_iXij8U",
     "section_3DF7Pf",
     "section_AzgRAD",
     "section_AFheF4",

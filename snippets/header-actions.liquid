@@ -7,13 +7,21 @@
 <header-actions
   {{- block.shopify_attributes -}}
 >
+  {% if section.settings.show_header_custom_button and section.settings.header_custom_button_text != blank %}
+    <a
+      href="{{ section.settings.header_custom_button_link | default: '#' }}"
+      class="header-actions__custom-button mobile:hidden"
+    >
+      {{ section.settings.header_custom_button_text }}
+    </a>
+  {% endif %}
   {% if shop.customer_accounts_enabled %}
     {% render 'account-popover' %}
-    {% render 'account-drawer' %}
+    {% comment %} {% render 'account-drawer' %} {% endcomment %}
   {% endif %}
 
   {% if settings.cart_type == 'drawer' and template.name != 'cart' %}
-    {% render 'cart-drawer' %}
+    {% comment %} {% render 'cart-drawer' %} {% endcomment %}
   {% else %}
     <a
       href="{{ routes.cart_url }}"
@@ -193,10 +201,36 @@
 
   header-actions {
     display: flex;
+    align-items: center;
+    gap: var(--gap-sm);
 
     @media screen and (max-width: 749px) {
       justify-self: flex-end;
     }
+  }
+
+  .header-actions__custom-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--padding-sm) var(--padding-md);
+    font-size: var(--font-size--xs);
+    font-weight: var(--font-paragraph--weight);
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgb(255 255 255);
+    background-color: rgb(26 26 26);
+    border: 1px solid rgb(255 255 255 / 0.3);
+    border-radius: 0;
+    white-space: nowrap;
+    transition: background-color var(--animation-values-fast), color var(--animation-values-fast), border-color var(--animation-values-fast);
+  }
+
+  .header-actions__custom-button:hover {
+    background-color: rgb(255 255 255);
+    color: rgb(26 26 26);
+    border-color: rgb(255 255 255);
   }
 
   .header__column--right header-actions {

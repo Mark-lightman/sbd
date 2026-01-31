@@ -32,6 +32,7 @@
         --divider-border-rounded: {% if settings.corner_radius == 'rounded' %}1{% else %}0{% endif %};
       {% endunless %}
       --divider-flex-basis: {{ settings.width_percent }}%;
+      {% if settings.color != blank %}--divider-color: {{ settings.color }};{% endif %}
     "
   ></span>
 </div>
@@ -45,8 +46,8 @@
   }
 
   .divider__line {
-    border-bottom: var(--divider-border-thickness) solid var(--color-border);
-    border-right: var(--divider-border-thickness) solid var(--color-border);
+    border-bottom: var(--divider-border-thickness) solid var(--divider-color, var(--color-border));
+    border-right: var(--divider-border-thickness) solid var(--divider-color, var(--color-border));
     border-radius: calc(var(--style-border-radius-sm) * var(--divider-border-rounded));
     flex-basis: var(--divider-flex-basis);
     min-height: var(--divider-flex-basis);
