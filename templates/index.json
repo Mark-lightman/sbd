@@ -118,7 +118,7 @@
                 "style_class": "button",
                 "font_size": "0.875rem",
                 "font_weight": "400",
-                "width": "custom",
+                "width": "fit-content",
                 "custom_width": 20,
                 "width_mobile": "custom",
                 "custom_width_mobile": 100
