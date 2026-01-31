@@ -1,12 +1,3 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "type": "header",
   "name": "Header",
@@ -69,7 +60,7 @@
             "type_case_primary_link": "none",
             "menu_style": "featured_products",
             "featured_products_aspect_ratio": "adapt",
-            "featured_collections_aspect_ratio": "16 / 9",
+            "featured_collections_aspect_ratio": "16 \/ 9",
             "image_border_radius": 1,
             "navigation_bar": false,
             "color_scheme_navigation_bar": "",
@@ -147,7 +138,7 @@
       "disabled": true,
       "name": "t:names.custom_liquid",
       "settings": {
-        "custom_liquid": "<p style=\"text-decoration:none;text-align:center;font-size:28px;\"><a href=\"/pages/contact\">Click Here</a> for a free no obligation quote </p>",
+        "custom_liquid": "<p style=\"text-decoration:none;text-align:center;font-size:28px;\"><a href=\"\/pages\/contact\">Click Here<\/a> for a free no obligation quote <\/p>",
         "color_scheme": "scheme-4",
         "section_width": "page-width",
         "padding-block-start": 35,

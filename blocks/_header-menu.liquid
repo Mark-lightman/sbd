@@ -21,7 +21,8 @@
       {% render 'header-drawer',
         class: 'header__drawer--mobile',
         linklist: block_settings.menu,
-        data_header_drawer_type: 'mobile-drawer'
+        data_header_drawer_type: 'mobile-drawer',
+        section: section
       %}
     </div>
 
@@ -189,7 +190,7 @@
 
     &:hover,
     &:focus {
-      color: var(--menu-top-level-font-color);
+      color: var(--menu-top-level-font-color-hover, var(--menu-top-level-font-color));
     }
 
     @media screen and (min-width: 750px) {
@@ -213,7 +214,7 @@
   .menu-list:not(:has(.menu-list__list-item:hover)) .menu-list__link--active,
   .menu-list .menu-list__list-item:where(:hover, :focus-within) .menu-list__link,
   .menu-list .menu-list__list-item[slot='overflow'] .menu-list__link[aria-expanded='true'] {
-    color: var(--menu-top-level-font-color);
+    color: var(--menu-top-level-font-color-hover, var(--menu-top-level-font-color));
   }
 
   .overflow-menu::part(list) {
@@ -699,6 +700,12 @@
         }
       ],
       "default": "none"
+    },
+    {
+      "type": "color",
+      "id": "link_hover_color",
+      "label": "t:settings.link_hover_color",
+      "default": "#C8A873"
     },
     {
       "type": "header",

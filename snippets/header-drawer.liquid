@@ -636,6 +636,17 @@
           </ul>
         </div>
       {% endif %}
+
+      {% if section.settings.show_header_custom_button and section.settings.header_custom_button_text != blank %}
+        <div class="menu-drawer__custom-button-wrap">
+          <a
+            href="{{ section.settings.header_custom_button_link | default: '#' }}"
+            class="menu-drawer__custom-button"
+          >
+            {{ section.settings.header_custom_button_text }}
+          </a>
+        </div>
+      {% endif %}
     </div>
     <div
       class="menu-drawer__backdrop"
@@ -734,6 +745,40 @@
     .header__drawer--desktop & {
       height: 100vh;
     }
+  }
+
+  #header-component .menu-drawer {
+    background-color: var(--header-bg-color-sticky, #1A1A1A);
+    --color-background: var(--header-bg-color-sticky, #1A1A1A);
+    --color-foreground: #fff;
+    --color-foreground-rgb: 255, 255, 255;
+    --color-foreground-heading: #fff;
+    --color-border: rgb(255 255 255 / 0.2);
+    color: #fff;
+  }
+
+  #header-component .menu-drawer .menu-drawer__menu-item--mainlist {
+    font-size: 0.875rem;
+  }
+
+  #header-component .menu-drawer .menu-drawer__menu-item--parent,
+  #header-component .menu-drawer .menu-drawer__menu-item--child {
+    font-size: 0.8125rem;
+  }
+
+  #header-component .menu-drawer a,
+  #header-component .menu-drawer .menu-drawer__menu-item,
+  #header-component .menu-drawer .menu-drawer__menu-item-text,
+  #header-component .menu-drawer .menu-drawer__back-button,
+  #header-component .menu-drawer .menu-drawer__close-button,
+  #header-component .menu-drawer .menu-drawer__utility-links,
+  #header-component .menu-drawer .menu-drawer__account,
+  #header-component .menu-drawer .menu-drawer__submenu {
+    color: #fff;
+  }
+
+  #header-component .menu-drawer .menu-drawer__submenu {
+    background-color: var(--header-bg-color-sticky, #1A1A1A);
   }
 
   .menu-drawer:has(details[open]) {
@@ -918,7 +963,7 @@
     justify-content: space-between;
 
     &:hover {
-      color: var(--menu-top-level-font-color);
+      color: var(--menu-top-level-font-color-hover, var(--menu-top-level-font-color));
     }
   }
 
@@ -1098,6 +1143,36 @@
     margin-right: var(--padding-md);
     width: var(--icon-size-xs);
     height: var(--icon-size-xs);
+  }
+
+  .menu-drawer__custom-button-wrap {
+    margin-top: auto;
+    padding: var(--drawer-padding);
+    padding-top: var(--padding-md);
+  }
+
+  .menu-drawer__custom-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: var(--padding-md) var(--padding-lg);
+    font-size: var(--font-size--xs);
+    font-weight: var(--font-paragraph--weight);
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgb(255 255 255);
+    background-color: rgb(26 26 26);
+    border: 1px solid rgb(255 255 255 / 0.3);
+    border-radius: 0;
+    transition: background-color var(--animation-values-fast), color var(--animation-values-fast), border-color var(--animation-values-fast);
+  }
+
+  .menu-drawer__custom-button:hover {
+    background-color: rgb(255 255 255);
+    color: rgb(26 26 26) !important;
+    border-color: rgb(255 255 255);
   }
 
   .menu-drawer__utility-links {

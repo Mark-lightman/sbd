@@ -1,12 +1,3 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "sections": {
     "hero_jVaWmY": {
@@ -16,7 +7,7 @@
           "type": "text",
           "name": "t:names.heading",
           "settings": {
-            "text": "<p>Luxury Steel Doors<br/>Designed & Crafted<br/> in the UK</p>",
+            "text": "<p>Luxury Steel Doors<br\/>Designed & Crafted<br\/> in the UK<\/p>",
             "width": "100%",
             "max_width": "normal",
             "alignment": "left",
@@ -42,7 +33,7 @@
           "type": "text",
           "name": "t:names.text",
           "settings": {
-            "text": "<p>Fully bespoke steel doors and windows<br/>Quoted, delivered and installed in 4 - 6 weeks</p>",
+            "text": "<p>Fully bespoke steel doors and windows<br\/>Quoted, delivered and installed in 4 - 6 weeks<\/p>",
             "width": "fit-content",
             "max_width": "normal",
             "alignment": "left",
@@ -109,7 +100,7 @@
               "name": "t:names.button",
               "settings": {
                 "label": "Get a free Quote",
-                "link": "shopify://pages/contact",
+                "link": "shopify:\/\/pages\/contact",
                 "open_in_new_tab": false,
                 "style_class": "button",
                 "width": "fit-content",
@@ -125,7 +116,7 @@
               "disabled": true,
               "settings": {
                 "label": "Internal Doors",
-                "link": "shopify://products/double-steel-doors",
+                "link": "shopify:\/\/products\/double-steel-doors",
                 "open_in_new_tab": false,
                 "style_class": "button-secondary",
                 "width": "fit-content",
@@ -150,7 +141,7 @@
       "name": "Hero V2",
       "settings": {
         "media_type_1": "image",
-        "image_1": "shopify://shop_images/Large-SBD_1.png",
+        "image_1": "shopify:\/\/shop_images\/Large-SBD_1.png",
         "media_type_2": "image",
         "stack_media_on_mobile": false,
         "custom_mobile_media": false,
@@ -204,7 +195,7 @@
             "color_scheme": "scheme-4",
             "background_media": "image",
             "video_position": "cover",
-            "background_image": "shopify://shop_images/balcony-black-steel-door-090721224530.jpg",
+            "background_image": "shopify:\/\/shop_images\/balcony-black-steel-door-090721224530.jpg",
             "background_image_position": "cover",
             "border": "none",
             "border_width": 1,
@@ -227,7 +218,7 @@
               "type": "text",
               "name": "t:names.heading",
               "settings": {
-                "text": "<h2>WE SUPPLY & FIT LUXURY STEEL DOORS ALL ACROSS THE UK</h2>",
+                "text": "<h2>WE SUPPLY & FIT LUXURY STEEL DOORS ALL ACROSS THE UK<\/h2>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
@@ -253,7 +244,7 @@
               "type": "button",
               "settings": {
                 "label": "Get your Free Quote",
-                "link": "shopify://pages/contact",
+                "link": "shopify:\/\/pages\/contact",
                 "open_in_new_tab": false,
                 "style_class": "button",
                 "width": "fit-content",
@@ -290,7 +281,7 @@
             "color_scheme": "scheme-87a3699f-e494-4023-b625-2dcf1cc781a7",
             "background_media": "image",
             "video_position": "cover",
-            "background_image": "shopify://shop_images/double-hung.webp",
+            "background_image": "shopify:\/\/shop_images\/double-hung.webp",
             "background_image_position": "cover",
             "border": "none",
             "border_width": 1,
@@ -346,7 +337,7 @@
               "type": "text",
               "disabled": true,
               "settings": {
-                "text": "<h3>Bestsellers</h3>",
+                "text": "<h3>Bestsellers<\/h3>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "center",
@@ -468,7 +459,7 @@
               "type": "text",
               "name": "t:names.heading",
               "settings": {
-                "text": "<h2>Free Quote</h2>",
+                "text": "<h2>Free Quote<\/h2>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "center",
@@ -551,7 +542,7 @@
               "type": "text",
               "name": "t:names.heading",
               "settings": {
-                "text": "<h2>Free Quote</h2>",
+                "text": "<h2>Free Quote<\/h2>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "center",
@@ -634,7 +625,7 @@
               "type": "text",
               "name": "t:names.heading",
               "settings": {
-                "text": "<h2>Free Quote</h2>",
+                "text": "<h2>Free Quote<\/h2>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "center",
@@ -717,7 +708,7 @@
               "type": "text",
               "name": "t:names.heading",
               "settings": {
-                "text": "<h2>Free Quote</h2>",
+                "text": "<h2>Free Quote<\/h2>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "center",
@@ -829,7 +820,7 @@
               "type": "image",
               "name": "t:names.image",
               "settings": {
-                "image": "shopify://shop_images/WhatsApp_Image_2025-07-21_at_20.07.27_2.jpg",
+                "image": "shopify:\/\/shop_images\/WhatsApp_Image_2025-07-21_at_20.07.27_2.jpg",
                 "link": "",
                 "image_ratio": "landscape",
                 "width": "custom",
@@ -892,7 +883,7 @@
                   "type": "text",
                   "name": "t:names.heading",
                   "settings": {
-                    "text": "<h2>Intentional design</h2>",
+                    "text": "<h2>Intentional design<\/h2>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
@@ -918,7 +909,7 @@
                   "type": "text",
                   "name": "t:names.description",
                   "settings": {
-                    "text": "<p>We create with intention. Our products solve real problems with clean design and honest materials.</p>",
+                    "text": "<p>We create with intention. Our products solve real problems with clean design and honest materials.<\/p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
@@ -945,7 +936,7 @@
                   "name": "t:names.button",
                   "settings": {
                     "label": "Shop now",
-                    "link": "shopify://collections/all",
+                    "link": "shopify:\/\/collections\/all",
                     "open_in_new_tab": false,
                     "style_class": "link",
                     "width": "fit-content",
@@ -1012,7 +1003,7 @@
               "type": "image",
               "name": "t:names.image",
               "settings": {
-                "image": "shopify://shop_images/WhatsApp_Image_2025-07-21_at_20.07.27_2.jpg",
+                "image": "shopify:\/\/shop_images\/WhatsApp_Image_2025-07-21_at_20.07.27_2.jpg",
                 "link": "",
                 "image_ratio": "landscape",
                 "width": "custom",
@@ -1075,7 +1066,7 @@
                   "type": "text",
                   "name": "t:names.heading",
                   "settings": {
-                    "text": "<h2>Intentional design</h2>",
+                    "text": "<h2>Intentional design<\/h2>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
@@ -1101,7 +1092,7 @@
                   "type": "text",
                   "name": "t:names.description",
                   "settings": {
-                    "text": "<p>We create with intention. Our products solve real problems with clean design and honest materials.</p>",
+                    "text": "<p>We create with intention. Our products solve real problems with clean design and honest materials.<\/p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
@@ -1128,7 +1119,7 @@
                   "name": "t:names.button",
                   "settings": {
                     "label": "Shop now",
-                    "link": "shopify://collections/all",
+                    "link": "shopify:\/\/collections\/all",
                     "open_in_new_tab": false,
                     "style_class": "link",
                     "width": "fit-content",
@@ -1227,7 +1218,7 @@
               "type": "_product-list-text",
               "name": "t:names.collection_title",
               "settings": {
-                "text": "<h3>INTERNAL STEEL & GLASS DOORS</h3>",
+                "text": "<h3>INTERNAL STEEL & GLASS DOORS<\/h3>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "center",
@@ -1429,7 +1420,7 @@
               "type": "image",
               "name": "t:names.image",
               "settings": {
-                "image": "shopify://shop_images/Large-SBD_1.png",
+                "image": "shopify:\/\/shop_images\/Large-SBD_1.png",
                 "link": "",
                 "image_ratio": "adapt",
                 "width": "fill",
@@ -1537,7 +1528,7 @@
                   "type": "text",
                   "name": "t:names.heading",
                   "settings": {
-                    "text": "<h2>Crafting Legacies.<br/>Not Just Doors</h2>",
+                    "text": "<h2>Crafting Legacies.<br\/>Not Just Doors<\/h2>",
                     "width": "100%",
                     "max_width": "narrow",
                     "alignment": "left",
@@ -1564,7 +1555,7 @@
                   "name": "t:names.text",
                   "disabled": true,
                   "settings": {
-                    "text": "<p>We make things that work better and last longer. Our products solve real problems with clean design and honest materials.</p>",
+                    "text": "<p>We make things that work better and last longer. Our products solve real problems with clean design and honest materials.<\/p>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
@@ -1590,7 +1581,7 @@
                   "type": "text",
                   "name": "t:names.description",
                   "settings": {
-                    "text": "<ul><li><h5>From order to install in 4 - 6 weeks</h5></li><li><h5>Choose from 150 different colour and finish combinations</h5></li><li><h5>We can colour match to to your existing fixtures and fittings</h5></li><li><h5>Various glass options from frosted and stained to fluted and mirrored</h5></li><li><h5>Fire rated options available</h5></li><li><h5>Various steel profiles</h5></li><li><h5>A wide choice of lever and bar or plated push pull handles<strong><br/></strong></h5></li></ul>",
+                    "text": "<ul><li><h5>From order to install in 4 - 6 weeks<\/h5><\/li><li><h5>Choose from 150 different colour and finish combinations<\/h5><\/li><li><h5>We can colour match to to your existing fixtures and fittings<\/h5><\/li><li><h5>Various glass options from frosted and stained to fluted and mirrored<\/h5><\/li><li><h5>Fire rated options available<\/h5><\/li><li><h5>Various steel profiles<\/h5><\/li><li><h5>A wide choice of lever and bar or plated push pull handles<strong><br\/><\/strong><\/h5><\/li><\/ul>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
@@ -1617,7 +1608,7 @@
                   "name": "t:names.button",
                   "settings": {
                     "label": "Get a Free Quote",
-                    "link": "shopify://pages/contact",
+                    "link": "shopify:\/\/pages\/contact",
                     "open_in_new_tab": false,
                     "style_class": "button",
                     "width": "fit-content",
@@ -1721,7 +1712,7 @@
               "type": "text",
               "name": "t:names.heading",
               "settings": {
-                "text": "<h2>Featured Projects</h2>",
+                "text": "<h2>Featured Projects<\/h2>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
@@ -1747,7 +1738,7 @@
               "type": "text",
               "name": "t:names.text",
               "settings": {
-                "text": "<p>We make things that work better and last longer. Our products solve real problems with clean design and honest materials.</p>",
+                "text": "<p>We make things that work better and last longer. Our products solve real problems with clean design and honest materials.<\/p>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
@@ -1813,7 +1804,7 @@
                   "type": "image",
                   "name": "t:names.image",
                   "settings": {
-                    "image": "shopify://shop_images/Large-SBD_1.png",
+                    "image": "shopify:\/\/shop_images\/Large-SBD_1.png",
                     "link": "",
                     "image_ratio": "landscape",
                     "width": "fill",
@@ -1837,7 +1828,7 @@
                   "name": "t:names.button",
                   "settings": {
                     "label": "View All Projects",
-                    "link": "shopify://pages/contact",
+                    "link": "shopify:\/\/pages\/contact",
                     "open_in_new_tab": false,
                     "style_class": "button",
                     "width": "fit-content",
@@ -1901,7 +1892,7 @@
           "type": "text",
           "name": "t:names.heading",
           "settings": {
-            "text": "<h3>Contact us to get a no hassle quote</h3>",
+            "text": "<h3>Contact us to get a no hassle quote<\/h3>",
             "width": "fit-content",
             "max_width": "normal",
             "alignment": "left",
@@ -1928,7 +1919,7 @@
           "name": "t:names.button",
           "settings": {
             "label": "Get a Free Quote",
-            "link": "shopify://pages/contact",
+            "link": "shopify:\/\/pages\/contact",
             "open_in_new_tab": false,
             "style_class": "button",
             "width": "fit-content",
@@ -1980,7 +1971,7 @@
           "type": "text",
           "name": "t:names.text",
           "settings": {
-            "text": "<p>We offer a full end to end service from initial enquiry through a site survey, design consultation, ‘deliver and fit’ and removal of your old doors.</p>",
+            "text": "<p>We offer a full end to end service from initial enquiry through a site survey, design consultation, ‘deliver and fit’ and removal of your old doors.<\/p>",
             "width": "fit-content",
             "max_width": "normal",
             "alignment": "center",
@@ -2043,7 +2034,7 @@
           "type": "text",
           "name": "t:names.heading",
           "settings": {
-            "text": "<h3>Featured Projects</h3>",
+            "text": "<h3>Featured Projects<\/h3>",
             "width": "fit-content",
             "max_width": "normal",
             "alignment": "left",
@@ -2069,7 +2060,7 @@
           "type": "text",
           "name": "t:names.text",
           "settings": {
-            "text": "<p>Discover how we've transformed visions into reality with  our<br/>bespoke steel solutions.</p>",
+            "text": "<p>Discover how we've transformed visions into reality with  our<br\/>bespoke steel solutions.<\/p>",
             "width": "fit-content",
             "max_width": "normal",
             "alignment": "center",
@@ -2132,7 +2123,7 @@
           "type": "_slide",
           "settings": {
             "media_type_1": "image",
-            "image_1": "shopify://shop_images/luxury-modern-home-interior-with-black-steel-doors.jpg",
+            "image_1": "shopify:\/\/shop_images\/luxury-modern-home-interior-with-black-steel-doors.jpg",
             "content_direction": "column",
             "vertical_on_mobile": true,
             "horizontal_alignment": "flex-start",
@@ -2195,7 +2186,7 @@
                 "text_w3PbKY": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Sliding Door To Match Existing Externals</p>",
+                    "text": "<p>Sliding Door To Match Existing Externals<\/p>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
@@ -2220,7 +2211,7 @@
                 "text_bAtiew": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Wolverhampton</p>",
+                    "text": "<p>Wolverhampton<\/p>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
@@ -2257,7 +2248,7 @@
           "type": "_slide",
           "settings": {
             "media_type_1": "image",
-            "image_1": "shopify://shop_images/686DB7B1-2154-49CB-9292-FF42FFF9D459_1_105_c.jpg",
+            "image_1": "shopify:\/\/shop_images\/686DB7B1-2154-49CB-9292-FF42FFF9D459_1_105_c.jpg",
             "content_direction": "column",
             "vertical_on_mobile": true,
             "horizontal_alignment": "flex-start",
@@ -2320,7 +2311,7 @@
                 "text_6e6rNa": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Dressing Room Partition</p>",
+                    "text": "<p>Dressing Room Partition<\/p>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
@@ -2345,7 +2336,7 @@
                 "text_iWtt6j": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Nottingham</p>",
+                    "text": "<p>Nottingham<\/p>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
@@ -2382,7 +2373,7 @@
           "type": "_slide",
           "settings": {
             "media_type_1": "image",
-            "image_1": "shopify://shop_images/AD381D93-2A0B-4558-A95B-6DDE156B9419_1_105_c-_1.jpg",
+            "image_1": "shopify:\/\/shop_images\/AD381D93-2A0B-4558-A95B-6DDE156B9419_1_105_c-_1.jpg",
             "content_direction": "column",
             "vertical_on_mobile": true,
             "horizontal_alignment": "flex-start",
@@ -2445,7 +2436,7 @@
                 "text_AHDBKG": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Utility Room Door</p>",
+                    "text": "<p>Utility Room Door<\/p>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
@@ -2470,7 +2461,7 @@
                 "text_j9HGhX": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Nantwich</p>",
+                    "text": "<p>Nantwich<\/p>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
@@ -2530,7 +2521,7 @@
           "name": "t:names.button",
           "settings": {
             "label": "View our Projects",
-            "link": "shopify://blogs/projects",
+            "link": "shopify:\/\/blogs\/projects",
             "open_in_new_tab": false,
             "style_class": "button",
             "width": "fit-content",
@@ -2620,7 +2611,7 @@
               "type": "text",
               "name": "t:names.heading",
               "settings": {
-                "text": "<h2>Our 6 Stage Process</h2>",
+                "text": "<h2>Our 6 Stage Process<\/h2>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "center",
@@ -2726,7 +2717,7 @@
               "type": "custom-liquid",
               "name": "t:names.custom_liquid",
               "settings": {
-                "custom_liquid": "<span style=\"font-size: 28px; color: #F8F9F4;\">\n  <i class=\"fa-solid fa-phone\"></i></i>\n</span>"
+                "custom_liquid": "<span style=\"font-size: 28px; color: #F8F9F4;\">\n  <i class=\"fa-solid fa-phone\"><\/i><\/i>\n<\/span>"
               },
               "blocks": {}
             },
@@ -2735,7 +2726,7 @@
               "disabled": true,
               "settings": {
                 "icon": "whatsapp",
-                "image_upload": "shopify://shop_images/phone.svg",
+                "image_upload": "shopify:\/\/shop_images\/phone.svg",
                 "width": 32,
                 "link": "",
                 "open_in_new_tab": false
@@ -2784,7 +2775,7 @@
                 "text_rBwh3d": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Initial Contact</p>",
+                    "text": "<p>Initial Contact<\/p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
@@ -2809,7 +2800,7 @@
                 "text_zLyXXY": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>We would love to hear from you and all about your project. Every one is different, and we're yet to come across a request we can't make happen</p>",
+                    "text": "<p>We would love to hear from you and all about your project. Every one is different, and we're yet to come across a request we can't make happen<\/p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
@@ -2835,7 +2826,7 @@
                   "type": "custom-liquid",
                   "name": "Arrow",
                   "settings": {
-                    "custom_liquid": "<div class=\"arrow-switch rotate-left\" style=\"position:absolute; height:90px; width:90px; right:-10%;top:-30%;\">\n<img class=\"icon-arrow\" src=\"https://cdn.shopify.com/s/files/1/0969/1679/9835/files/arrow.png?v=1765965621\" alt=\"arrow\" width=\"64%\" height=\"auto\"/>\n</div>\n\n<style>\n.icon-arrow{\nwidth:64%;\n}\n.rotate-left{\ntransform:rotate(-30deg);\n}\n@media only screen and (max-width: 768px) {\n.arrow-switch{\ndisplay:none;\n}\n}\n</style>"
+                    "custom_liquid": "<div class=\"arrow-switch rotate-left\" style=\"position:absolute; height:90px; width:90px; right:-10%;top:-30%;\">\n<img class=\"icon-arrow\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0969\/1679\/9835\/files\/arrow.png?v=1765965621\" alt=\"arrow\" width=\"64%\" height=\"auto\"\/>\n<\/div>\n\n<style>\n.icon-arrow{\nwidth:64%;\n}\n.rotate-left{\ntransform:rotate(-30deg);\n}\n@media only screen and (max-width: 768px) {\n.arrow-switch{\ndisplay:none;\n}\n}\n<\/style>"
                   },
                   "blocks": {}
                 }
@@ -2896,7 +2887,7 @@
               "type": "custom-liquid",
               "name": "t:names.custom_liquid",
               "settings": {
-                "custom_liquid": "<span style=\"font-size: 28px; color: #F8F9F4;\">\n  <i class=\"fa-solid fa-clipboard-list\"></i>\n</span>"
+                "custom_liquid": "<span style=\"font-size: 28px; color: #F8F9F4;\">\n  <i class=\"fa-solid fa-clipboard-list\"><\/i>\n<\/span>"
               },
               "blocks": {}
             },
@@ -2953,7 +2944,7 @@
                 "text_W7amtG": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Design Consultation</p>",
+                    "text": "<p>Design Consultation<\/p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
@@ -2978,7 +2969,7 @@
                 "text_YFyT8P": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Where your project comes to life. We can settle on options for handles, glass, colour, finish and design. Full CAD drawings can be provided later if requested.</p>",
+                    "text": "<p>Where your project comes to life. We can settle on options for handles, glass, colour, finish and design. Full CAD drawings can be provided later if requested.<\/p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
@@ -3004,7 +2995,7 @@
                   "type": "custom-liquid",
                   "name": "Arrow",
                   "settings": {
-                    "custom_liquid": "<div class=\"arrow-switch rotate-left\" style=\"position:absolute; height:90px; width:90px; right:-10%;top:-30%;\">\n<img class=\"icon-arrow\" src=\"https://cdn.shopify.com/s/files/1/0969/1679/9835/files/arrow.png?v=1765965621\" alt=\"arrow\" width=\"64%\" height=\"auto\"/>\n</div>\n\n<style>\n.icon-arrow{\nwidth:64%;\n}\n.rotate-left{\ntransform:rotate(-30deg);\n}\n@media only screen and (max-width: 768px) {\n.arrow-switch{\ndisplay:none;\n}\n}\n</style>"
+                    "custom_liquid": "<div class=\"arrow-switch rotate-left\" style=\"position:absolute; height:90px; width:90px; right:-10%;top:-30%;\">\n<img class=\"icon-arrow\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0969\/1679\/9835\/files\/arrow.png?v=1765965621\" alt=\"arrow\" width=\"64%\" height=\"auto\"\/>\n<\/div>\n\n<style>\n.icon-arrow{\nwidth:64%;\n}\n.rotate-left{\ntransform:rotate(-30deg);\n}\n@media only screen and (max-width: 768px) {\n.arrow-switch{\ndisplay:none;\n}\n}\n<\/style>"
                   },
                   "blocks": {}
                 }
@@ -3065,7 +3056,7 @@
               "type": "custom-liquid",
               "name": "t:names.custom_liquid",
               "settings": {
-                "custom_liquid": "<span style=\"font-size: 28px; color: #F8F9F4;\">\n  <i class=\"fa-solid fa-clipboard-check\"></i>\n</span>"
+                "custom_liquid": "<span style=\"font-size: 28px; color: #F8F9F4;\">\n  <i class=\"fa-solid fa-clipboard-check\"><\/i>\n<\/span>"
               },
               "blocks": {}
             },
@@ -3122,7 +3113,7 @@
                 "text_4xBRAz": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Site Survey</p>",
+                    "text": "<p>Site Survey<\/p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
@@ -3147,7 +3138,7 @@
                 "text_caVMPk": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>We will visit your site and carry out a full pre-built site survey to ensure fitting happens without a hitch</p>",
+                    "text": "<p>We will visit your site and carry out a full pre-built site survey to ensure fitting happens without a hitch<\/p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
@@ -3179,7 +3170,7 @@
               "type": "custom-liquid",
               "name": "Arrow",
               "settings": {
-                "custom_liquid": "<div class=\"arrow-switch\" style=\"position:absolute; height:60px; width:60px; right:9%;bottom:-40%;\">\n<img class=\"icon-arrow\" src=\"https://cdn.shopify.com/s/files/1/0969/1679/9835/files/sbdfav-Asset_2_3x_7308f972-20a1-4eaa-b21e-e8b7fb6be148.png?v=1765459407\" alt=\"arrow\" width=\"24%\" height=\"auto\"/>\n</div>\n\n<style>\n.icon-arrow{\nwidth:64%;\n}\n@media only screen and (max-width: 768px) {\n.arrow-switch{\ndisplay:none;\n}\n}\n</style>"
+                "custom_liquid": "<div class=\"arrow-switch\" style=\"position:absolute; height:60px; width:60px; right:9%;bottom:-40%;\">\n<img class=\"icon-arrow\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0969\/1679\/9835\/files\/sbdfav-Asset_2_3x_7308f972-20a1-4eaa-b21e-e8b7fb6be148.png?v=1765459407\" alt=\"arrow\" width=\"24%\" height=\"auto\"\/>\n<\/div>\n\n<style>\n.icon-arrow{\nwidth:64%;\n}\n@media only screen and (max-width: 768px) {\n.arrow-switch{\ndisplay:none;\n}\n}\n<\/style>"
               },
               "blocks": {}
             }
@@ -3213,7 +3204,7 @@
         "color_scheme": "scheme-4",
         "background_media": "none",
         "video_position": "cover",
-        "background_image": "shopify://shop_images/arrow-right.svg",
+        "background_image": "shopify:\/\/shop_images\/arrow-right.svg",
         "background_image_position": "cover",
         "border": "none",
         "border_width": 1,
@@ -3273,7 +3264,7 @@
               "type": "custom-liquid",
               "name": "t:names.custom_liquid",
               "settings": {
-                "custom_liquid": "<span style=\"font-size: 28px; color: #F8F9F4;\">\n<i class=\"fa-solid fa-ruler\"></i>\n</span>"
+                "custom_liquid": "<span style=\"font-size: 28px; color: #F8F9F4;\">\n<i class=\"fa-solid fa-ruler\"><\/i>\n<\/span>"
               },
               "blocks": {}
             },
@@ -3331,14 +3322,14 @@
                   "type": "custom-liquid",
                   "name": "Arrow",
                   "settings": {
-                    "custom_liquid": "<div class=\"arrow-switch arrow-rotate\" style=\"position:absolute; height:90px; width:90px; right:-9%;top:-40%;\">\n<img class=\"icon-arrow\" src=\"https://cdn.shopify.com/s/files/1/0969/1679/9835/files/left-arrow.png?v=1765965912\" alt=\"arrow\" width=\"24%\" height=\"auto\"/>\n</div>\n\n<style>\n.icon-arrow{\nwidth:64%;\n}\n.arrow-rotate{\ntransform: rotate(30deg);}\n@media only screen and (max-width: 768px) {\n.arrow-switch{\ndisplay:none;\n}\n}\n</style>"
+                    "custom_liquid": "<div class=\"arrow-switch arrow-rotate\" style=\"position:absolute; height:90px; width:90px; right:-9%;top:-40%;\">\n<img class=\"icon-arrow\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0969\/1679\/9835\/files\/left-arrow.png?v=1765965912\" alt=\"arrow\" width=\"24%\" height=\"auto\"\/>\n<\/div>\n\n<style>\n.icon-arrow{\nwidth:64%;\n}\n.arrow-rotate{\ntransform: rotate(30deg);}\n@media only screen and (max-width: 768px) {\n.arrow-switch{\ndisplay:none;\n}\n}\n<\/style>"
                   },
                   "blocks": {}
                 },
                 "text_w7mQyL": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Fitting</p>",
+                    "text": "<p>Fitting<\/p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
@@ -3363,7 +3354,7 @@
                 "text_36dD9t": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>One of our skilled technicians will meet the delivery of your doors at site for the install. </p>",
+                    "text": "<p>One of our skilled technicians will meet the delivery of your doors at site for the install. <\/p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
@@ -3442,7 +3433,7 @@
               "type": "custom-liquid",
               "name": "t:names.custom_liquid",
               "settings": {
-                "custom_liquid": "<span style=\"font-size: 28px; color: #F8F9F4;\">\n<i class=\"fa-solid fa-wrench\"></i>\n</span>"
+                "custom_liquid": "<span style=\"font-size: 28px; color: #F8F9F4;\">\n<i class=\"fa-solid fa-wrench\"><\/i>\n<\/span>"
               },
               "blocks": {}
             },
@@ -3451,7 +3442,7 @@
               "disabled": true,
               "settings": {
                 "icon": "washing",
-                "image_upload": "shopify://shop_images/wrench.svg",
+                "image_upload": "shopify:\/\/shop_images\/wrench.svg",
                 "width": 32,
                 "link": "",
                 "open_in_new_tab": false
@@ -3501,14 +3492,14 @@
                   "type": "custom-liquid",
                   "name": "Arrow",
                   "settings": {
-                    "custom_liquid": "<div class=\"arrow-switch arrow-rotate\" style=\"position:absolute; height:90px; width:90px; right:-9%;top:-40%;\">\n<img class=\"icon-arrow\" src=\"https://cdn.shopify.com/s/files/1/0969/1679/9835/files/left-arrow.png?v=1765965912\" alt=\"arrow\" width=\"24%\" height=\"auto\"/>\n</div>\n\n<style>\n.icon-arrow{\nwidth:64%;\n}\n.arrow-rotate{\ntransform: rotate(30deg);}\n@media only screen and (max-width: 768px) {\n.arrow-switch{\ndisplay:none;\n}\n}\n</style>"
+                    "custom_liquid": "<div class=\"arrow-switch arrow-rotate\" style=\"position:absolute; height:90px; width:90px; right:-9%;top:-40%;\">\n<img class=\"icon-arrow\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0969\/1679\/9835\/files\/left-arrow.png?v=1765965912\" alt=\"arrow\" width=\"24%\" height=\"auto\"\/>\n<\/div>\n\n<style>\n.icon-arrow{\nwidth:64%;\n}\n.arrow-rotate{\ntransform: rotate(30deg);}\n@media only screen and (max-width: 768px) {\n.arrow-switch{\ndisplay:none;\n}\n}\n<\/style>"
                   },
                   "blocks": {}
                 },
                 "text_mnEr39": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Manufacturing</p>",
+                    "text": "<p>Manufacturing<\/p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
@@ -3533,7 +3524,7 @@
                 "text_PRriMj": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>The factory will build your doors from the requirements in the spec sheet. From here your doors will take 4-6 weeks to deliver to site.</p>",
+                    "text": "<p>The factory will build your doors from the requirements in the spec sheet. From here your doors will take 4-6 weeks to deliver to site.<\/p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
@@ -3612,7 +3603,7 @@
               "type": "custom-liquid",
               "name": "t:names.custom_liquid",
               "settings": {
-                "custom_liquid": "<span style=\"font-size: 28px; color: #F8F9F4;\">\n<i class=\"fa-solid fa-square-check\"></i>\n</span>"
+                "custom_liquid": "<span style=\"font-size: 28px; color: #F8F9F4;\">\n<i class=\"fa-solid fa-square-check\"><\/i>\n<\/span>"
               },
               "blocks": {}
             },
@@ -3669,7 +3660,7 @@
                 "text_jGNmAe": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Quote & Order</p>",
+                    "text": "<p>Quote & Order<\/p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
@@ -3694,7 +3685,7 @@
                 "text_ppncHi": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Once you are happy with your build and have received your quote we can confirm your order and move forward to manufacture and fitting.</p>",
+                    "text": "<p>Once you are happy with your build and have received your quote we can confirm your order and move forward to manufacture and fitting.<\/p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
@@ -3810,7 +3801,7 @@
               "type": "custom-liquid",
               "name": "t:names.custom_liquid",
               "settings": {
-                "custom_liquid": "<span style=\"font-size: 28px; color: #F8F9F4;\">\n<i class=\"fa-solid fa-square-check\"></i>\n</span>"
+                "custom_liquid": "<span style=\"font-size: 28px; color: #F8F9F4;\">\n<i class=\"fa-solid fa-square-check\"><\/i>\n<\/span>"
               },
               "blocks": {}
             },
@@ -3867,7 +3858,7 @@
                 "text_dNHJre": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Quote & Order</p>",
+                    "text": "<p>Quote & Order<\/p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
@@ -3892,7 +3883,7 @@
                 "text_zekne3": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Once you are happy with your build and have received your quote we can confirm your order and move forward to manufacture and fitting.</p>",
+                    "text": "<p>Once you are happy with your build and have received your quote we can confirm your order and move forward to manufacture and fitting.<\/p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
@@ -3970,7 +3961,7 @@
               "type": "custom-liquid",
               "name": "t:names.custom_liquid",
               "settings": {
-                "custom_liquid": "<span style=\"font-size: 28px; color: #F8F9F4;\">\n<i class=\"fa-solid fa-wrench\"></i>\n</span>"
+                "custom_liquid": "<span style=\"font-size: 28px; color: #F8F9F4;\">\n<i class=\"fa-solid fa-wrench\"><\/i>\n<\/span>"
               },
               "blocks": {}
             },
@@ -3979,7 +3970,7 @@
               "disabled": true,
               "settings": {
                 "icon": "washing",
-                "image_upload": "shopify://shop_images/wrench.svg",
+                "image_upload": "shopify:\/\/shop_images\/wrench.svg",
                 "width": 32,
                 "link": "",
                 "open_in_new_tab": false
@@ -4028,7 +4019,7 @@
                 "text_bnMAmK": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Manufacturing</p>",
+                    "text": "<p>Manufacturing<\/p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
@@ -4053,7 +4044,7 @@
                 "text_fYkNzC": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>The factory will build your doors from the requirements in the spec sheet. From here your doors will take 4-6 weeks to deliver to site.</p>",
+                    "text": "<p>The factory will build your doors from the requirements in the spec sheet. From here your doors will take 4-6 weeks to deliver to site.<\/p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
@@ -4131,7 +4122,7 @@
               "type": "custom-liquid",
               "name": "t:names.custom_liquid",
               "settings": {
-                "custom_liquid": "<span style=\"font-size: 28px; color: #F8F9F4;\">\n<i class=\"fa-solid fa-ruler\"></i>\n</span>"
+                "custom_liquid": "<span style=\"font-size: 28px; color: #F8F9F4;\">\n<i class=\"fa-solid fa-ruler\"><\/i>\n<\/span>"
               },
               "blocks": {}
             },
@@ -4188,7 +4179,7 @@
                 "text_RPDgMG": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Fitting</p>",
+                    "text": "<p>Fitting<\/p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
@@ -4213,7 +4204,7 @@
                 "text_JqTx9L": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>One of our skilled technicians will meet the delivery of your doors at site for the install. </p>",
+                    "text": "<p>One of our skilled technicians will meet the delivery of your doors at site for the install. <\/p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
@@ -4294,7 +4285,7 @@
           "static": true,
           "settings": {
             "media_type": "image",
-            "image": "shopify://shop_images/double-doors-2_1.png",
+            "image": "shopify:\/\/shop_images\/double-doors-2_1.png",
             "link": "",
             "video_loop": true,
             "video_autoplay": false,
@@ -4316,7 +4307,7 @@
               "type": "text",
               "name": "t:names.caption",
               "settings": {
-                "text": "<p>Bestseller</p>",
+                "text": "<p>Bestseller<\/p>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
@@ -4381,7 +4372,7 @@
                   "type": "text",
                   "name": "t:names.heading",
                   "settings": {
-                    "text": "<h2>Crafting Legacies.<br/>Not Just Doors</h2>",
+                    "text": "<h2>Crafting Legacies.<br\/>Not Just Doors<\/h2>",
                     "width": "fit-content",
                     "max_width": "narrow",
                     "alignment": "left",
@@ -4406,7 +4397,7 @@
                 "text_J4hajT": {
                   "type": "text",
                   "settings": {
-                    "text": "<ul><li><h5>From order to install in 4 - 6 weeks</h5></li><li><h5>Choose from 150 different colour and finish combinations</h5></li><li><h5>We can colour match to to your existing fixtures and fittings</h5></li><li><h5>Various glass options from frosted and stained to fluted and mirrored</h5></li><li><h5>Fire rated options available</h5></li><li><h5>Various steel profiles</h5></li><li><h5>A wide choice of lever and bar or plated push pull handles<strong><br/></strong></h5></li></ul>",
+                    "text": "<ul><li><h5>From order to install in 4 - 6 weeks<\/h5><\/li><li><h5>Choose from 150 different colour and finish combinations<\/h5><\/li><li><h5>We can colour match to to your existing fixtures and fittings<\/h5><\/li><li><h5>Various glass options from frosted and stained to fluted and mirrored<\/h5><\/li><li><h5>Fire rated options available<\/h5><\/li><li><h5>Various steel profiles<\/h5><\/li><li><h5>A wide choice of lever and bar or plated push pull handles<strong><br\/><\/strong><\/h5><\/li><\/ul>",
                     "width": "100%",
                     "max_width": "narrow",
                     "alignment": "left",
@@ -4439,7 +4430,7 @@
               "disabled": true,
               "settings": {
                 "label": "Shop now",
-                "link": "shopify://collections/all",
+                "link": "shopify:\/\/collections\/all",
                 "open_in_new_tab": false,
                 "style_class": "link",
                 "width": "fit-content",
@@ -4532,7 +4523,7 @@
               "type": "text",
               "name": "t:names.description",
               "settings": {
-                "text": "<h4>Sarah B -<br/><em>\"Simple ordering process and outstanding quality, they look amazing and you can just tell they’re built to last. 5 stars.</em></h4><h4></h4><h4></h4><h4><em>--</em></h4>",
+                "text": "<h4>Sarah B -<br\/><em>\"Simple ordering process and outstanding quality, they look amazing and you can just tell they’re built to last. 5 stars.<\/em><\/h4><h4><\/h4><h4><\/h4><h4><em>--<\/em><\/h4>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "center",
@@ -4603,7 +4594,7 @@
               "type": "text",
               "name": "t:names.description",
               "settings": {
-                "text": "<h4>Carl T -<br/><em>\"The site survey gave us real confidence the doors would fit perfectly, and they did. Combined with a smooth ordering process and excellent quality, the whole process exceeded expectations\"</em></h4><h4><em>--</em></h4>",
+                "text": "<h4>Carl T -<br\/><em>\"The site survey gave us real confidence the doors would fit perfectly, and they did. Combined with a smooth ordering process and excellent quality, the whole process exceeded expectations\"<\/em><\/h4><h4><em>--<\/em><\/h4>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "center",

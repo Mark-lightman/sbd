@@ -1,0 +1,579 @@
+TEST
+{% liquid
+  assign item_blocks = section.blocks | where: 'type', 'bespoke-collection-item'
+  assign columns = section.settings.columns
+  assign columns_mobile = section.settings.mobile_columns
+  assign columns_gap = section.settings.columns_gap
+  assign rows_gap = section.settings.rows_gap
+%}
+
+<div class="section-background color-{{ section.settings.color_scheme }}"></div>
+
+<div
+  class="
+    section
+    section--{{ section.settings.section_width }}
+    color-{{ section.settings.color_scheme }}
+    collection-grid-bespoke
+    spacing-style
+  "
+  style="
+    {% render 'spacing-style', settings: section.settings %}
+    --bespoke-columns: {{ columns }};
+    --bespoke-columns-mobile: {{ columns_mobile }};
+    --bespoke-column-gap: {{ columns_gap }}px;
+    --bespoke-row-gap: {{ rows_gap }}px;
+    --bespoke-card-width: calc((100% - (var(--bespoke-column-gap) * ({{ columns }} - 1))) / {{ columns }});
+    --bespoke-item-gap: {{ section.settings.item_content_gap }}px;
+    --bespoke-header-gap: {{ section.settings.header_gap }}px;
+    --bespoke-subheading-color: {{ section.settings.subheading_color }};
+    --bespoke-heading-color: {{ section.settings.heading_color }};
+    --bespoke-underline-color: {{ section.settings.underline_color }};
+    --bespoke-description-color: {{ section.settings.description_color }};
+  "
+>
+  <div class="collection-grid-bespoke__inner">
+    {% if section.settings.subheading != blank or section.settings.heading != blank or section.settings.description != blank %}
+      <header class="collection-grid-bespoke__header" style="text-align: {{ section.settings.header_alignment }};">
+        {% if section.settings.subheading != blank %}
+          <p class="collection-grid-bespoke__subheading">{{ section.settings.subheading }}</p>
+        {% endif %}
+        {% if section.settings.heading != blank %}
+          <h2 class="collection-grid-bespoke__heading">{{ section.settings.heading }}</h2>
+        {% endif %}
+        {% if section.settings.show_underline and section.settings.heading != blank %}
+          <span class="collection-grid-bespoke__underline" aria-hidden="true"></span>
+        {% endif %}
+        {% if section.settings.description != blank %}
+          <div class="collection-grid-bespoke__description rte">{{ section.settings.description }}</div>
+        {% endif %}
+      </header>
+    {% endif %}
+
+    <div class="collection-grid-bespoke__grid">
+      {% for block in item_blocks %}
+        <div class="collection-grid-bespoke__item">
+          {% render 'bespoke-collection-item', block: block, section: section %}
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+{% stylesheet %}
+  .collection-grid-bespoke__inner {
+    display: flex;
+    flex-direction: column;
+    gap: var(--bespoke-header-gap, 32px);
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .collection-grid-bespoke__header {
+    max-width: 100%;
+  }
+
+  .collection-grid-bespoke__subheading {
+    margin: 0 0 8px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--bespoke-subheading-color, #B6925B);
+  }
+
+  .collection-grid-bespoke__heading {
+    margin: 0 0 12px;
+    font-family: var(--font-heading--family);
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    font-weight: 400;
+    line-height: 1.2;
+    color: var(--bespoke-heading-color, #26293B);
+  }
+
+  .collection-grid-bespoke__underline {
+    display: block;
+    width: 28%;
+    max-width: 120px;
+    height: 2px;
+    margin: 0 0 16px;
+    background-color: var(--bespoke-underline-color, #B6925B);
+  }
+
+  .collection-grid-bespoke__header[style*="center"] .collection-grid-bespoke__underline {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .collection-grid-bespoke__header[style*="right"] .collection-grid-bespoke__underline {
+    margin-left: auto;
+  }
+
+  .collection-grid-bespoke__description {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.6;
+    max-width: 42rem;
+    letter-spacing: normal;
+    color: var(--bespoke-description-color, #7B7B7B);
+  }
+
+  .collection-grid-bespoke__description p {
+    letter-spacing: normal;
+  }
+
+  .collection-grid-bespoke__header[style*="center"] .collection-grid-bespoke__description {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .collection-grid-bespoke__header[style*="right"] .collection-grid-bespoke__description {
+    margin-left: auto;
+  }
+
+  .collection-grid-bespoke__grid {
+    display: grid;
+    grid-template-columns: repeat(var(--bespoke-columns-mobile), 1fr);
+    gap: var(--bespoke-row-gap) var(--bespoke-column-gap);
+    width: 100%;
+  }
+
+  @media (min-width: 750px) {
+    .collection-grid-bespoke__grid {
+      grid-template-columns: repeat(var(--bespoke-columns), 1fr);
+    }
+  }
+
+  .collection-grid-bespoke__item {
+    min-width: 0;
+  }
+
+  .bespoke-collection-item {
+    position: relative;
+    flex: 1 1 var(--bespoke-card-width, 100%);
+    width: 100%;
+    min-width: 0;
+  }
+
+  .bespoke-collection-item__link {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    border-radius: inherit;
+  }
+
+  .bespoke-collection-item__inner {
+    display: flex;
+    flex-direction: column;
+    gap: var(--bespoke-item-gap, 12px);
+    height: 100%;
+    pointer-events: none;
+  }
+
+  .bespoke-collection-item__inner * {
+    pointer-events: auto;
+  }
+
+  .bespoke-collection-item__image-wrapper {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    aspect-ratio: var(--bespoke-item-ratio, 1);
+    border-radius: inherit;
+  }
+
+  .bespoke-collection-item__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .bespoke-collection-item__image--placeholder {
+    width: 100%;
+    height: 100%;
+    background: var(--color-foreground, #000);
+    opacity: 0.06;
+  }
+
+  .bespoke-collection-item__image--placeholder svg {
+    width: 100%;
+    height: 100%;
+  }
+
+  .bespoke-collection-item__content {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    flex: 1 1 auto;
+  }
+
+  .bespoke-collection-item__title {
+    margin: 0;
+    font-family: var(--font-body--family);
+    line-height: 1.3;
+    letter-spacing: normal;
+  }
+
+  .bespoke-collection-item__description {
+    margin: 0;
+    font-family: var(--font-body--family);
+    line-height: 1.5;
+    opacity: 0.85;
+    letter-spacing: normal;
+  }
+
+  .bespoke-collection-item__arrow {
+    display: inline-flex;
+    align-self: flex-start;
+    margin-top: 4px;
+    opacity: 0.7;
+  }
+
+  .bespoke-collection-item__arrow svg {
+    width: 20px;
+    height: 20px;
+  }
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "Bespoke collections grid",
+  "class": "collection-grid-bespoke-section",
+  "tag": "section",
+  "blocks": [
+    {
+      "type": "bespoke-collection-item",
+      "name": "Collection item",
+      "settings": [
+        {
+          "type": "collection",
+          "id": "collection",
+          "label": "t:settings.collection"
+        },
+        {
+          "type": "header",
+          "content": "Image"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Custom image",
+          "info": "Overrides collection image when set"
+        },
+        {
+          "type": "text",
+          "id": "image_alt",
+          "label": "Image alt text"
+        },
+        {
+          "type": "select",
+          "id": "image_ratio",
+          "label": "t:settings.aspect_ratio",
+          "options": [
+            { "value": "adapt", "label": "t:options.auto" },
+            { "value": "portrait", "label": "t:options.portrait" },
+            { "value": "square", "label": "t:options.square" },
+            { "value": "landscape", "label": "t:options.landscape" }
+          ],
+          "default": "square"
+        },
+        {
+          "type": "header",
+          "content": "Title"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Custom title",
+          "info": "Overrides collection title when set"
+        },
+        {
+          "type": "select",
+          "id": "title_font_weight",
+          "label": "Font weight",
+          "options": [
+            { "value": "400", "label": "Normal" },
+            { "value": "500", "label": "Medium" },
+            { "value": "600", "label": "Semi bold" },
+            { "value": "700", "label": "Bold" }
+          ],
+          "default": "600"
+        },
+        {
+          "type": "text",
+          "id": "title_font_size",
+          "label": "Font size",
+          "placeholder": "e.g. 1.125rem"
+        },
+        {
+          "type": "color",
+          "id": "title_color",
+          "label": "Color"
+        },
+        {
+          "type": "header",
+          "content": "Description"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Description"
+        },
+        {
+          "type": "text",
+          "id": "description_font_size",
+          "label": "Font size",
+          "placeholder": "e.g. 0.875rem"
+        },
+        {
+          "type": "color",
+          "id": "description_color",
+          "label": "Color"
+        },
+        {
+          "type": "header",
+          "content": "Link"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Link",
+          "info": "Defaults to collection URL when empty"
+        }
+      ]
+    }
+  ],
+  "settings": [
+    {
+      "type": "header",
+      "content": "Header"
+    },
+    {
+      "type": "paragraph",
+      "content": "Subheading and divider colors"
+    },
+    {
+      "type": "color",
+      "id": "subheading_color",
+      "label": "Subheading color",
+      "default": "#B6925B"
+    },
+    {
+      "type": "color",
+      "id": "underline_color",
+      "label": "Divider color",
+      "default": "#B6925B"
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Subheading"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Description"
+    },
+    {
+      "type": "select",
+      "id": "header_alignment",
+      "label": "Header alignment",
+      "options": [
+        { "value": "left", "label": "Left" },
+        { "value": "center", "label": "Center" },
+        { "value": "right", "label": "Right" }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_underline",
+      "label": "Show underline",
+      "default": true
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Heading color",
+      "default": "#26293B"
+    },
+    {
+      "type": "color",
+      "id": "description_color",
+      "label": "Description color",
+      "default": "#7B7B7B"
+    },
+    {
+      "type": "range",
+      "id": "header_gap",
+      "label": "Header spacing",
+      "min": 8,
+      "max": 64,
+      "step": 4,
+      "unit": "px",
+      "default": 32
+    },
+    {
+      "type": "header",
+      "content": "Grid"
+    },
+    {
+      "type": "range",
+      "id": "columns",
+      "label": "Columns (desktop)",
+      "min": 1,
+      "max": 4,
+      "step": 1,
+      "default": 2
+    },
+    {
+      "type": "select",
+      "id": "mobile_columns",
+      "label": "Columns (mobile)",
+      "options": [
+        { "value": "1", "label": "1" },
+        { "value": "2", "label": "2" }
+      ],
+      "default": "1"
+    },
+    {
+      "type": "range",
+      "id": "columns_gap",
+      "label": "Horizontal gap",
+      "min": 0,
+      "max": 80,
+      "step": 4,
+      "unit": "px",
+      "default": 24
+    },
+    {
+      "type": "range",
+      "id": "rows_gap",
+      "label": "Vertical gap",
+      "min": 0,
+      "max": 80,
+      "step": 4,
+      "unit": "px",
+      "default": 24
+    },
+    {
+      "type": "range",
+      "id": "item_content_gap",
+      "label": "Gap between image and text (per item)",
+      "min": 4,
+      "max": 32,
+      "step": 2,
+      "unit": "px",
+      "default": 12
+    },
+    {
+      "type": "header",
+      "content": "Section layout"
+    },
+    {
+      "type": "select",
+      "id": "section_width",
+      "label": "Width",
+      "options": [
+        { "value": "page-width", "label": "Page width" },
+        { "value": "full-width", "label": "Full width" }
+      ],
+      "default": "page-width"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "Color scheme",
+      "default": "scheme-1"
+    },
+    {
+      "type": "header",
+      "content": "Padding"
+    },
+    {
+      "type": "range",
+      "id": "padding-block-start",
+      "label": "Top",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 48
+    },
+    {
+      "type": "range",
+      "id": "padding-block-end",
+      "label": "Bottom",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 48
+    }
+  ],
+  "presets": [
+    {
+      "name": "Bespoke collections grid",
+      "category": "Collection",
+      "blocks": [
+        {
+          "type": "bespoke-collection-item",
+          "settings": {
+            "title": "Internal Steel Doors",
+            "description": "Define your space with elegance and light.",
+            "image_ratio": "square"
+          }
+        },
+        {
+          "type": "bespoke-collection-item",
+          "settings": {
+            "title": "External Steel Doors",
+            "description": "Secure, stylish, and built to last.",
+            "image_ratio": "square"
+          }
+        },
+        {
+          "type": "bespoke-collection-item",
+          "settings": {
+            "title": "Steel Room Dividers",
+            "description": "Flexible design solutions for open plan living.",
+            "image_ratio": "square"
+          }
+        },
+        {
+          "type": "bespoke-collection-item",
+          "settings": {
+            "title": "Steel Screens & Partitions",
+            "description": "Architectural elements for any room.",
+            "image_ratio": "square"
+          }
+        }
+      ],
+      "settings": {
+        "subheading": "CRAFTSMANSHIP",
+        "heading": "Our Bespoke Collections",
+        "description": "<p>Explore our range of bespoke steel doors and glazing solutions, each crafted to elevate your architectural vision.</p>",
+        "header_alignment": "center",
+        "show_underline": true,
+        "subheading_color": "#B6925B",
+        "heading_color": "#26293B",
+        "underline_color": "#B6925B",
+        "description_color": "#7B7B7B",
+        "columns": 2,
+        "mobile_columns": "1",
+        "columns_gap": 24,
+        "rows_gap": 24,
+        "section_width": "page-width",
+        "padding-block-start": 48,
+        "padding-block-end": 48
+      }
+    }
+  ]
+}
+{% endschema %}
