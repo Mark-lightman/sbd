@@ -1,0 +1,843 @@
+<div class="section-background color-{{ section.settings.color_scheme }}"></div>
+<div
+  class="section section--full-width process-steps color-{{ section.settings.color_scheme }}"
+  data-testid="process-steps"
+  style="
+    --process-steps-subheading-color: {{ section.settings.subheading_color }};
+  "
+>
+  <div class="process-steps__inner">
+    <div class="process-steps__header">
+      <div class="process-steps__header-content">
+        {%- content_for 'block', type: '_product-list-content', id: 'static-header' -%}
+      </div>
+    </div>
+
+    <div class="process-steps__grid">
+      {% for i in (1..6) %}
+        {% assign title_key = 'step_' | append: i | append: '_title' %}
+        {% assign desc_key = 'step_' | append: i | append: '_description' %}
+        {% assign icon_key = 'step_' | append: i | append: '_icon' %}
+        {% assign title = section.settings[title_key] %}
+        {% assign description = section.settings[desc_key] %}
+        {% assign icon_type = section.settings[icon_key] | default: 'chat' %}
+        {% assign card_number = i | prepend: '0' | slice: -2, 2 %}
+        <div class="process-steps__card group">
+            <span class="process-steps__card-number">{{ card_number }}</span>
+            <div class="process-steps__card-icon">
+              {% case icon_type %}
+                {% when 'chat' %}
+                  <span class="process-steps__card-icon-symbol process-steps__card-icon-svg">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M2 22V4q0-.825.588-1.412T4 2h16q.825 0 1.413.588T22 4v12q0 .825-.587 1.413T20 18H6zm3.15-6H20V4H4v13.125zM4 16V4z"/></svg>
+                  </span>
+                {% when 'design' %}
+                  <span class="process-steps__card-icon-symbol process-steps__card-icon-svg">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="m6.75 21l-.25-2.2l2.85-7.85q.375.35.813.588t.937.362l-2.75 7.55zm10.5 0l-1.6-1.55l-2.75-7.55q.5-.125.938-.363t.812-.587l2.85 7.85zM12 11q-1.25 0-2.125-.875T9 8q0-.975.563-1.737T11 5.2V3h2v2.2q.875.3 1.438 1.063T15 8q0 1.25-.875 2.125T12 11m0-2q.425 0 .713-.288T13 8t-.288-.712T12 7t-.712.288T11 8t.288.713T12 9"/></svg>
+                  </span>
+                {% when 'survey' %}
+                  <span class="process-steps__card-icon-symbol process-steps__card-icon-svg">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M21 6H3c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2m0 10H3V8h2v4h2V8h2v4h2V8h2v4h2V8h2v4h2V8h2z"/></svg>
+                  </span>
+                {% when 'confirmation' %}
+                  <span class="process-steps__card-icon-symbol process-steps__card-icon-svg">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6 22q-1.25 0-2.125-.875T3 19v-3h3V2l1.5 1.5L9 2l1.5 1.5L12 2l1.5 1.5L15 2l1.5 1.5L18 2l1.5 1.5L21 2v17q0 1.25-.875 2.125T18 22zm12-2q.425 0 .713-.288T19 19V5H8v11h9v3q0 .425.288.713T18 20M9 9V7h6v2zm0 3v-2h6v2zm8-3q-.425 0-.712-.288T16 8t.288-.712T17 7t.713.288T18 8t-.288.713T17 9m0 3q-.425 0-.712-.288T16 11t.288-.712T17 10t.713.288T18 11t-.288.713T17 12"/></svg>
+                  </span>
+                {% when 'craftsmanship' %}
+                  <span class="process-steps__card-icon-symbol process-steps__card-icon-svg">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M5.475 21q-.625 0-1.062-.437T3.975 19.5t.438-1.062T5.475 18h1.6l-2.55-8.35q-.675-.375-1.112-1.1T2.975 7q0-1.25.875-2.125T5.975 4q.975 0 1.738.563T8.775 6h3.2V5q0-.425.288-.712T12.975 4q.225 0 .438.1t.362.3l1.7-1.6q.225-.225.538-.288t.612.088l3.9 1.8q.3.15.413.438t-.013.562q-.15.3-.437.388t-.563-.038l-3.6-1.65l-2.35 2.2v1.4l2.35 2.15l3.6-1.65q.275-.125.575-.025t.425.375q.15.3.025.575t-.425.425l-3.9 1.85q-.3.15-.612.087t-.538-.287l-1.7-1.6q-.15.15-.362.275t-.438.125q-.425 0-.712-.287T11.975 9V8h-3.2q-.075.2-.162.375t-.238.375l5 9.25h2.1q.625 0 1.063.438t.437 1.062t-.437 1.063t-1.063.437zm.5-13q.425 0 .713-.288T6.975 7t-.287-.712T5.975 6t-.712.288T4.975 7t.288.713t.712.287m3.15 10h1.95l-4.3-8h-.1zm1.95 0"/></svg>
+                  </span>
+                {% when 'installation' %}
+                  <span class="process-steps__card-icon-symbol process-steps__card-icon-svg">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="m18.9 21l-5.475-5.475l2.1-2.1L21 18.9zM5.1 21L3 18.9L9.9 12l-1.7-1.7l-.7.7l-1.275-1.275v2.05l-.7.7L2.5 9.45l.7-.7h2.05L4 7.5l3.55-3.55q.5-.5 1.075-.725T9.8 3t1.175.225t1.075.725l-2.3 2.3L11 7.5l-.7.7L12 9.9l2.25-2.25q-.1-.275-.162-.575t-.063-.6q0-1.475 1.013-2.488t2.487-1.012q.375 0 .713.075t.687.225L16.45 5.75l1.8 1.8l2.475-2.475q.175.35.238.687t.062.713q0 1.475-1.012 2.488t-2.488 1.012q-.3 0-.6-.05t-.575-.175z"/></svg>
+                  </span>
+                {% else %}
+                  <span class="process-steps__card-icon-symbol process-steps__card-icon-svg">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M2 22V4q0-.825.588-1.412T4 2h16q.825 0 1.413.588T22 4v12q0 .825-.587 1.413T20 18H6zm3.15-6H20V4H4v13.125zM4 16V4z"/></svg>
+                  </span>
+              {% endcase %}
+            </div>
+            {% if title != blank %}<h3 class="process-steps__card-title h4">{{ title }}</h3>{% endif %}
+            {% if description != blank %}
+              <div class="process-steps__card-description-wrap">
+                <div class="process-steps__card-description rte">{{ description }}</div>
+              </div>
+            {% endif %}
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+{% stylesheet %}
+  .process-steps {
+    --process-steps-golden: #C8A873;
+    --process-steps-line-default: rgba(248, 249, 244, 0.35);
+    --process-steps-line-hover: #C8A873;
+    --process-steps-text: #ffffff;
+    --process-steps-text-muted: rgba(248, 249, 244, 0.8);
+    --process-steps-number: rgba(80, 90, 110, 0.5);
+    position: relative;
+    overflow: hidden;
+  }
+
+  @media screen and (max-width: 749px) {
+    .process-steps {
+      min-height: 100vh;
+      min-height: 100dvh;
+    }
+  }
+
+
+  .process-steps::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    background-size: 24px 24px;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .process-steps__inner {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 100px var(--page-margin, 2rem);
+    max-width: var(--page-width, 120rem);
+    margin: 0 auto;
+  }
+
+  .process-steps__header {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+  }
+
+  @media screen and (min-width: 750px) {
+    .process-steps__header {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-end;
+      gap: 2rem;
+    }
+  }
+
+  .process-steps__header-content {
+    flex: 1;
+    width: 100%;
+  }
+
+  .process-steps__header-content .group-block {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .process-steps__header-content .group-block-content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-end;
+    text-align: left;
+    width: 100%;
+    gap: 1rem 2rem;
+  }
+
+  .process-steps__header-content .group-block-content > *:nth-child(1),
+  .process-steps__header-content .group-block-content > *:nth-child(2) {
+    width: 100%;
+  }
+
+  .process-steps__header-content .group-block-content > *:nth-child(3) {
+    max-width: 42ch;
+    align-self: flex-end;
+    text-align: left;
+  }
+
+  .process-steps__header-content .group-block-content > *:nth-child(3) * {
+    text-align: left;
+  }
+
+  .process-steps__header-content .group-block-content > *:first-child,
+  .process-steps__header-content .group-block-content > *:first-child * {
+    color: var(--process-steps-subheading-color, var(--process-steps-text-muted));
+  }
+
+  .process-steps__header-content .group-block-content > *:nth-child(2),
+  .process-steps__header-content .group-block-content > *:nth-child(2) * {
+    color: var(--process-steps-text);
+  }
+
+  .process-steps__header-content .text-block.h2 em,
+  .process-steps__header-content .group-block-content > *:nth-child(2) .text-block__highlight,
+  .process-steps__header-content .group-block-content > *:nth-child(2) em {
+    font-family: inherit;
+    font-style: italic;
+    font-size: var(--font-h2--size);
+    font-weight: inherit;
+    line-height: inherit;
+    letter-spacing: inherit;
+    color: var(--process-steps-golden);
+  }
+
+  .process-steps__header-content .group-block-content > *:nth-child(3),
+  .process-steps__header-content .group-block-content > *:nth-child(3) * {
+    color: var(--process-steps-text-muted);
+    opacity: 0.8;
+  }
+
+  .process-steps__header-content .group-block-content > a {
+    flex-shrink: 0;
+    margin-left: auto;
+    white-space: nowrap;
+  }
+
+  @media screen and (max-width: 749px) {
+    .process-steps__header-content .group-block-content > a {
+      margin-left: 0;
+      align-self: stretch;
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  .process-steps__subheading {
+    font-size: var(--font-size--xs);
+    font-weight: 500;
+    letter-spacing: var(--letter-spacing-md);
+    color: var(--process-steps-text-muted);
+    margin: 0 0 0.5rem 0;
+    text-transform: uppercase;
+  }
+
+  .process-steps__heading {
+    font-family: var(--font-heading--family);
+    font-size: var(--font-size--h2);
+    font-weight: var(--font-h2--weight);
+    color: var(--process-steps-text);
+    margin: 0 0 1rem 0;
+    line-height: 1.2;
+  }
+
+  .process-steps__heading-accent {
+    font-family: var(--font-accent--family);
+    font-style: italic;
+    color: var(--process-steps-golden);
+  }
+
+  .process-steps__description {
+    font-size: var(--font-size--paragraph);
+    line-height: 1.6;
+    color: var(--process-steps-text-muted);
+    margin: 0;
+    max-width: 42ch;
+  }
+
+  .process-steps__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    flex: 1;
+  }
+
+  @media screen and (min-width: 750px) {
+    .process-steps__grid {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+    }
+  }
+
+  .process-steps__card {
+    position: relative;
+    padding: 2rem;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .process-steps__card-number {
+    position: absolute;
+    top: 1.5rem;
+    right: 2rem;
+    font-size: 3.5rem;
+    font-weight: 300;
+    font-family: Georgia, 'Times New Roman', serif;
+    color: var(--process-steps-number);
+    line-height: 1;
+    transition: color 0.5s ease;
+  }
+
+  .process-steps__card:hover .process-steps__card-number {
+    color: var(--process-steps-golden);
+  }
+
+  .process-steps__card-icon {
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #1f2937;
+    border-radius: 50%;
+    background: #181818;
+    flex-shrink: 0;
+    position: relative;
+    z-index: 10;
+    transition: all 0.5s ease;
+  }
+
+  .process-steps__card:hover .process-steps__card-icon {
+    border-color: var(--process-steps-golden);
+    box-shadow: 0 0 30px rgba(200, 168, 115, 0.2);
+  }
+
+  .process-steps__card-icon-symbol {
+    font-size: 1.5rem;
+    color: #9ca3af;
+    transition: color 0.5s ease;
+  }
+
+  .process-steps__card-icon-svg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #9ca3af;
+    transition: color 0.5s ease;
+  }
+
+  .process-steps__card-icon-svg svg {
+    width: 2rem; 
+    height: 2rem;
+  }
+
+  .process-steps__card:hover .process-steps__card-icon-symbol {
+    color: var(--process-steps-golden);
+  }
+
+  .process-steps__card-title {
+    font-family: var(--font-h4--family);
+    font-style: var(--font-h4--style);
+    font-weight: var(--font-h4--weight);
+    font-size: var(--font-h4--size);
+    line-height: var(--font-h4--line-height);
+    letter-spacing: var(--font-h4--letter-spacing);
+    text-transform: var(--font-h4--case);
+    color: var(--process-steps-text);
+    margin: 0;
+    transition: color 0.5s ease;
+  }
+
+  .process-steps__card:hover .process-steps__card-title {
+    color: var(--process-steps-golden);
+  }
+
+  .process-steps__card-description-wrap {
+    border-left: 1px solid var(--process-steps-line-default);
+    padding-inline-start: 1rem;
+    transition: border-color 0.5s ease;
+  }
+
+  .process-steps__card:hover .process-steps__card-description-wrap {
+    border-left-color: var(--process-steps-golden);
+  }
+
+  .process-steps__card-description {
+    font-family: var(--font-body--family);
+    font-size: var(--font-size--sm);
+    line-height: 1.6;
+    color: var(--process-steps-text-muted);
+    opacity: 0.8;
+    margin: 0;
+  }
+
+  @media screen and (max-width: 749px) {
+    .process-steps__card {
+      transition: transform 0.5s ease, opacity 0.5s ease;
+    }
+
+    .process-steps__card--in-view {
+      transform: scale(1.02);
+      opacity: 1;
+    }
+
+    .process-steps__card:not(.process-steps__card--in-view) {
+      opacity: 0.85;
+    }
+
+    .process-steps__card--in-view .process-steps__card-number {
+      color: var(--process-steps-golden);
+    }
+
+    .process-steps__card--in-view .process-steps__card-icon {
+      border-color: var(--process-steps-golden);
+      box-shadow: 0 0 30px rgba(200, 168, 115, 0.2);
+    }
+
+    .process-steps__card--in-view .process-steps__card-icon-symbol,
+    .process-steps__card--in-view .process-steps__card-icon-svg {
+      color: var(--process-steps-golden);
+    }
+
+    .process-steps__card--in-view .process-steps__card-title {
+      color: var(--process-steps-golden);
+    }
+
+    .process-steps__card--in-view .process-steps__card-description-wrap {
+      border-left-color: var(--process-steps-golden);
+    }
+  }
+{% endstylesheet %}
+
+<script>
+  (function() {
+    const section = document.querySelector('[data-testid="process-steps"]');
+    if (!section) return;
+
+    const cards = section.querySelectorAll('.process-steps__card');
+    if (!cards.length) return;
+
+    const mobileQuery = window.matchMedia('(max-width: 749px)');
+    let ticking = false;
+    let scrollListener = null;
+    let currentHighlight = null;
+    const HYSTERESIS = 80;
+
+    function updateHighlight() {
+      if (!mobileQuery.matches) return;
+
+      const vv = window.visualViewport || window;
+      const viewportHeight = vv.height || window.innerHeight;
+      const viewportCenter = (vv.offsetTop || 0) + viewportHeight / 2;
+      let closest = null;
+      let closestDist = Infinity;
+
+      cards.forEach(card => {
+        const rect = card.getBoundingClientRect();
+        if (rect.bottom < 0 || rect.top > viewportHeight) return;
+        const cardCenter = rect.top + rect.height / 2;
+        const dist = Math.abs(cardCenter - viewportCenter);
+        if (dist < closestDist) {
+          closestDist = dist;
+          closest = card;
+        }
+      });
+
+      const currentDist = currentHighlight
+        ? Math.abs(
+            currentHighlight.getBoundingClientRect().top +
+            currentHighlight.getBoundingClientRect().height / 2 -
+            viewportCenter
+          )
+        : Infinity;
+      const shouldSwitch = !currentHighlight || (closest && closestDist < currentDist - HYSTERESIS);
+
+      if (shouldSwitch && closest !== currentHighlight) {
+        cards.forEach(card => card.classList.remove('process-steps__card--in-view'));
+        if (closest) {
+          closest.classList.add('process-steps__card--in-view');
+          currentHighlight = closest;
+        } else {
+          currentHighlight = null;
+        }
+      }
+    }
+
+    function onScroll() {
+      if (!ticking) {
+        requestAnimationFrame(() => {
+          updateHighlight();
+          ticking = false;
+        });
+        ticking = true;
+      }
+    }
+
+    function setup() {
+      if (!mobileQuery.matches) {
+        if (scrollListener) {
+          window.removeEventListener('scroll', scrollListener, { passive: true });
+          if (window.visualViewport) {
+            window.visualViewport.removeEventListener('resize', onScroll);
+          }
+          scrollListener = null;
+        }
+        cards.forEach(card => card.classList.remove('process-steps__card--in-view'));
+        currentHighlight = null;
+        return;
+      }
+
+      if (scrollListener) return;
+
+      scrollListener = onScroll;
+      window.addEventListener('scroll', scrollListener, { passive: true });
+      if (window.visualViewport) {
+        window.visualViewport.addEventListener('resize', onScroll);
+      }
+      updateHighlight();
+    }
+
+    setup();
+    mobileQuery.addEventListener('change', setup);
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "Process steps",
+  "class": "process-steps-section",
+  "blocks": [
+    {
+      "type": "@theme"
+    },
+    {
+      "type": "@app"
+    },
+    {
+      "type": "_divider"
+    },
+    {
+      "type": "_product-list-content"
+    },
+    {
+      "type": "_product-list-text"
+    },
+    {
+      "type": "button"
+    }
+  ],
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "header",
+      "content": "Header"
+    },
+    {
+      "type": "color",
+      "id": "subheading_color",
+      "label": "Subheading color",
+      "default": "#C8A873"
+    },
+    {
+      "type": "header",
+      "content": "Step 1"
+    },
+    {
+      "type": "text",
+      "id": "step_1_title",
+      "label": "Title",
+      "default": "Initial Dialogue"
+    },
+    {
+      "type": "richtext",
+      "id": "step_1_description",
+      "label": "Description",
+      "default": "<p>We begin by understanding your architectural vision. Every project starts with a conversation about your unique requirements.</p>"
+    },
+    {
+      "type": "select",
+      "id": "step_1_icon",
+      "label": "Icon",
+      "options": [
+        { "value": "chat", "label": "Chat / Dialogue" },
+        { "value": "design", "label": "Design / Edit" },
+        { "value": "survey", "label": "Survey / Calendar" },
+        { "value": "confirmation", "label": "Confirmation / Check" },
+        { "value": "craftsmanship", "label": "Craftsmanship / Wrench" },
+        { "value": "installation", "label": "Installation / Package" }
+      ],
+      "default": "chat"
+    },
+    {
+      "type": "header",
+      "content": "Step 2"
+    },
+    {
+      "type": "text",
+      "id": "step_2_title",
+      "label": "Title",
+      "default": "Bespoke Design"
+    },
+    {
+      "type": "richtext",
+      "id": "step_2_description",
+      "label": "Description",
+      "default": "<p>Our designers draft detailed specifications, selecting the finest handles, glass, and finishes to complement your space.</p>"
+    },
+    {
+      "type": "select",
+      "id": "step_2_icon",
+      "label": "Icon",
+      "options": [
+        { "value": "chat", "label": "Chat / Dialogue" },
+        { "value": "design", "label": "Design / Edit" },
+        { "value": "survey", "label": "Survey / Calendar" },
+        { "value": "confirmation", "label": "Confirmation / Check" },
+        { "value": "craftsmanship", "label": "Craftsmanship / Wrench" },
+        { "value": "installation", "label": "Installation / Package" }
+      ],
+      "default": "design"
+    },
+    {
+      "type": "header",
+      "content": "Step 3"
+    },
+    {
+      "type": "text",
+      "id": "step_3_title",
+      "label": "Title",
+      "default": "Site Survey"
+    },
+    {
+      "type": "richtext",
+      "id": "step_3_description",
+      "label": "Description",
+      "default": "<p>Precision is paramount. We conduct a comprehensive site survey to ensure millimeter-perfect fitting for your installation.</p>"
+    },
+    {
+      "type": "select",
+      "id": "step_3_icon",
+      "label": "Icon",
+      "options": [
+        { "value": "chat", "label": "Chat / Dialogue" },
+        { "value": "design", "label": "Design / Edit" },
+        { "value": "survey", "label": "Survey / Calendar" },
+        { "value": "confirmation", "label": "Confirmation / Check" },
+        { "value": "craftsmanship", "label": "Craftsmanship / Wrench" },
+        { "value": "installation", "label": "Installation / Package" }
+      ],
+      "default": "survey"
+    },
+    {
+      "type": "header",
+      "content": "Step 4"
+    },
+    {
+      "type": "text",
+      "id": "step_4_title",
+      "label": "Title",
+      "default": "Confirmation"
+    },
+    {
+      "type": "richtext",
+      "id": "step_4_description",
+      "label": "Description",
+      "default": "<p>With the design finalized and site details confirmed, we present a transparent quote and proceed upon your approval.</p>"
+    },
+    {
+      "type": "select",
+      "id": "step_4_icon",
+      "label": "Icon",
+      "options": [
+        { "value": "chat", "label": "Chat / Dialogue" },
+        { "value": "design", "label": "Design / Edit" },
+        { "value": "survey", "label": "Survey / Calendar" },
+        { "value": "confirmation", "label": "Confirmation / Check" },
+        { "value": "craftsmanship", "label": "Craftsmanship / Wrench" },
+        { "value": "installation", "label": "Installation / Package" }
+      ],
+      "default": "confirmation"
+    },
+    {
+      "type": "header",
+      "content": "Step 5"
+    },
+    {
+      "type": "text",
+      "id": "step_5_title",
+      "label": "Title",
+      "default": "Craftsmanship"
+    },
+    {
+      "type": "richtext",
+      "id": "step_5_description",
+      "label": "Description",
+      "default": "<p>Your doors are hand-fabricated in our UK workshop, combining traditional techniques with modern engineering excellence.</p>"
+    },
+    {
+      "type": "select",
+      "id": "step_5_icon",
+      "label": "Icon",
+      "options": [
+        { "value": "chat", "label": "Chat / Dialogue" },
+        { "value": "design", "label": "Design / Edit" },
+        { "value": "survey", "label": "Survey / Calendar" },
+        { "value": "confirmation", "label": "Confirmation / Check" },
+        { "value": "craftsmanship", "label": "Craftsmanship / Wrench" },
+        { "value": "installation", "label": "Installation / Package" }
+      ],
+      "default": "craftsmanship"
+    },
+    {
+      "type": "header",
+      "content": "Step 6"
+    },
+    {
+      "type": "text",
+      "id": "step_6_title",
+      "label": "Title",
+      "default": "Installation"
+    },
+    {
+      "type": "richtext",
+      "id": "step_6_description",
+      "label": "Description",
+      "default": "<p>Our skilled technicians deliver and install your doors with white-glove service, ensuring flawless operation and finish.</p>"
+    },
+    {
+      "type": "select",
+      "id": "step_6_icon",
+      "label": "Icon",
+      "options": [
+        { "value": "chat", "label": "Chat / Dialogue" },
+        { "value": "design", "label": "Design / Edit" },
+        { "value": "survey", "label": "Survey / Calendar" },
+        { "value": "confirmation", "label": "Confirmation / Check" },
+        { "value": "craftsmanship", "label": "Craftsmanship / Wrench" },
+        { "value": "installation", "label": "Installation / Package" }
+      ],
+      "default": "installation"
+    },
+    {
+      "type": "header",
+      "content": "t:content.appearance"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:settings.color_scheme",
+      "default": "scheme-5"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Process steps",
+      "settings": {
+        "subheading_color": "#C8A873",
+        "color_scheme": "scheme-5"
+      },
+      "blocks": {
+        "static-header": {
+          "type": "_product-list-content",
+          "name": "t:names.header",
+          "static": true,
+          "settings": {
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "flex-start",
+            "gap": 8,
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "subheading": {
+              "type": "_product-list-text",
+              "name": "Subheading",
+              "settings": {
+                "text": "<p>WORKFLOW</p>",
+                "type_preset": "custom",
+                "font": "var(--font-body--family)",
+                "font_size": "0.75rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "uppercase",
+                "wrap": "pretty",
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "left",
+                "padding-block-start": 0,
+                "padding-block-end": 8,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              }
+            },
+            "heading": {
+              "type": "_product-list-text",
+              "name": "Heading",
+              "settings": {
+                "text": "<h2>The Journey to <em>Perfection</em></h2>",
+                "type_preset": "h2",
+                "font": "var(--font-heading--family)",
+                "font_size": "",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "left",
+                "padding-block-start": 0,
+                "padding-block-end": 12,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              }
+            },
+            "description": {
+              "type": "_product-list-text",
+              "name": "Description",
+              "settings": {
+                "text": "<p>Our process is as meticulous as our engineering. From the first sketch to the final polish, we ensure an experience of seamless luxury.</p>",
+                "type_preset": "custom",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "width": "100%",
+                "max_width": "normal",
+                "alignment": "left",
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              }
+            },
+            "cta-button": {
+              "type": "button",
+              "name": "Button",
+              "settings": {
+                "label": "START YOUR JOURNEY",
+                "link": "",
+                "open_in_new_tab": false,
+                "style_class": "link",
+                "font_size": "",
+                "font_weight": "",
+                "width": "fit-content",
+                "custom_width": 100,
+                "width_mobile": "fit-content",
+                "custom_width_mobile": 100
+              }
+            }
+          },
+          "block_order": ["subheading", "heading", "description", "cta-button"]
+        }
+      },
+      "block_order": []
+    }
+  ]
+}
+{% endschema %}

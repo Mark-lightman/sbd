@@ -319,6 +319,20 @@
     },
     {
       "type": "checkbox",
+      "id": "enable_highlight_syntax",
+      "label": "t:settings.enable_highlight_syntax",
+      "default": false,
+      "info": "t:info.highlight_syntax"
+    },
+    {
+      "type": "color",
+      "id": "highlight_color",
+      "label": "t:settings.highlight_color",
+      "default": "#C8A873",
+      "visible_if": "{{ block.settings.enable_highlight_syntax }}"
+    },
+    {
+      "type": "checkbox",
       "id": "background",
       "label": "t:settings.background",
       "default": false

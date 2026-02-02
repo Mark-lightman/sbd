@@ -1,19 +1,10 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "current": {
-    "logo": "shopify://shop_images/sbd-light.png",
-    "logo_inverse": "shopify://shop_images/sbd-light.png",
+    "logo": "shopify:\/\/shop_images\/sbd-light.png",
+    "logo_inverse": "shopify:\/\/shop_images\/sbd-light.png",
     "logo_height": 100,
     "logo_height_mobile": 50,
-    "favicon": "shopify://shop_images/sbd-circle.png",
+    "favicon": "shopify:\/\/shop_images\/sbd-circle.png",
     "type_body_font": "inter_n3",
     "type_subheading_font": "playfair_display_n4",
     "type_heading_font": "playfair_display_n4",
@@ -267,9 +258,9 @@
           "primary_button_hover_border": "#000000",
           "secondary_button_background": "rgba(0,0,0,0)",
           "secondary_button_text": "#ffffff",
-          "secondary_button_border": "#ffffffb0",
-          "secondary_button_hover_background": "#ffffff0a",
-          "secondary_button_hover_text": "#ffffffed",
+          "secondary_button_border": "#4b4b4b",
+          "secondary_button_hover_background": "#ffffffdd",
+          "secondary_button_hover_text": "#000000cf",
           "secondary_button_hover_border": "#ffffffb0",
           "input_background": "#333333",
           "input_text_color": "#ffffffed",
