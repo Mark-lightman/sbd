@@ -5347,6 +5347,29 @@
         "padding-block-start": 1,
         "padding-block-end": 0
       }
+    },
+    "cta_RWxwit": {
+      "type": "cta",
+      "disabled": true,
+      "name": "CTA",
+      "settings": {
+        "image": "shopify://shop_images/Generated_Image_February_04_2026_-_4_57PM.png",
+        "heading": "Ready to Transform Your Space with Steel?",
+        "description": "Speak to our team for expert advice and a tailored quote",
+        "button_label": "GET A FREE QUOTE",
+        "button_link": "shopify://pages/contact",
+        "show_footer_text": false,
+        "footer_text": "© 2025 Steel Doors. All rights reserved",
+        "heading_font_size": 48,
+        "description_font_size": 16,
+        "button_font_size": 13,
+        "footer_font_size": 12,
+        "background_color": "#121212",
+        "section_width": "page-width",
+        "color_scheme": "scheme-5",
+        "padding-block-start": 100,
+        "padding-block-end": 100
+      }
     }
   },
   "order": [
@@ -5372,6 +5395,7 @@
     "section_hWmEmb",
     "media_with_content_7nqPJc",
     "divider_rh8KUy",
-    "divider_GYG9AT"
+    "divider_GYG9AT",
+    "cta_RWxwit"
   ]
 }
