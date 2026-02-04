@@ -455,6 +455,115 @@
         "padding-block-end": 100
       }
     },
+    "philosophy_tmL4TQ": {
+      "type": "philosophy",
+      "blocks": {
+        "feature_8UMLXC": {
+          "type": "feature",
+          "disabled": true,
+          "settings": {
+            "title": "Precision Engineering",
+            "description": "Steel frames engineered to the millimeter."
+          }
+        },
+        "feature_dTfHk6": {
+          "type": "feature",
+          "disabled": true,
+          "settings": {
+            "title": "Bespoke Design",
+            "description": "Tailored completely to your exact specifications."
+          }
+        },
+        "feature_YGHWzC": {
+          "type": "feature",
+          "settings": {
+            "title": "UK Manufactured",
+            "description": "Proudly crafted in our London workshop."
+          }
+        },
+        "feature_Gf8BMD": {
+          "type": "feature",
+          "settings": {
+            "title": "4-6 Week Delivery",
+            "description": "From order to installation."
+          }
+        },
+        "feature_4Hk6CC": {
+          "type": "feature",
+          "settings": {
+            "title": "150+ Colour Options",
+            "description": "Choose from extensive colour and finish combinations."
+          }
+        },
+        "feature_wmjb6Y": {
+          "type": "feature",
+          "settings": {
+            "title": "Custom Colour Matching",
+            "description": "We match to your existing fixtures and fittings."
+          }
+        },
+        "feature_M7nLaB": {
+          "type": "feature",
+          "settings": {
+            "title": "Premium Glass Selection",
+            "description": "Frosted, stained, fluted, and mirrored options."
+          }
+        },
+        "feature_NPxkzR": {
+          "type": "feature",
+          "settings": {
+            "title": "Fire-Rated Available",
+            "description": "Certified fire protection when required."
+          }
+        },
+        "feature_fchATe": {
+          "type": "feature",
+          "settings": {
+            "title": "Multiple Steel Profiles",
+            "description": "Various frame styles to suit your design."
+          }
+        },
+        "feature_6njjb7": {
+          "type": "feature",
+          "settings": {
+            "title": "Designer Handles",
+            "description": "Lever, bar, or plated push-pull options."
+          }
+        }
+      },
+      "block_order": [
+        "feature_8UMLXC",
+        "feature_dTfHk6",
+        "feature_YGHWzC",
+        "feature_Gf8BMD",
+        "feature_4Hk6CC",
+        "feature_wmjb6Y",
+        "feature_M7nLaB",
+        "feature_NPxkzR",
+        "feature_fchATe",
+        "feature_6njjb7"
+      ],
+      "disabled": true,
+      "name": "Philosophy",
+      "settings": {
+        "image": "shopify://shop_images/image_-_4169182_1500x_3257341c-8ced-467d-8af2-8edb3aadebf3.webp",
+        "show_badge": true,
+        "badge_number": "10+",
+        "badge_text": "YEARS EXP.",
+        "subheading": "OUR PHILOSOPHY",
+        "heading": "Crafting Legacies, Not Just Doors",
+        "description": "<p>There's a difference between what anyone can do with metal and steel design. Our work focuses on the artistry behind your vision, and UK-based workshops bring your ideas to life in the timeless piece for the timeless architectural statement.</p>",
+        "button_label": "GET A FREE QUERY",
+        "button_link": "shopify://pages/contact",
+        "subheading_color": "#c79f67",
+        "checkmark_color": "#c79f67",
+        "background_color": "#ffffff",
+        "section_width": "page-width",
+        "color_scheme": "scheme-1",
+        "padding-block-start": 64,
+        "padding-block-end": 64
+      }
+    },
     "section_3DF7Pf": {
       "type": "section",
       "blocks": {
@@ -5237,6 +5346,7 @@
   "order": [
     "hero_jVaWmY",
     "featured_collection_grid_iXij8U",
+    "philosophy_tmL4TQ",
     "section_3DF7Pf",
     "section_AzgRAD",
     "section_AFheF4",
