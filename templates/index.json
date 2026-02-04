@@ -2530,6 +2530,75 @@
         "padding-block-end": 40
       }
     },
+    "testimonials_wdJ6Y4": {
+      "type": "testimonials",
+      "blocks": {
+        "testimonial_FEE4ML": {
+          "type": "testimonial",
+          "settings": {
+            "quote": "We’re absolutely thrilled with our doors. The slim black frames look stunning and have completely transformed the space, letting in so much more light while still feeling solid and high-quality. The craftsmanship is excellent, and the doors feel sturdy and they’re beautifully finished. We’ve had so many compliments on them since they were installed. From design to installation, the whole process was really straight forward. A great investment that genuinely elevates the look of our home.",
+            "rating": 5,
+            "name": "SARAH T.",
+            "location": "Hampstead, London"
+          }
+        },
+        "testimonial_VNBdpw": {
+          "type": "testimonial",
+          "settings": {
+            "quote": "The end result is exactly what we had in mind. The doors look amazing, fit perfectly, and have completely transformed the space. Great design, great quality, and no stress. We were really impressed with how quickly they were delivered once we had finalised the design. Would definitely recommend.",
+            "rating": 5,
+            "name": "Amanda H.",
+            "location": "Surrey"
+          }
+        },
+        "testimonial_EPKCGm": {
+          "type": "testimonial",
+          "settings": {
+            "quote": "Really happy with our new doors. They look great and instantly made the space feel brighter and more modern. They feel solid, open and close smoothly, and look far more expensive than they were. The design process was great and we felt like we got something really bespoke rather than just an off the shelf option that many other people had as well. Great design and great quality, We would 100% recommend.",
+            "rating": 5,
+            "name": "Andrew W.",
+            "location": "Chelsea, London"
+          }
+        },
+        "testimonial_jjPKnt": {
+          "type": "testimonial",
+          "settings": {
+            "quote": "We’ve been shopping around for options for quite a while now and we have put it off a few times due to how big of a commitment it felt. Now that they’re fitted I wish we'd done it a long time ago. They completely transformed the look of our house overnight. We were surprised with how many options were available for glass and frame finish, as well as colour. I was nervous about going against the grain of matte black finish when so many others seem to go that way, but I’m really pleased we did now they’re in.",
+            "rating": 5,
+            "name": "Sophie M.",
+            "location": "Kensington, London"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_FEE4ML",
+        "testimonial_VNBdpw",
+        "testimonial_EPKCGm",
+        "testimonial_jjPKnt"
+      ],
+      "name": "Testimonials",
+      "settings": {
+        "subheading": "TESTIMONIALS",
+        "heading": "What Our Clients Say",
+        "subheading_color": "#c79f67",
+        "star_color": "#c79f67",
+        "background_color": "#f4f4f4",
+        "autoplay": true,
+        "autoplay_speed": 5,
+        "section_width": "page-width",
+        "color_scheme": "scheme-87a3699f-e494-4023-b625-2dcf1cc781a7",
+        "subheading-padding-bottom": 8,
+        "header-padding-bottom": 48,
+        "quote-icon-size": 48,
+        "quote-icon-margin-bottom": 12,
+        "stars-margin-bottom": 16,
+        "quote-margin-bottom": 20,
+        "divider-margin-bottom": 16,
+        "name-margin-bottom": 4,
+        "padding-block-start": 64,
+        "padding-block-end": 64
+      }
+    },
     "section_J9eThm": {
       "type": "section",
       "blocks": {
@@ -3268,6 +3337,7 @@
         "group_yDhWYn",
         "group_JQ8YBK"
       ],
+      "disabled": true,
       "name": "Reviews",
       "settings": {
         "content_direction": "row",
@@ -5176,6 +5246,7 @@
     "section_KBFtrt",
     "section_aRpgXp",
     "section_wAFgbV",
+    "testimonials_wdJ6Y4",
     "section_J9eThm",
     "slideshow_pGij47",
     "section_NeDTri",
