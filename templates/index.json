@@ -2576,6 +2576,7 @@
         "testimonial_EPKCGm",
         "testimonial_jjPKnt"
       ],
+      "disabled": true,
       "name": "Testimonials",
       "settings": {
         "subheading": "TESTIMONIALS",
@@ -3337,7 +3338,6 @@
         "group_yDhWYn",
         "group_JQ8YBK"
       ],
-      "disabled": true,
       "name": "Reviews",
       "settings": {
         "content_direction": "row",
