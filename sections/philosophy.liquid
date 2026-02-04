@@ -1,0 +1,613 @@
+{% liquid
+  assign feature_blocks = section.blocks | where: 'type', 'feature'
+%}
+
+<div class="section-background color-{{ section.settings.color_scheme }}"></div>
+<div
+  class="section section--{{ section.settings.section_width }} philosophy color-{{ section.settings.color_scheme }} spacing-style"
+  data-testid="philosophy"
+  style="
+    {% render 'spacing-style', settings: section.settings %}
+    --philosophy-subheading-color: {{ section.settings.subheading_color }};
+    --philosophy-checkmark-color: {{ section.settings.checkmark_color }};
+    {% if section.settings.background_color != blank %}background-color: {{ section.settings.background_color }};{% endif %}
+  "
+>
+  <div class="philosophy__container">
+    <!-- Image Column -->
+    <div class="philosophy__media">
+      <div class="philosophy__image-wrapper">
+        {% if section.settings.image != blank %}
+          <img
+            src="{{ section.settings.image | image_url: width: 1000 }}"
+            srcset="
+              {{ section.settings.image | image_url: width: 500 }} 500w,
+              {{ section.settings.image | image_url: width: 750 }} 750w,
+              {{ section.settings.image | image_url: width: 1000 }} 1000w
+            "
+            sizes="(min-width: 750px) 50vw, 100vw"
+            alt="{{ section.settings.image.alt | escape }}"
+            loading="lazy"
+            width="{{ section.settings.image.width }}"
+            height="{{ section.settings.image.height }}"
+            class="philosophy__image"
+          >
+        {% else %}
+          {{ 'image' | placeholder_svg_tag: 'philosophy__image philosophy__image--placeholder' }}
+        {% endif %}
+        
+        {% if section.settings.show_badge %}
+          <div class="philosophy__badge">
+            <div class="philosophy__badge-number">{{ section.settings.badge_number }}</div>
+            <div class="philosophy__badge-text">{{ section.settings.badge_text }}</div>
+          </div>
+        {% endif %}
+      </div>
+    </div>
+
+    <!-- Content Column -->
+    <div class="philosophy__content">
+      {% if section.settings.subheading != blank %}
+        <p class="philosophy__subheading">{{ section.settings.subheading }}</p>
+      {% endif %}
+      
+      {% if section.settings.heading != blank %}
+        <h2 class="philosophy__heading">{{ section.settings.heading }}</h2>
+      {% endif %}
+      
+      {% if section.settings.description != blank %}
+        <div class="philosophy__description">{{ section.settings.description }}</div>
+      {% endif %}
+
+      {% if feature_blocks.size > 0 %}
+        <ul class="philosophy__features">
+          {% for block in feature_blocks %}
+            {% if block.type == 'feature' %}
+              <li class="philosophy__feature-item" {{ block.shopify_attributes }}>
+                <div class="philosophy__feature-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </div>
+                <div class="philosophy__feature-content">
+                  {% if block.settings.title != blank %}
+                    <h3 class="philosophy__feature-title">{{ block.settings.title }}</h3>
+                  {% endif %}
+                  {% if block.settings.description != blank %}
+                    <p class="philosophy__feature-description">{{ block.settings.description }}</p>
+                  {% endif %}
+                </div>
+              </li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      {% endif %}
+
+      {% if section.settings.button_label != blank %}
+        <div class="philosophy__button-wrapper">
+          <a 
+            href="{{ section.settings.button_link }}" 
+            class="button-secondary"
+          >
+            {{ section.settings.button_label }}
+          </a>
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+{% stylesheet %}
+  .philosophy {
+    --philosophy-subheading-color: #c79f67;
+    --philosophy-checkmark-color: #c79f67;
+  }
+
+  .philosophy__container {
+    max-width: var(--page-width, 120rem);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    align-items: center;
+  }
+
+  @media screen and (min-width: 750px) {
+    .philosophy__container {
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      padding-left: var(--page-margin, 2rem);
+      padding-right: var(--page-margin, 2rem);
+    }
+  }
+
+  @media screen and (min-width: 990px) {
+    .philosophy__container {
+      gap: 6rem;
+    }
+  }
+
+  /* Media Column */
+  .philosophy__media {
+    position: relative;
+    width: 100%;
+  }
+
+  .philosophy__image-wrapper {
+    position: relative;
+    width: 100%;
+  }
+
+  @media screen and (max-width: 749px) {
+    .philosophy__image-wrapper {
+      padding: 0 var(--page-margin, 2rem);
+    }
+  }
+
+  @media screen and (min-width: 750px) {
+    .philosophy__image-wrapper::before {
+      content: '';
+      position: absolute;
+      top: -20px;
+      left: -20px;
+      right: 20px;
+      bottom: 20px;
+      border: 1px solid rgba(0, 0, 0, 0.15);
+      pointer-events: none;
+      z-index: 0;
+    }
+  }
+
+  .philosophy__image {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    position: relative;
+    z-index: 1;
+  }
+
+  .philosophy__image--placeholder {
+    min-height: 400px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .philosophy__image {
+      min-height: 500px;
+      max-height: 700px;
+      object-fit: cover;
+    }
+  }
+
+  /* Badge */
+  .philosophy__badge {
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+    background: #fff;
+    padding: 1.5rem 2rem;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+  }
+
+  @media screen and (max-width: 749px) {
+    .philosophy__badge {
+      bottom: 1rem;
+      right: calc(var(--page-margin, 2rem) + 1rem);
+      padding: 1rem 1.5rem;
+    }
+  }
+
+  .philosophy__badge-number {
+    font-family: var(--font-heading--family);
+    font-size: 2.5rem;
+    line-height: 1;
+    color: var(--philosophy-subheading-color);
+    font-weight: 400;
+    margin-bottom: 0.25rem;
+  }
+
+  @media screen and (max-width: 749px) {
+    .philosophy__badge-number {
+      font-size: 2rem;
+    }
+  }
+
+  .philosophy__badge-text {
+    font-family: var(--font-body--family);
+    font-size: 0.625rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #666;
+    line-height: 1;
+  }
+
+  /* Content Column */
+  .philosophy__content {
+    padding: 0 var(--page-margin, 2rem);
+  }
+
+  @media screen and (min-width: 750px) {
+    .philosophy__content {
+      padding: 0;
+    }
+  }
+
+  .philosophy__subheading {
+    font-family: var(--font-body--family);
+    font-size: 0.75rem;
+    line-height: normal;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--philosophy-subheading-color);
+    margin: 0 0 1rem 0;
+  }
+
+  .philosophy__heading {
+    font-family: var(--font-heading--family);
+    font-size: clamp(1.75rem, 4vw, 3rem);
+    font-weight: 400;
+    line-height: 1.2;
+    color: rgb(var(--color-foreground));
+    margin: 0 0 1.5rem 0;
+  }
+
+  .philosophy__description {
+    font-family: var(--font-body--family);
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #5d5d5d;
+    margin: 0 0 2rem 0;
+  }
+
+  /* Features List */
+  .philosophy__features {
+    list-style: none;
+    margin: 0 0 2.5rem 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  @media screen and (min-width: 750px) {
+    .philosophy__features {
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem 3rem;
+    }
+  }
+
+  .philosophy__feature-item {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+
+  .philosophy__feature-icon {
+    flex-shrink: 0;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--philosophy-checkmark-color);
+    background-color: #FAF6F0;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+  }
+
+  .philosophy__feature-item:hover .philosophy__feature-icon {
+    background-color: rgba(199, 159, 103, 0.2);
+  }
+
+  .philosophy__feature-content {
+    flex: 1;
+  }
+
+  .philosophy__feature-title {
+    font-family: var(--font-heading--family);
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.3;
+    color: rgb(var(--color-foreground));
+    margin: 0 0 0.5rem 0;
+    cursor: pointer;
+  }
+
+  .philosophy__feature-description {
+    font-family: var(--font-body--family);
+    font-size: 0.9375rem;
+    line-height: 1.6;
+    color: #5d5d5d;
+    margin: 0;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, opacity 0.3s ease, margin-top 0.3s ease;
+  }
+
+  .philosophy__feature-item:hover .philosophy__feature-description {
+    max-height: 100px;
+    opacity: 1;
+    margin-top: 0.5rem;
+  }
+
+  /* Button */
+  .philosophy__button-wrapper {
+    display: flex;
+  }
+
+  .philosophy__button-wrapper .button-secondary {
+    padding-block: var(--button-padding-block);
+    padding-inline: var(--button-padding-inline);
+  }
+
+  @media screen and (max-width: 749px) {
+    .philosophy__button-wrapper .button-secondary {
+      width: 100%;
+    }
+  }
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "Philosophy",
+  "tag": "section",
+  "class": "philosophy-section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "header",
+      "content": "Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_badge",
+      "label": "Show experience badge",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "badge_number",
+      "label": "Badge number",
+      "default": "25+"
+    },
+    {
+      "type": "text",
+      "id": "badge_text",
+      "label": "Badge text",
+      "default": "YEARS EXP."
+    },
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Subheading",
+      "default": "OUR PHILOSOPHY"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Crafting Legacies, Not Just Doors"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Description",
+      "default": "<p>There's a difference between what anyone can do with metal and steel design. Our work focuses on the artistry behind your vision, and UK-based workshops bring your ideas to life in the timeless piece for the timeless architectural statement.</p>"
+    },
+    {
+      "type": "header",
+      "content": "Button"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button label",
+      "default": "MEET THE TEAM"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button link"
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "subheading_color",
+      "label": "Subheading & accent color",
+      "default": "#c79f67"
+    },
+    {
+      "type": "color",
+      "id": "checkmark_color",
+      "label": "Checkmark color",
+      "default": "#c79f67"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "select",
+      "id": "section_width",
+      "label": "Width",
+      "options": [
+        {
+          "value": "page-width",
+          "label": "Page width"
+        },
+        {
+          "value": "full-width",
+          "label": "Full width"
+        }
+      ],
+      "default": "page-width"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "Color scheme",
+      "default": "scheme-1"
+    },
+    {
+      "type": "header",
+      "content": "Padding"
+    },
+    {
+      "type": "range",
+      "id": "padding-block-start",
+      "label": "Top",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 64
+    },
+    {
+      "type": "range",
+      "id": "padding-block-end",
+      "label": "Bottom",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 64
+    }
+  ],
+  "blocks": [
+    {
+      "type": "feature",
+      "name": "Feature",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Precision Engineering"
+        },
+        {
+          "type": "text",
+          "id": "description",
+          "label": "Description",
+          "default": "Steel frames engineered to the millimeter."
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Philosophy",
+      "settings": {
+        "subheading": "OUR PHILOSOPHY",
+        "heading": "Crafting Legacies, Not Just Doors",
+        "description": "<p>There's a difference between what anyone can do with metal and steel design. Our work focuses on the artistry behind your vision, and UK-based workshops bring your ideas to life in the timeless piece for the timeless architectural statement.</p>",
+        "show_badge": true,
+        "badge_number": "25+",
+        "badge_text": "YEARS EXP.",
+        "button_label": "MEET THE TEAM",
+        "subheading_color": "#c79f67",
+        "checkmark_color": "#c79f67",
+        "background_color": "#ffffff",
+        "section_width": "page-width",
+        "color_scheme": "scheme-1",
+        "padding-block-start": 64,
+        "padding-block-end": 64
+      },
+      "blocks": [
+        {
+          "type": "feature",
+          "settings": {
+            "title": "Precision Engineering",
+            "description": "Steel frames engineered to the millimeter."
+          }
+        },
+        {
+          "type": "feature",
+          "settings": {
+            "title": "Bespoke Design",
+            "description": "Tailored completely to your exact specifications."
+          }
+        },
+        {
+          "type": "feature",
+          "settings": {
+            "title": "UK Manufactured",
+            "description": "Proudly crafted in our London workshop."
+          }
+        },
+        {
+          "type": "feature",
+          "settings": {
+            "title": "4-6 Week Delivery",
+            "description": "From order to installation."
+          }
+        },
+        {
+          "type": "feature",
+          "settings": {
+            "title": "150+ Colour Options",
+            "description": "Choose from extensive colour and finish combinations."
+          }
+        },
+        {
+          "type": "feature",
+          "settings": {
+            "title": "Custom Colour Matching",
+            "description": "We match to your existing fixtures and fittings."
+          }
+        },
+        {
+          "type": "feature",
+          "settings": {
+            "title": "Premium Glass Selection",
+            "description": "Frosted, stained, fluted, and mirrored options."
+          }
+        },
+        {
+          "type": "feature",
+          "settings": {
+            "title": "Fire-Rated Available",
+            "description": "Certified fire protection when required."
+          }
+        },
+        {
+          "type": "feature",
+          "settings": {
+            "title": "Multiple Steel Profiles",
+            "description": "Various frame styles to suit your design."
+          }
+        },
+        {
+          "type": "feature",
+          "settings": {
+            "title": "Designer Handles",
+            "description": "Lever, bar, or plated push-pull options."
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
