@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "type": "footer",
   "name": "Footer",
@@ -47,7 +56,7 @@
             "text_LWt8Pz": {
               "type": "text",
               "settings": {
-                "text": "<h2>Join our email list<\/h2>",
+                "text": "<h2>Join our email list</h2>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
@@ -74,7 +83,7 @@
             "text_f9CFLH": {
               "type": "text",
               "settings": {
-                "text": "<p>Get exclusive deals and early access to new products.<\/p>",
+                "text": "<p>Get exclusive deals and early access to new products.</p>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
@@ -167,11 +176,11 @@
           "type": "social-links",
           "disabled": true,
           "settings": {
-            "facebook_url": "https:\/\/www.facebook.com\/",
-            "instagram_url": "https:\/\/www.instagram.com\/",
-            "youtube_url": "https:\/\/www.youtube.com\/",
-            "tiktok_url": "https:\/\/www.tiktok.com\/",
-            "twitter_url": "https:\/\/x.com\/",
+            "facebook_url": "https://www.facebook.com/",
+            "instagram_url": "https://www.instagram.com/",
+            "youtube_url": "https://www.youtube.com/",
+            "tiktok_url": "https://www.tiktok.com/",
+            "twitter_url": "https://x.com/",
             "threads_url": "",
             "linkedin_url": "",
             "bluesky_url": "",
