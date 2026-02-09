@@ -4,7 +4,7 @@
 
 <div class="section-background color-{{ section.settings.color_scheme }}"></div>
 <div
-  class="section section--{{ section.settings.section_width }} philosophy color-{{ section.settings.color_scheme }} spacing-style"
+  class="section section--{{ section.settings.section_width }} philosophy{% if section.settings.descriptions_always_visible %} philosophy--descriptions-visible{% endif %} color-{{ section.settings.color_scheme }} spacing-style"
   data-testid="philosophy"
   style="
     {% render 'spacing-style', settings: section.settings %}
@@ -15,6 +15,7 @@
     --philosophy-feature-title-font-size: {{ section.settings.feature_title_font_size }}px;
     --philosophy-feature-description-font-size: {{ section.settings.feature_description_font_size }}px;
     --philosophy-button-font-size: {{ section.settings.button_font_size }}px;
+    --philosophy-icon-size: {{ section.settings.icon_size }}px;
     {% if section.settings.background_color != blank %}background-color: {{ section.settings.background_color }};{% endif %}
   "
 >
@@ -315,8 +316,8 @@
 
   .philosophy__feature-icon {
     flex-shrink: 0;
-    width: 48px;
-    height: 48px;
+    width: var(--philosophy-icon-size, 48px);
+    height: var(--philosophy-icon-size, 48px);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -326,15 +327,20 @@
     transition: background-color 0.3s ease;
   }
 
+  .philosophy__feature-icon svg {
+    width: calc(var(--philosophy-icon-size, 48px) * 0.42);
+    height: calc(var(--philosophy-icon-size, 48px) * 0.42);
+  }
+
   @media screen and (max-width: 749px) {
     .philosophy__feature-icon {
-      width: 36px;
-      height: 36px;
+      width: calc(var(--philosophy-icon-size, 48px) * 0.75);
+      height: calc(var(--philosophy-icon-size, 48px) * 0.75);
     }
 
     .philosophy__feature-icon svg {
-      width: 16px;
-      height: 16px;
+      width: calc(var(--philosophy-icon-size, 48px) * 0.33);
+      height: calc(var(--philosophy-icon-size, 48px) * 0.33);
     }
   }
 
@@ -369,6 +375,12 @@
   }
 
   .philosophy__feature-item:hover .philosophy__feature-description {
+    max-height: 100px;
+    opacity: 1;
+    margin-top: 0.5rem;
+  }
+
+  .philosophy--descriptions-visible .philosophy__feature-description {
     max-height: 100px;
     opacity: 1;
     margin-top: 0.5rem;
@@ -528,6 +540,27 @@
     },
     {
       "type": "header",
+      "content": "Display Options"
+    },
+    {
+      "type": "checkbox",
+      "id": "descriptions_always_visible",
+      "label": "Keep feature descriptions always visible",
+      "default": false,
+      "info": "When enabled, feature descriptions will always be shown instead of on hover"
+    },
+    {
+      "type": "range",
+      "id": "icon_size",
+      "min": 24,
+      "max": 80,
+      "step": 4,
+      "unit": "px",
+      "label": "Icon size",
+      "default": 48
+    },
+    {
+      "type": "header",
       "content": "Colors"
     },
     {
@@ -635,6 +668,8 @@
         "feature_title_font_size": 20,
         "feature_description_font_size": 15,
         "button_font_size": 13,
+        "descriptions_always_visible": false,
+        "icon_size": 48,
         "subheading_color": "#c79f67",
         "checkmark_color": "#c79f67",
         "background_color": "#ffffff",
