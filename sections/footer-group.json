@@ -14,6 +14,42 @@
     "footer_m9NzUG": {
       "type": "footer",
       "blocks": {
+        "footer_three_column_Vc6eiD": {
+          "type": "footer-three-column",
+          "name": "Footer three columns",
+          "disabled": true,
+          "settings": {
+            "show_brand": true,
+            "logo_inverse": false,
+            "logo_size": 200,
+            "logo_text_size": 18,
+            "logo_line_1": "STEEL BY",
+            "logo_line_2": "DESIGN",
+            "description": "Luxury steel doors and glazing, designed and crafted in the UK. Bringing timeless elegance to modern spaces.",
+            "show_social": true,
+            "facebook_url": "",
+            "instagram_url": "",
+            "show_products": true,
+            "products_heading": "PRODUCTS",
+            "products_menu": "footer",
+            "show_contact": true,
+            "contact_heading": "CONTACT",
+            "contact_email": "info@steelydesign.co.uk",
+            "contact_phone": "+44 (0) 20 1234 5678",
+            "contact_address_line_1": "123 Industrial Estate",
+            "contact_address_line_2": "Design District",
+            "contact_address_line_3": "London, SW1 1AA",
+            "icon_accent_color": "#c4a84a",
+            "gap_column": 80,
+            "gap_row": 80,
+            "gap_list": 14,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
         "group_H6VpwJ": {
           "type": "group",
           "settings": {
@@ -388,6 +424,7 @@
         }
       },
       "block_order": [
+        "footer_three_column_Vc6eiD",
         "group_H6VpwJ",
         "group_dXxzMg",
         "group_BKHyrU",
