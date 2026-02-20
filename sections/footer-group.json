@@ -17,7 +17,6 @@
         "footer_three_column_Vc6eiD": {
           "type": "footer-three-column",
           "name": "Footer three columns",
-          "disabled": true,
           "settings": {
             "show_brand": true,
             "logo_inverse": false,
@@ -27,20 +26,20 @@
             "logo_line_2": "DESIGN",
             "description": "Luxury steel doors and glazing, designed and crafted in the UK. Bringing timeless elegance to modern spaces.",
             "show_social": true,
-            "facebook_url": "",
-            "instagram_url": "",
+            "facebook_url": "https://www.facebook.com/profile.php?id=61588258988866#",
+            "instagram_url": "https://www.instagram.com/steelbydesignltd/",
             "show_products": true,
             "products_heading": "PRODUCTS",
             "products_menu": "footer",
             "show_contact": true,
             "contact_heading": "CONTACT",
-            "contact_email": "info@steelydesign.co.uk",
-            "contact_phone": "+44 (0) 20 1234 5678",
-            "contact_address_line_1": "123 Industrial Estate",
-            "contact_address_line_2": "Design District",
-            "contact_address_line_3": "London, SW1 1AA",
+            "contact_email": "ben@steelbydesign.co.uk",
+            "contact_phone": "",
+            "contact_address_line_1": "",
+            "contact_address_line_2": "",
+            "contact_address_line_3": "",
             "icon_accent_color": "#c4a84a",
-            "gap_column": 80,
+            "gap_column": 0,
             "gap_row": 80,
             "gap_list": 14,
             "padding-block-start": 0,
@@ -52,6 +51,7 @@
         },
         "group_H6VpwJ": {
           "type": "group",
+          "disabled": true,
           "settings": {
             "content_direction": "column",
             "vertical_on_mobile": true,
@@ -166,6 +166,7 @@
         "group_dXxzMg": {
           "type": "group",
           "name": "t:names.group",
+          "disabled": true,
           "settings": {
             "content_direction": "column",
             "vertical_on_mobile": true,
@@ -278,6 +279,7 @@
         "group_BKHyrU": {
           "type": "group",
           "name": "t:names.group",
+          "disabled": true,
           "settings": {
             "content_direction": "column",
             "vertical_on_mobile": true,
