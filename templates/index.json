@@ -483,6 +483,7 @@
         },
         "feature_Gf8BMD": {
           "type": "feature",
+          "disabled": true,
           "settings": {
             "title": "4-6 Week Delivery",
             "description": "From order to installation."
@@ -497,6 +498,7 @@
         },
         "feature_wmjb6Y": {
           "type": "feature",
+          "disabled": true,
           "settings": {
             "title": "Custom Colour Matching",
             "description": "We match to your existing fixtures and fittings."
