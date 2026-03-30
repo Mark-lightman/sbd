@@ -2173,7 +2173,7 @@
               "type": "text",
               "name": "t:names.heading",
               "settings": {
-                "text": "<h2>The Journey to<br/><em>Perfection</em></h2>",
+                "text": "<p>Your Door Journey</p><p>Step By Step</p>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
