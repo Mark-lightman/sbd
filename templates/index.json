@@ -16,7 +16,7 @@
           "type": "text",
           "name": "t:names.heading",
           "settings": {
-            "text": "<h1>Luxury Steel Doors<br/>Designed &lt;&lt;&&gt;&gt; Crafted<br/> in the UK</h1>",
+            "text": "<h1>Precision Steel Doors</h1><h1>Enduring Style &lt;&lt;&&gt;&gt;  Design</h1>",
             "width": "100%",
             "max_width": "normal",
             "alignment": "left",
@@ -44,7 +44,7 @@
           "type": "text",
           "name": "t:names.text",
           "settings": {
-            "text": "<p>Fully bespoke steel doors and windows<br/>Quoted, delivered and installed in 4 - 6 weeks</p>",
+            "text": "<p>Bespoke Steel Framed Doors & Windows</p>",
             "width": "fit-content",
             "max_width": "normal",
             "alignment": "left",
