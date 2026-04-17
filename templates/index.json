@@ -5284,6 +5284,36 @@
         "padding-block-end": 0
       }
     },
+    "steel_door_quote_calculator_hB6imA": {
+      "type": "steel-door-quote-calculator",
+      "name": "Steel Door Estimator",
+      "settings": {
+        "heading": "Steel Door Estimator",
+        "description": "<p>Enter the height and width of your steel door to get an instant quote.</p>",
+        "height_label": "Height",
+        "width_label": "Width",
+        "price_label": "Estimated Cost",
+        "price_per_unit": "Price per m²",
+        "button_text": "Get a Quote",
+        "button_link": "",
+        "button_text_above": "<p>We can beat any like for like quote so if you’re not satisfied with your estimate then please get in touch.</p>",
+        "primary_color": "#000000",
+        "secondary_color": "#666666",
+        "success_color": "#22aa22",
+        "form_alignment": "center",
+        "form_layout": "row",
+        "form_max_width": 650,
+        "form_gap": 24,
+        "form_padding": 25,
+        "margin_top": 10,
+        "margin_bottom": 10,
+        "show_background": true,
+        "background_color": "#f9f9f9",
+        "background_opacity": 100,
+        "show_border": true,
+        "border_radius": 8
+      }
+    },
     "testimonials_wdJ6Y4": {
       "type": "testimonials",
       "blocks": {
@@ -5355,6 +5385,7 @@
     },
     "cta_RWxwit": {
       "type": "cta",
+      "disabled": true,
       "name": "CTA",
       "settings": {
         "image": "shopify://shop_images/Generated_Image_February_04_2026_-_4_57PM.png",
@@ -5399,6 +5430,7 @@
     "media_with_content_7nqPJc",
     "divider_rh8KUy",
     "divider_GYG9AT",
+    "steel_door_quote_calculator_hB6imA",
     "testimonials_wdJ6Y4",
     "cta_RWxwit"
   ]
