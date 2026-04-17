@@ -193,6 +193,14 @@
   letter-spacing: 0.5px;
 }
 
+.steel-door-calculator__text-above-button {
+  margin: 0 0 1rem 0;
+  font-size: 0.9375rem;
+  color: var(--calc-secondary-color);
+  line-height: 1.6;
+  text-align: center;
+}
+
 .steel-door-calculator__button:hover:not(:disabled) {
   background: #333;
   transform: translateY(-1px);

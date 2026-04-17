@@ -62,6 +62,10 @@
       </div>
     </div>
 
+    {% if block.settings.button_text_above != blank %}
+      <p class="steel-door-calculator__text-above-button">{{ block.settings.button_text_above }}</p>
+    {% endif %}
+
     <button
       type="button"
       data-submit-button
@@ -130,6 +134,12 @@
       "type": "url",
       "id": "button_link",
       "label": "Button Link URL"
+    },
+    {
+      "type": "richtext",
+      "id": "button_text_above",
+      "label": "Text Above Button",
+      "default": "<p>Text above button</p>"
     },
     {
       "type": "header",

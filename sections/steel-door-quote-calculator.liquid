@@ -8,7 +8,7 @@
   style="--calc-primary-color: {{ section.settings.primary_color }}; --calc-secondary-color: {{ section.settings.secondary_color }}; --calc-success-color: {{ section.settings.success_color }}; --calc-max-width: {{ section.settings.form_max_width }}px; --calc-gap: {{ section.settings.form_gap }}px; --calc-padding: {{ section.settings.form_padding }}px; --calc-bg-opacity: {{ section.settings.background_opacity }}%; --calc-background-color: {{ section.settings.background_color }}; --calc-border-color: #d0d0d0; --calc-border-radius: {{ section.settings.border_radius }}px;"
 >
   <h2 class="steel-door-calculator__heading">{{ section.settings.heading }}</h2>
-  
+   
   {% if section.settings.description != blank %}
     <p class="steel-door-calculator__description">{{ section.settings.description }}</p>
   {% endif %}
@@ -61,6 +61,10 @@
         </div>
       </div>
     </div>
+
+    {% if section.settings.button_text_above != blank %}
+      <p class="steel-door-calculator__text-above-button">{{ section.settings.button_text_above }}</p>
+    {% endif %}
 
     <button
       type="button"
@@ -131,6 +135,12 @@
       "type": "url",
       "id": "button_link",
       "label": "Button Link URL"
+    },
+    {
+      "type": "richtext",
+      "id": "button_text_above",
+      "label": "Text Above Button",
+      "default": "<p><strong>Guaranteed to beat your current quote</strong></p>"
     },
     {
       "type": "header",
