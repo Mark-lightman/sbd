@@ -28,6 +28,8 @@
             "case": "none",
             "wrap": "pretty",
             "color": "",
+            "enable_highlight_syntax": false,
+            "highlight_color": "#0d0d0d",
             "background": false,
             "background_color": "#00000026",
             "corner_radius": 0,
@@ -55,9 +57,39 @@
         "padding-block-start": 18,
         "padding-block-end": 30
       }
+    },
+    "steel_door_quote_calculator_zDq8aK": {
+      "type": "steel-door-quote-calculator",
+      "name": "Steel Door Estimator",
+      "settings": {
+        "heading": "Steel Door Estimator",
+        "description": "<p>Enter the height and width of your steel door to get an instant quote. All prices are for £700 per square metre.</p>",
+        "height_label": "Height",
+        "width_label": "Width",
+        "price_label": "Estimated Cost",
+        "price_per_unit": "Price per m²",
+        "button_text": "Get a Quote",
+        "button_link": "",
+        "primary_color": "#000000",
+        "secondary_color": "#666666",
+        "success_color": "#22aa22",
+        "form_alignment": "center",
+        "form_layout": "row",
+        "form_max_width": 500,
+        "form_gap": 24,
+        "form_padding": 25,
+        "margin_top": 10,
+        "margin_bottom": 10,
+        "show_background": true,
+        "background_color": "#f9f9f9",
+        "background_opacity": 100,
+        "show_border": true,
+        "border_radius": 8
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "steel_door_quote_calculator_zDq8aK"
   ]
 }
