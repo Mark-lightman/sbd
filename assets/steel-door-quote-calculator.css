@@ -1,0 +1,248 @@
+[data-steel-door-calculator] {
+  --calc-spacing: 1.5rem;
+  --calc-border-color: #d0d0d0;
+  --calc-primary-color: #000;
+  --calc-secondary-color: #666;
+  --calc-success-color: #22aa22;
+  --calc-max-width: 500px;
+  --calc-gap: 24px;
+  --calc-padding: 25px;
+  --calc-bg-opacity: 100%;
+}
+
+.steel-door-estimator-wrapper {
+  width: 100%;
+}
+
+.steel-door-calculator {
+  max-width: var(--calc-max-width);
+  padding: var(--calc-padding);
+  background: rgba(249, 249, 249, calc(var(--calc-bg-opacity) / 100));
+  border: 1px solid var(--calc-border-color);
+  border-radius: var(--calc-border-radius, 8px);
+  font-family: inherit;
+}
+
+.steel-door-calculator--no-bg {
+  background: transparent;
+}
+
+.steel-door-calculator--no-border {
+  border: none;
+}
+
+/* Alignment classes */
+.steel-door-calculator--align-left {
+  margin: 0;
+  margin-right: auto;
+}
+
+.steel-door-calculator--align-center {
+  margin: 0 auto;
+}
+
+.steel-door-calculator--align-right {
+  margin: 0;
+  margin-left: auto;
+}
+
+/* Layout classes */
+.steel-door-calculator--layout-row .steel-door-calculator__inputs-wrapper {
+  grid-template-columns: 1fr 1fr;
+}
+
+.steel-door-calculator--layout-column .steel-door-calculator__inputs-wrapper {
+  grid-template-columns: 1fr;
+}
+
+.steel-door-calculator__heading {
+  margin: 0 0 1.5rem 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--calc-primary-color);
+}
+
+.steel-door-calculator__description {
+  margin: 0 0 var(--calc-spacing) 0;
+  font-size: 0.9375rem;
+  color: var(--calc-secondary-color);
+  line-height: 1.6;
+}
+
+.steel-door-calculator__form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--calc-gap);
+}
+
+.steel-door-calculator__form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.steel-door-calculator__label {
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: var(--calc-primary-color);
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.steel-door-calculator__label-unit {
+  font-size: 0.875rem;
+  color: var(--calc-secondary-color);
+  font-weight: normal;
+}
+
+.steel-door-calculator__input {
+  padding: 0.75rem;
+  border: 1px solid var(--calc-border-color);
+  border-radius: 4px;
+  font-size: 1rem;
+  font-family: inherit;
+  transition: border-color 0.2s ease;
+}
+
+.steel-door-calculator__input:focus {
+  outline: none;
+  border-color: var(--calc-primary-color);
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.05);
+}
+
+.steel-door-calculator__input::placeholder {
+  color: #ccc;
+}
+
+/* Input type number spinner styling */
+.steel-door-calculator__input::-webkit-outer-spin-button,
+.steel-door-calculator__input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.steel-door-calculator__input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.steel-door-calculator__inputs-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+@media (max-width: 480px) {
+  .steel-door-calculator__inputs-wrapper {
+    grid-template-columns: 1fr !important;
+  }
+
+  .steel-door-calculator {
+    padding: calc(var(--calc-padding) * 0.75);
+  }
+}
+
+.steel-door-calculator__results {
+  padding: var(--calc-spacing);
+  background: #fff;
+  border: 1px solid var(--calc-border-color);
+  border-radius: 4px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.steel-door-calculator__results.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.steel-door-calculator__area {
+  font-size: 0.9375rem;
+  color: var(--calc-secondary-color);
+  margin-bottom: 0.75rem;
+}
+
+.steel-door-calculator__price {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--calc-primary-color);
+}
+
+.steel-door-calculator__price-label {
+  display: block;
+  font-size: 0.875rem;
+  color: var(--calc-secondary-color);
+  margin-top: 0.5rem;
+  font-weight: normal;
+}
+
+.steel-door-calculator__button {
+  padding: 0.875rem 1.5rem;
+  background: var(--calc-primary-color);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: inherit;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.steel-door-calculator__button:hover:not(:disabled) {
+  background: #333;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.steel-door-calculator__button:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.steel-door-calculator__button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.steel-door-calculator__button.submitted {
+  background: var(--calc-success-color);
+}
+
+/* Price breakdown (future enhancement) */
+.steel-door-calculator__breakdown {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--calc-border-color);
+  font-size: 0.875rem;
+  color: var(--calc-secondary-color);
+}
+
+.steel-door-calculator__breakdown-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .steel-door-calculator {
+    padding: 1.25rem;
+  }
+
+  .steel-door-calculator__heading {
+    font-size: 1.125rem;
+  }
+
+  .steel-door-calculator__price {
+    font-size: 1.75rem;
+  }
+
+  .steel-door-calculator__button {
+    padding: 0.75rem 1rem;
+    font-size: 0.9375rem;
+  }
+}

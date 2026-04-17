@@ -18,6 +18,66 @@
         "name": "boolean",
         "category": "TRUE_FALSE"
       }
+    },
+    {
+      "key": "color-pattern",
+      "namespace": "shopify",
+      "name": "Color",
+      "description": "Defines the primary color or pattern, such as blue or striped",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "style",
+      "namespace": "shopify",
+      "name": "Style",
+      "description": "Describes the style of a product, typically for window treatments; e.g. vertical blind, pleated shades",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "door-material",
+      "namespace": "shopify",
+      "name": "Door material",
+      "description": "Specifies the construction material of a door, such as tempered glass or Medium density fiberboard (MDF)",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "door-glass-finish",
+      "namespace": "shopify",
+      "name": "Door glass finish",
+      "description": "Specifies the type of glass finish on doors, such as lead or pattern",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "door-suitable-location",
+      "namespace": "shopify",
+      "name": "Door suitable location",
+      "description": "Identifies the ideal placement for a door, such as front or patio",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "door-surface-finish",
+      "namespace": "shopify",
+      "name": "Door surface finish",
+      "description": "Specifies the surface finish on home doors, such as glazed or unglazed",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
     }
   ],
   "variant": [
@@ -132,5 +192,26 @@
       }
     }
   ],
-  "shop": []
+  "shop": [
+    {
+      "key": "merchant_id",
+      "namespace": "mm_google_shopping_extension",
+      "name": "Google: Merchant ID",
+      "description": "Currently Linked Merchant Center ID",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "show_store_widget_app_embed_block",
+      "namespace": "mm_google_shopping_extension",
+      "name": "Google: Show Store Widget App Embed Block",
+      "description": "Indicates if the store widget app embed block should be shown.",
+      "type": {
+        "name": "boolean",
+        "category": "TRUE_FALSE"
+      }
+    }
+  ]
 }

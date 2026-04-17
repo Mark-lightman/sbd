@@ -1,0 +1,297 @@
+{{ 'steel-door-quote-calculator.css' | asset_url | stylesheet_tag }}
+ 
+<section class="steel-door-estimator-wrapper" style="margin-top: {{ section.settings.margin_top }}px; margin-bottom: {{ section.settings.margin_bottom }}px;">
+<div
+  data-steel-door-calculator
+  class="steel-door-calculator steel-door-calculator--align-{{ section.settings.form_alignment }} steel-door-calculator--layout-{{ section.settings.form_layout }}{% if section.settings.show_background == false %} steel-door-calculator--no-bg{% endif %}{% if section.settings.show_border == false %} steel-door-calculator--no-border{% endif %}"
+  data-button-url="{{ section.settings.button_link }}"
+  style="--calc-primary-color: {{ section.settings.primary_color }}; --calc-secondary-color: {{ section.settings.secondary_color }}; --calc-success-color: {{ section.settings.success_color }}; --calc-max-width: {{ section.settings.form_max_width }}px; --calc-gap: {{ section.settings.form_gap }}px; --calc-padding: {{ section.settings.form_padding }}px; --calc-bg-opacity: {{ section.settings.background_opacity }}%; --calc-background-color: {{ section.settings.background_color }}; --calc-border-color: #d0d0d0; --calc-border-radius: {{ section.settings.border_radius }}px;"
+>
+  <h2 class="steel-door-calculator__heading">{{ section.settings.heading }}</h2>
+  
+  {% if section.settings.description != blank %}
+    <p class="steel-door-calculator__description">{{ section.settings.description }}</p>
+  {% endif %}
+
+  <form class="steel-door-calculator__form" data-quote-form>
+    <div class="steel-door-calculator__inputs-wrapper">
+      <div class="steel-door-calculator__form-group">
+        <label class="steel-door-calculator__label">
+          {{ section.settings.height_label }}
+          <span class="steel-door-calculator__label-unit">(m)</span>
+        </label>
+        <input
+          type="number"
+          data-height-input
+          class="steel-door-calculator__input"
+          placeholder="0.00"
+          step="0.01"
+          min="0"
+          required
+          aria-label="{{ section.settings.height_label }}"
+        />
+      </div>
+
+      <div class="steel-door-calculator__form-group">
+        <label class="steel-door-calculator__label">
+          {{ section.settings.width_label }}
+          <span class="steel-door-calculator__label-unit">(m)</span>
+        </label>
+        <input
+          type="number"
+          data-width-input
+          class="steel-door-calculator__input"
+          placeholder="0.00"
+          step="0.01"
+          min="0"
+          required
+          aria-label="{{ section.settings.width_label }}"
+        />
+      </div>
+    </div>
+
+    <div class="steel-door-calculator__results" data-quote-result>
+      <div class="steel-door-calculator__area" data-area-display></div>
+      <div class="steel-door-calculator__price" data-quote-price></div>
+      <span class="steel-door-calculator__price-label">{{ section.settings.price_label }}</span>
+      <div class="steel-door-calculator__breakdown" style="display: none;">
+        <div class="steel-door-calculator__breakdown-item">
+          <span>{{ section.settings.price_per_unit }}</span>
+          <span>£700.00</span>
+        </div>
+      </div>
+    </div>
+
+    <button
+      type="button"
+      data-submit-button
+      class="steel-door-calculator__button"
+      aria-label="{{ section.settings.button_text }}"
+    >
+      {{ section.settings.button_text }}
+    </button>
+  </form>
+</div>
+</section>
+
+<script src="{{ 'steel-door-quote-calculator.js' | asset_url }}" defer="defer"></script>
+
+{% schema %}
+{
+  "name": "Steel Door Estimator",
+  "class": "steel-door-estimator-section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Steel Door Estimator"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Description",
+      "default": "<p>Enter the height and width of your steel door to get an instant quote. All prices are for £700 per square metre.</p>"
+    },
+    {
+      "type": "text",
+      "id": "height_label",
+      "label": "Height Field Label",
+      "default": "Height"
+    },
+    {
+      "type": "text",
+      "id": "width_label",
+      "label": "Width Field Label",
+      "default": "Width"
+    },
+    {
+      "type": "text",
+      "id": "price_label",
+      "label": "Price Display Label",
+      "default": "Estimated Cost"
+    },
+    {
+      "type": "text",
+      "id": "price_per_unit",
+      "label": "Price Per Unit Text",
+      "default": "Price per m²"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Submit Button Text",
+      "default": "Get a Quote"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button Link URL"
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "primary_color",
+      "label": "Primary Color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "secondary_color",
+      "label": "Secondary Color",
+      "default": "#666666"
+    },
+    {
+      "type": "color",
+      "id": "success_color",
+      "label": "Success Color",
+      "default": "#22aa22"
+    },
+    {
+      "type": "header",
+      "content": "Layout & Spacing"
+    },
+    {
+      "type": "select",
+      "id": "form_alignment",
+      "label": "Form Alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "select",
+      "id": "form_layout",
+      "label": "Input Layout",
+      "options": [
+        {
+          "value": "row",
+          "label": "Side by Side"
+        },
+        {
+          "value": "column",
+          "label": "Stacked"
+        }
+      ],
+      "default": "row"
+    },
+    {
+      "type": "range",
+      "id": "form_max_width",
+      "label": "Form Width",
+      "min": 200,
+      "max": 800,
+      "step": 50,
+      "unit": "px",
+      "default": 500
+    },
+    {
+      "type": "range",
+      "id": "form_gap",
+      "label": "Element Spacing",
+      "min": 4,
+      "max": 48,
+      "step": 2,
+      "unit": "px",
+      "default": 24
+    },
+    {
+      "type": "range",
+      "id": "form_padding",
+      "label": "Form Padding",
+      "min": 0,
+      "max": 60,
+      "step": 5,
+      "unit": "px",
+      "default": 25
+    },
+    {
+      "type": "range",
+      "id": "margin_top",
+      "label": "Margin Top",
+      "min": 0,
+      "max": 100,
+      "step": 10,
+      "unit": "px",
+      "default": 10
+    },
+    {
+      "type": "range",
+      "id": "margin_bottom",
+      "label": "Margin Bottom",
+      "min": 0,
+      "max": 100,
+      "step": 10,
+      "unit": "px",
+      "default": 10
+    },
+    {
+      "type": "header",
+      "content": "Background"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_background",
+      "label": "Show Background",
+      "default": true
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background Color",
+      "default": "#f9f9f9"
+    },
+    {
+      "type": "range",
+      "id": "background_opacity",
+      "label": "Background Opacity",
+      "min": 0,
+      "max": 100,
+      "step": 10,
+      "unit": "%",
+      "default": 100
+    },
+    {
+      "type": "checkbox",
+      "id": "show_border",
+      "label": "Show Border",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "border_radius",
+      "label": "Border Radius",
+      "min": 0,
+      "max": 50,
+      "step": 2,
+      "unit": "px",
+      "default": 8
+    }
+  ],
+  "presets": [
+    {
+      "name": "Steel Door Estimator",
+      "settings": {}
+    }
+  ]
+}
+{% endschema %}
