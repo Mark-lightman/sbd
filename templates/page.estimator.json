@@ -69,7 +69,7 @@
         "price_label": "Estimated Cost",
         "price_per_unit": "Price per m²",
         "button_text": "Get a Quote",
-        "button_link": "",
+        "button_link": "shopify://pages/contact",
         "primary_color": "#000000",
         "secondary_color": "#666666",
         "success_color": "#22aa22",
