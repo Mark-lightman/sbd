@@ -5302,14 +5302,14 @@
         "success_color": "#22aa22",
         "form_alignment": "center",
         "form_layout": "row",
-        "form_max_width": 650,
+        "form_max_width": 700,
         "form_gap": 24,
         "form_padding": 25,
-        "margin_top": 10,
-        "margin_bottom": 10,
+        "margin_top": 30,
+        "margin_bottom": 30,
         "show_background": true,
         "background_color": "#f9f9f9",
-        "background_opacity": 100,
+        "background_opacity": 50,
         "show_border": true,
         "border_radius": 8
       }
