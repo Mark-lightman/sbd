@@ -63,7 +63,7 @@
       "name": "Steel Door Estimator",
       "settings": {
         "heading": "Steel Door Estimator",
-        "description": "<p>Enter the height and width of your steel door to get an instant quote. All prices are for £700 per square metre.</p>",
+        "description": "<p>Enter the height and width of your steel door to get an instant quote. </p>",
         "height_label": "Height",
         "width_label": "Width",
         "price_label": "Estimated Cost",
